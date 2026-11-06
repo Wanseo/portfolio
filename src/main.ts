@@ -54,7 +54,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       <a id="tab-bookshelf" href="#bookshelf" role="tab" aria-selected="false" aria-controls="bookshelf" data-panel="bookshelf">bookshelf</a>
       <a id="tab-drawing" href="#drawing" role="tab" aria-selected="false" aria-controls="drawing" data-panel="drawing">drawing</a>
       <a id="tab-shop" href="#shop" role="tab" aria-selected="false" aria-controls="shop" data-panel="shop">shop</a>
-      <a id="tab-contact" href="#contact" role="tab" aria-selected="false" aria-expanded="false" aria-controls="contact" data-panel="contact">contact</a>
+      <a id="tab-contact" href="#contact" role="button" aria-expanded="false" aria-controls="contact">contact</a>
     </nav>
     <section class="portfolio-panel resume-panel" id="introduce" role="tabpanel" aria-labelledby="tab-introduce">
       <section class="resume-skills" aria-labelledby="skills-title">
@@ -423,7 +423,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     </section>
     <section class="portfolio-panel empty-panel" id="shop" role="tabpanel" aria-labelledby="tab-shop" hidden>
     </section>
-    <section class="portfolio-panel contact-panel" id="contact" role="tabpanel" aria-labelledby="tab-contact" hidden>
+    <section class="contact-panel" id="contact" aria-label="Contact details" hidden>
       <a href="mailto:wanseo1206@gmail.com">wanseo1206@gmail.com</a>
       <a href="tel:+821084413231">010-8441-3231</a>
     </section>
@@ -567,34 +567,70 @@ themeToggle?.addEventListener('click', () => {
   }
 })
 
-const menuLinks = document.querySelectorAll<HTMLAnchorElement>('.menu > a')
+const contactToggle = document.querySelector<HTMLAnchorElement>('#tab-contact')
+const contactDropdown = document.querySelector<HTMLElement>('#contact')
+
+const positionContactDropdown = () => {
+  if (!contactToggle || !contactDropdown || contactDropdown.hidden) return
+  const anchor = contactToggle.getBoundingClientRect()
+  const container = contactDropdown.offsetParent?.getBoundingClientRect()
+  if (!container) return
+  const left = Math.max(0, Math.min(
+    anchor.left - container.left,
+    container.width - contactDropdown.offsetWidth - 16,
+  ))
+  contactDropdown.style.left = `${left}px`
+  contactDropdown.style.top = `${anchor.bottom - container.top + 8}px`
+}
+
+const closeContactDropdown = () => {
+  if (contactDropdown) contactDropdown.hidden = true
+  contactToggle?.setAttribute('aria-expanded', 'false')
+}
+
+contactToggle?.addEventListener('click', (event) => {
+  event.preventDefault()
+  if (!contactDropdown) return
+  contactDropdown.hidden = !contactDropdown.hidden
+  contactToggle.setAttribute('aria-expanded', String(!contactDropdown.hidden))
+  positionContactDropdown()
+})
+contactToggle?.addEventListener('keydown', (event) => {
+  if (event.key === ' ') {
+    event.preventDefault()
+    contactToggle.click()
+  }
+})
+document.addEventListener('click', (event) => {
+  if (!(event.target instanceof Node)) return
+  if (contactToggle?.contains(event.target) || contactDropdown?.contains(event.target)) return
+  closeContactDropdown()
+})
+document.addEventListener('keydown', (event) => {
+  if (event.key !== 'Escape' || contactDropdown?.hidden !== false) return
+  closeContactDropdown()
+  contactToggle?.focus({ preventScroll: true })
+})
+window.addEventListener('resize', positionContactDropdown)
+document.fonts.ready.then(positionContactDropdown)
+
+const menuLinks = document.querySelectorAll<HTMLAnchorElement>('.menu > a[data-panel]')
 const portfolioPanels = document.querySelectorAll<HTMLElement>('.portfolio-panel')
 
 menuLinks.forEach((menuLink) => {
   menuLink.addEventListener('click', (event) => {
     event.preventDefault()
     titleDust?.dropFromElement(menuLink)
-    const closeContact = menuLink.dataset.panel === 'contact'
-      && menuLink.getAttribute('aria-expanded') === 'true'
+    closeContactDropdown()
 
     menuLinks.forEach((link) => {
       link.classList.remove('active')
-      if (link.dataset.panel === 'contact') link.setAttribute('aria-expanded', 'false')
-      if (link.getAttribute('role') === 'tab') {
-        link.setAttribute('aria-selected', 'false')
-      }
+      link.setAttribute('aria-selected', 'false')
     })
-
-    menuLink.classList.toggle('active', !closeContact)
-    if (menuLink.getAttribute('role') === 'tab') {
-      menuLink.setAttribute('aria-selected', String(!closeContact))
-    }
-    if (menuLink.dataset.panel === 'contact') {
-      menuLink.setAttribute('aria-expanded', String(!closeContact))
-    }
-
+    menuLink.classList.add('active')
+    menuLink.setAttribute('aria-selected', 'true')
     portfolioPanels.forEach((panel) => {
-      panel.hidden = closeContact || panel.id !== menuLink.dataset.panel
+      panel.hidden = panel.id !== menuLink.dataset.panel
     })
   })
 })
