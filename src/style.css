@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400&display=swap');
 
+/* Keep the first design in source while showing only the header and menu. */
+#app .portfolio-panel,
+#app .travel-album,
+#app .beauty-lightbox,
+#app .corner-verse {
+  display: none;
+}
+
 :root {
   --background: #fff;
   --foreground: #000;
