@@ -46,7 +46,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       >
     </div>
     <nav class="menu" aria-label="Portfolio navigation" role="tablist">
-      <a class="active" id="tab-introduce" href="#introduce" role="tab" aria-selected="true" aria-controls="introduce" data-panel="introduce">introduce myself</a>
+      <a class="active" id="tab-introduce" href="#introduce" role="tab" aria-selected="true" aria-controls="introduce" data-panel="introduce">Cover Letter</a>
       <a id="tab-cv" href="#cv" role="tab" aria-selected="false" aria-controls="cv" data-panel="cv">CV</a>
       <a id="tab-work" href="#work" role="tab" aria-selected="false" aria-controls="work" data-panel="work">work</a>
       <a id="tab-beauty" href="#beauty" role="tab" aria-selected="false" aria-controls="beauty" data-panel="beauty">the beauty</a>
@@ -59,7 +59,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     </nav>
     <section class="portfolio-panel about-panel" id="introduce" role="tabpanel" aria-labelledby="tab-introduce">
       <header class="about-header">
-        <p class="about-eyebrow">INTRODUCE MYSELF</p>
+        <p class="about-eyebrow">COVER LETTER</p>
         <h2>기술을 이해하고,<br>사람에게 전하는 마케터.</h2>
       </header>
       <div class="about-story">
