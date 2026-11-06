@@ -51,9 +51,9 @@
   display: grid;
   grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.7fr);
   gap: clamp(2rem, 4vw, 4.5rem);
-  max-width: 86rem;
+  max-width: var(--layout-max-width);
   margin: 0 auto;
-  padding: clamp(2.5rem, 5vw, 5rem) clamp(1rem, 5vw, 5rem) 5rem;
+  padding: clamp(2.5rem, 5vw, 5rem) var(--layout-gutter) 5rem;
 }
 
 .about-eyebrow {
@@ -73,7 +73,7 @@
 }
 
 .about-story {
-  max-width: 44rem;
+  min-width: 0;
   font-size: 0.9375rem;
   line-height: 1.95;
   word-break: keep-all;
@@ -102,9 +102,9 @@
   display: grid;
   grid-template-columns: minmax(0, 0.6fr) minmax(0, 2fr);
   gap: clamp(2rem, 4vw, 4.5rem);
-  max-width: 86rem;
+  max-width: var(--layout-max-width);
   margin: 0 auto;
-  padding: clamp(2.5rem, 5vw, 5rem) clamp(1rem, 5vw, 5rem) 5rem;
+  padding: clamp(2.5rem, 5vw, 5rem) var(--layout-gutter) 5rem;
 }
 
 .resume-career-column {
@@ -239,6 +239,8 @@
 }
 
 :root {
+  --layout-max-width: 86rem;
+  --layout-gutter: clamp(1rem, 5vw, 5rem);
   --background: #fff;
   --foreground: #000;
   --soft-border: #d9d9d9;
@@ -386,9 +388,9 @@ body {
   display: flex;
   align-items: flex-end;
   gap: 0.72rem;
-  max-width: 86rem;
+  max-width: var(--layout-max-width);
   margin-inline: auto;
-  padding-inline: clamp(1rem, 5vw, 5rem);
+  padding-inline: var(--layout-gutter);
   padding-block: clamp(0.5rem, 0.9vw, 0.875rem);
 }
 
@@ -595,9 +597,9 @@ body {
 
 .menu {
   display: flex;
-  max-width: 86rem;
+  max-width: var(--layout-max-width);
   margin-inline: auto;
-  padding-inline: clamp(1rem, 5vw, 5rem);
+  padding-inline: var(--layout-gutter);
   flex-wrap: wrap;
   align-items: center;
   justify-content: flex-start;
@@ -3073,4 +3075,14 @@ h1 {
   .travel-album__book.is-turning-down .travel-album__note-sheet {
     animation: none;
   }
+}
+
+/* A shared centered frame keeps every tab aligned with the logo. */
+#app .intro > .brand,
+#app .intro > .menu,
+#app .intro > .portfolio-panel {
+  width: 100%;
+  max-width: var(--layout-max-width);
+  margin-inline: auto;
+  padding-inline: var(--layout-gutter);
 }
