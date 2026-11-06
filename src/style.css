@@ -80,9 +80,9 @@
   overflow-wrap: anywhere;
 }
 
-.about-note strong {
-  color: var(--foreground);
-  font-weight: 700;
+.about-note__highlight {
+  color: color-mix(in srgb, var(--muted) 65%, var(--foreground));
+  font-weight: 400;
 }
 
 .about-story p { margin: 0 0 1.5rem; }
