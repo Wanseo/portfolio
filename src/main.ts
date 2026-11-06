@@ -54,7 +54,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       <a id="tab-bookshelf" href="#bookshelf" role="tab" aria-selected="false" aria-controls="bookshelf" data-panel="bookshelf">bookshelf</a>
       <a id="tab-drawing" href="#drawing" role="tab" aria-selected="false" aria-controls="drawing" data-panel="drawing">drawing</a>
       <a id="tab-shop" href="#shop" role="tab" aria-selected="false" aria-controls="shop" data-panel="shop">shop</a>
-      <a id="tab-contact" href="#contact" role="tab" aria-selected="false" aria-controls="contact" data-panel="contact">contact</a>
+      <a id="tab-contact" href="#contact" role="tab" aria-selected="false" aria-expanded="false" aria-controls="contact" data-panel="contact">contact</a>
     </nav>
     <section class="portfolio-panel introduce" id="introduce" role="tabpanel" aria-labelledby="tab-introduce">
       <h2 class="visually-hidden" id="introduce-title">Introduce myself</h2>
@@ -434,7 +434,9 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     </section>
     <section class="portfolio-panel empty-panel" id="shop" role="tabpanel" aria-labelledby="tab-shop" hidden>
     </section>
-    <section class="portfolio-panel empty-panel" id="contact" role="tabpanel" aria-labelledby="tab-contact" hidden>
+    <section class="portfolio-panel contact-panel" id="contact" role="tabpanel" aria-labelledby="tab-contact" hidden>
+      <a href="mailto:wanseo1206@gmail.com">wanseo1206@gmail.com</a>
+      <a href="tel:+821084413231">010-8441-3231</a>
     </section>
     <div class="travel-album" role="dialog" aria-modal="true" aria-labelledby="travel-album-title" hidden>
       <button class="travel-album__nav travel-album__nav--previous" type="button" aria-label="Previous album page"><span aria-hidden="true">&lt;</span></button>
@@ -583,21 +585,27 @@ menuLinks.forEach((menuLink) => {
   menuLink.addEventListener('click', (event) => {
     event.preventDefault()
     titleDust?.dropFromElement(menuLink)
+    const closeContact = menuLink.dataset.panel === 'contact'
+      && menuLink.getAttribute('aria-expanded') === 'true'
 
     menuLinks.forEach((link) => {
       link.classList.remove('active')
+      if (link.dataset.panel === 'contact') link.setAttribute('aria-expanded', 'false')
       if (link.getAttribute('role') === 'tab') {
         link.setAttribute('aria-selected', 'false')
       }
     })
 
-    menuLink.classList.add('active')
+    menuLink.classList.toggle('active', !closeContact)
     if (menuLink.getAttribute('role') === 'tab') {
-      menuLink.setAttribute('aria-selected', 'true')
+      menuLink.setAttribute('aria-selected', String(!closeContact))
+    }
+    if (menuLink.dataset.panel === 'contact') {
+      menuLink.setAttribute('aria-expanded', String(!closeContact))
     }
 
     portfolioPanels.forEach((panel) => {
-      panel.hidden = panel.id !== menuLink.dataset.panel
+      panel.hidden = closeContact || panel.id !== menuLink.dataset.panel
     })
   })
 })

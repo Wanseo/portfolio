@@ -8,6 +8,37 @@
   display: none;
 }
 
+#app .contact-panel:not([hidden]) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.625rem;
+  padding: 1.25rem 0.875rem;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.875rem;
+  animation: contact-drop 220ms ease-out both;
+}
+
+.contact-panel a {
+  color: var(--foreground);
+  text-decoration: none;
+  text-underline-offset: 0.25em;
+}
+
+.contact-panel a:hover,
+.contact-panel a:focus-visible {
+  text-decoration: underline;
+}
+
+@keyframes contact-drop {
+  from { opacity: 0; transform: translateY(-0.625rem); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #app .contact-panel:not([hidden]) { animation: none; }
+}
+
 :root {
   --background: #fff;
   --foreground: #000;
