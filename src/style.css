@@ -47,6 +47,52 @@
   #app .contact-panel:not([hidden]) { animation: none; }
 }
 
+#app .about-panel:not([hidden]) {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.7fr);
+  gap: clamp(2rem, 4vw, 4.5rem);
+  max-width: 86rem;
+  margin: 0 auto;
+  padding: clamp(2.5rem, 5vw, 5rem) clamp(1rem, 5vw, 5rem) 5rem;
+}
+
+.about-eyebrow {
+  margin: 0 0 1.25rem;
+  color: var(--muted);
+  font: 0.6875rem 'Space Mono', monospace;
+  letter-spacing: 0.08em;
+}
+
+.about-header h2 {
+  margin: 0;
+  font-size: clamp(1.5rem, 2.2vw, 2.25rem);
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: -0.04em;
+  word-break: keep-all;
+}
+
+.about-story {
+  max-width: 44rem;
+  font-size: 0.9375rem;
+  line-height: 1.95;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.about-story p { margin: 0 0 1.5rem; }
+.about-story p:first-child { font-weight: 500; }
+.about-story .about-note {
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--soft-border);
+  color: var(--muted);
+  font-size: 0.75rem;
+}
+
+@media (max-width: 760px) {
+  #app .about-panel:not([hidden]) { grid-template-columns: minmax(0, 1fr); }
+}
+
 #app .resume-panel:not([hidden]) {
   display: grid;
   grid-template-columns: minmax(0, 0.6fr) minmax(0, 2fr);
