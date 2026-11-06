@@ -80,6 +80,11 @@
   overflow-wrap: anywhere;
 }
 
+.about-note strong {
+  color: var(--foreground);
+  font-weight: 700;
+}
+
 .about-story p { margin: 0 0 1.5rem; }
 .about-story p:first-child { font-weight: 500; }
 .about-story .about-note {
