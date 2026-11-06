@@ -56,63 +56,40 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       <a id="tab-shop" href="#shop" role="tab" aria-selected="false" aria-controls="shop" data-panel="shop">shop</a>
       <a id="tab-contact" href="#contact" role="tab" aria-selected="false" aria-expanded="false" aria-controls="contact" data-panel="contact">contact</a>
     </nav>
-    <section class="portfolio-panel introduce" id="introduce" role="tabpanel" aria-labelledby="tab-introduce">
-      <h2 class="visually-hidden" id="introduce-title">Introduce myself</h2>
-      <svg class="connection-lines" aria-hidden="true">
-        <line class="connection-line" />
-      </svg>
-      <div class="image-board" aria-label="Introduction image board">
-        <figure class="board-image board-image--1" data-note="1" tabindex="0">
-          <div class="image-placeholder">image 01</div>
-          <figcaption>01</figcaption>
-        </figure>
-        <figure class="board-image board-image--2" data-note="2" tabindex="0">
-          <div class="image-placeholder">image 02</div>
-          <figcaption>02</figcaption>
-        </figure>
-        <figure class="board-image board-image--3" data-note="3" tabindex="0">
-          <div class="image-placeholder">image 03</div>
-          <figcaption>03</figcaption>
-        </figure>
-        <figure class="board-image board-image--4" data-note="4" tabindex="0">
-          <div class="image-placeholder">image 04</div>
-          <figcaption>04</figcaption>
-        </figure>
-        <figure class="board-image board-image--5" data-note="5" tabindex="0">
-          <div class="image-placeholder">image 05</div>
-          <figcaption>05</figcaption>
-        </figure>
-        <figure class="board-image board-image--6" data-note="6" tabindex="0">
-          <div class="image-placeholder">image 06</div>
-          <figcaption>06</figcaption>
-        </figure>
-      </div>
-      <ol class="introduce-notes">
-        <li data-note="1">
-          <span class="note-number">01</span>
-          <div><h3>Who I am</h3><p>A designer and developer who enjoys turning ideas into clear visual experiences.</p></div>
-        </li>
-        <li data-note="2">
-          <span class="note-number">02</span>
-          <div><h3>How I think</h3><p>I observe small details, organize them, and look for a simple direction.</p></div>
-        </li>
-        <li data-note="3">
-          <span class="note-number">03</span>
-          <div><h3>What I make</h3><p>I build identities, interfaces, and interactive moments for the screen.</p></div>
-        </li>
-        <li data-note="4">
-          <span class="note-number">04</span>
-          <div><h3>What inspires me</h3><p>Everyday scenes, books, conversations, and unexpected visual rhythms.</p></div>
-        </li>
-        <li data-note="5">
-          <span class="note-number">05</span>
-          <div><h3>My process</h3><p>Research, collect, sketch, test, and refine until the idea feels natural.</p></div>
-        </li>
-        <li data-note="6">
-          <span class="note-number">06</span>
-          <div><h3>Let’s connect</h3><p>I am always open to thoughtful collaborations and new perspectives.</p></div>
-        </li>
-      </ol>
+    <section class="portfolio-panel resume-panel" id="introduce" role="tabpanel" aria-labelledby="tab-introduce">
+      <section class="resume-skills" aria-labelledby="skills-title">
+        <header class="resume-heading"><span>01</span><h2 id="skills-title">기술 <small>SKILLS</small></h2></header>
+        <ul class="resume-skill-list">
+          <li>Adobe Illustrator</li>
+          <li>Adobe Photoshop</li>
+          <li>Figma</li>
+          <li>ChatGPT Codex Design</li>
+          <li>OPIc IH</li>
+          <li>Python</li>
+          <li>C++</li>
+        </ul>
+      </section>
+      <section class="resume-experience" aria-labelledby="experience-title">
+        <header class="resume-heading"><span>02</span><h2 id="experience-title">경력 <small>EXPERIENCE</small></h2></header>
+        <ol class="resume-timeline">
+          <li class="resume-job">
+            <p class="resume-job__date">2021 — 2024</p>
+            <div class="resume-job__body">
+              <p class="resume-job__company">STRADVISION <span>스트라드비젼</span></p>
+              <h3>Lane Detection Algorithm Engineer</h3>
+              <ul><li>LD Algorithm 개선</li><li>모델 학습</li><li>데이터베이스 구축 및 관리</li></ul>
+            </div>
+          </li>
+          <li class="resume-job">
+            <p class="resume-job__date">2025 — 2026</p>
+            <div class="resume-job__body">
+              <p class="resume-job__company">Build Up Korea <span>빌드업코리아</span></p>
+              <h3>사원</h3>
+              <ul><li>마케팅 기획</li><li>SNS 홍보 배너 및 온·오프라인 게시물 디자인</li></ul>
+            </div>
+          </li>
+        </ol>
+      </section>
     </section>
     <section class="portfolio-panel work-panel" id="work" role="tabpanel" aria-labelledby="tab-work" hidden>
       <div class="work-grid">

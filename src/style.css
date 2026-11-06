@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400&display=swap');
 
-/* Keep the first design in source while showing only the header and menu. */
+/* Reveal only the sections added after the archived first design. */
 #app .portfolio-panel,
 #app .travel-album,
 #app .beauty-lightbox,
@@ -37,6 +37,124 @@
 
 @media (prefers-reduced-motion: reduce) {
   #app .contact-panel:not([hidden]) { animation: none; }
+}
+
+#app .resume-panel:not([hidden]) {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.8fr);
+  gap: clamp(2rem, 6vw, 7rem);
+  max-width: 86rem;
+  margin: 0 auto;
+  padding: clamp(2.5rem, 5vw, 5rem) 0 5rem;
+}
+
+.resume-heading {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--foreground);
+}
+
+.resume-heading > span {
+  color: var(--muted);
+  font: 0.6875rem 'Space Mono', monospace;
+}
+
+.resume-heading h2 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.resume-heading small {
+  margin-left: 0.5rem;
+  font: 0.6875rem 'Space Mono', monospace;
+  letter-spacing: 0.06em;
+}
+
+.resume-skill-list {
+  padding: 0;
+  margin: 1rem 0 0;
+  list-style: none;
+}
+
+.resume-skill-list li {
+  padding: 0.875rem 0;
+  border-bottom: 1px solid var(--soft-border);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.resume-timeline {
+  padding: 0;
+  margin: 2rem 0 0;
+  list-style: none;
+}
+
+.resume-job {
+  display: grid;
+  grid-template-columns: 8rem minmax(0, 1fr);
+  gap: 1.5rem;
+}
+
+.resume-job + .resume-job { margin-top: 2.75rem; }
+
+.resume-job__date {
+  margin: 0;
+  padding-top: 0.25rem;
+  color: var(--muted);
+  font: 0.75rem/1.7 'Space Mono', monospace;
+}
+
+.resume-job__body {
+  border-left: 1px solid var(--foreground);
+  padding: 0 0 0.5rem 1.5rem;
+}
+
+.resume-job__company {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.375rem 0.75rem;
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.resume-job__company span {
+  color: var(--muted);
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.resume-job h3 {
+  margin: 0.625rem 0 1.125rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.resume-job ul {
+  display: grid;
+  gap: 0.5rem;
+  padding-left: 1.125rem;
+  margin: 0;
+  font-size: 0.9375rem;
+  line-height: 1.7;
+}
+
+@media (max-width: 760px) {
+  #app .resume-panel:not([hidden]) {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .resume-job { grid-template-columns: minmax(0, 1fr); gap: 0.75rem; }
+  .resume-job__body { padding-left: 1rem; }
 }
 
 :root {
