@@ -48,7 +48,7 @@
   padding: clamp(2.5rem, 5vw, 5rem) clamp(1rem, 5vw, 5rem) 5rem;
 }
 
-.resume-sidebar {
+.resume-career-column {
   display: grid;
   align-content: start;
   gap: 4.5rem;
@@ -56,8 +56,6 @@
 }
 
 .resume-job.resume-education__entry {
-  grid-template-columns: minmax(0, 1fr);
-  gap: 0.75rem;
   margin-top: 2rem;
 }
 
