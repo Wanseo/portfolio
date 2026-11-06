@@ -46,8 +46,8 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       >
     </div>
     <nav class="menu" aria-label="Portfolio navigation" role="tablist">
-      <a id="tab-introduce" href="#introduce" role="tab" aria-selected="false" aria-controls="introduce" data-panel="introduce">introduce myself</a>
-      <a class="active" id="tab-cv" href="#cv" role="tab" aria-selected="true" aria-controls="cv" data-panel="cv">CV</a>
+      <a class="active" id="tab-introduce" href="#introduce" role="tab" aria-selected="true" aria-controls="introduce" data-panel="introduce">introduce myself</a>
+      <a id="tab-cv" href="#cv" role="tab" aria-selected="false" aria-controls="cv" data-panel="cv">CV</a>
       <a id="tab-work" href="#work" role="tab" aria-selected="false" aria-controls="work" data-panel="work">work</a>
       <a id="tab-beauty" href="#beauty" role="tab" aria-selected="false" aria-controls="beauty" data-panel="beauty">the beauty</a>
       <a id="tab-material" href="#material" role="tab" aria-selected="false" aria-controls="material" data-panel="material">material research</a>
@@ -57,7 +57,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       <a id="tab-shop" href="#shop" role="tab" aria-selected="false" aria-controls="shop" data-panel="shop">shop</a>
       <a id="tab-contact" href="#contact" role="button" aria-expanded="false" aria-controls="contact">contact</a>
     </nav>
-    <section class="portfolio-panel about-panel" id="introduce" role="tabpanel" aria-labelledby="tab-introduce" hidden>
+    <section class="portfolio-panel about-panel" id="introduce" role="tabpanel" aria-labelledby="tab-introduce">
       <header class="about-header">
         <p class="about-eyebrow">INTRODUCE MYSELF</p>
         <h2>기술을 이해하고,<br>사람에게 전하는 마케터.</h2>
@@ -72,7 +72,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         <p class="about-note">※ 해당 경력은 단체의 정치적 성향에 대한 개인적 지지와 무관하며, 수행한 업무와 성과를 중심으로 검토해 주시기 바랍니다.</p>
       </div>
     </section>
-    <section class="portfolio-panel resume-panel" id="cv" role="tabpanel" aria-labelledby="tab-cv">
+    <section class="portfolio-panel resume-panel" id="cv" role="tabpanel" aria-labelledby="tab-cv" hidden>
       <section class="resume-skills" aria-labelledby="skills-title">
         <header class="resume-heading"><span>01</span><h2 id="skills-title">기술 <small>SKILLS</small></h2></header>
         <ul class="resume-skill-list">
