@@ -49,12 +49,12 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       <a class="active" id="tab-introduce" href="#introduce" role="tab" aria-selected="true" aria-controls="introduce" data-panel="introduce">Cover Letter</a>
       <a id="tab-cv" href="#cv" role="tab" aria-selected="false" aria-controls="cv" data-panel="cv">CV</a>
       <a id="tab-work" href="#work" role="tab" aria-selected="false" aria-controls="work" data-panel="work">work</a>
-      <a id="tab-beauty" href="#beauty" role="tab" aria-selected="false" aria-controls="beauty" data-panel="beauty">the beauty</a>
-      <a id="tab-material" href="#material" role="tab" aria-selected="false" aria-controls="material" data-panel="material">material research</a>
-      <a id="tab-traveling" href="#traveling" role="tab" aria-selected="false" aria-controls="traveling" data-panel="traveling">traveling</a>
-      <a id="tab-bookshelf" href="#bookshelf" role="tab" aria-selected="false" aria-controls="bookshelf" data-panel="bookshelf">bookshelf</a>
-      <a id="tab-drawing" href="#drawing" role="tab" aria-selected="false" aria-controls="drawing" data-panel="drawing">drawing</a>
-      <a id="tab-shop" href="#shop" role="tab" aria-selected="false" aria-controls="shop" data-panel="shop">shop</a>
+      <a hidden id="tab-beauty" href="#beauty" role="tab" aria-selected="false" aria-controls="beauty" data-panel="beauty">the beauty</a>
+      <a hidden id="tab-material" href="#material" role="tab" aria-selected="false" aria-controls="material" data-panel="material">material research</a>
+      <a hidden id="tab-traveling" href="#traveling" role="tab" aria-selected="false" aria-controls="traveling" data-panel="traveling">traveling</a>
+      <a hidden id="tab-bookshelf" href="#bookshelf" role="tab" aria-selected="false" aria-controls="bookshelf" data-panel="bookshelf">bookshelf</a>
+      <a hidden id="tab-drawing" href="#drawing" role="tab" aria-selected="false" aria-controls="drawing" data-panel="drawing">drawing</a>
+      <a hidden id="tab-shop" href="#shop" role="tab" aria-selected="false" aria-controls="shop" data-panel="shop">shop</a>
       <a id="tab-contact" href="#contact" role="button" aria-expanded="false" aria-controls="contact">contact</a>
     </nav>
     <section class="portfolio-panel about-panel" id="introduce" role="tabpanel" aria-labelledby="tab-introduce">

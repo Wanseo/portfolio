@@ -619,6 +619,10 @@ body {
   transition: background-color 160ms ease, border-color 160ms ease;
 }
 
+.menu > a[hidden] {
+  display: none;
+}
+
 .menu > a:hover,
 .menu > a:focus-visible,
 .menu > a.active {
