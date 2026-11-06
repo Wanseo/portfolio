@@ -57,6 +57,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       <a id="tab-contact" href="#contact" role="tab" aria-selected="false" aria-expanded="false" aria-controls="contact" data-panel="contact">contact</a>
     </nav>
     <section class="portfolio-panel resume-panel" id="introduce" role="tabpanel" aria-labelledby="tab-introduce">
+      <div class="resume-sidebar">
       <section class="resume-skills" aria-labelledby="skills-title">
         <header class="resume-heading"><span>01</span><h2 id="skills-title">기술 <small>SKILLS</small></h2></header>
         <ul class="resume-skill-list">
@@ -69,6 +70,16 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
           <li>C++</li>
         </ul>
       </section>
+      <section class="resume-education" aria-labelledby="education-title">
+        <header class="resume-heading"><span>03</span><h2 id="education-title">학력 <small>EDUCATION</small></h2></header>
+        <div class="resume-job resume-education__entry">
+          <p class="resume-job__date">2017 — 2021</p>
+          <div class="resume-job__body">
+            <p class="resume-job__company">한동대학교 <span>Handong Global University</span></p>
+            <p class="resume-education__degree">학사 <span aria-hidden="true">/</span> 컴퓨터공학심화 전공</p>
+          </div>
+        </div>
+        </div>
       <section class="resume-experience" aria-labelledby="experience-title">
         <header class="resume-heading"><span>02</span><h2 id="experience-title">경력 <small>EXPERIENCE</small></h2></header>
         <ol class="resume-timeline">
@@ -90,16 +101,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
           </li>
         </ol>
       </section>
-      <section class="resume-education" aria-labelledby="education-title">
-        <header class="resume-heading"><span>03</span><h2 id="education-title">학력 <small>EDUCATION</small></h2></header>
-        <div class="resume-job resume-education__entry">
-          <p class="resume-job__date">2017 — 2021</p>
-          <div class="resume-job__body">
-            <p class="resume-job__company">한동대학교 <span>Handong Global University</span></p>
-            <p class="resume-education__degree">학사 <span aria-hidden="true">/</span> 컴퓨터공학심화 전공</p>
-          </div>
-        </div>
-      </section>
+    </section>
     </section>
     <section class="portfolio-panel work-panel" id="work" role="tabpanel" aria-labelledby="tab-work" hidden>
       <div class="work-grid">
