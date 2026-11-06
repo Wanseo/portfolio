@@ -112,6 +112,7 @@
   align-content: start;
   gap: 4.5rem;
   min-width: 0;
+  padding-left: clamp(1rem, 2vw, 2rem);
 }
 
 .resume-job.resume-education__entry {
@@ -227,6 +228,10 @@
 }
 
 @media (max-width: 760px) {
+  .resume-career-column {
+    padding-left: 0;
+  }
+
   #app .resume-panel:not([hidden]) {
     grid-template-columns: minmax(0, 1fr);
     gap: 3rem;
