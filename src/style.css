@@ -633,6 +633,10 @@ body {
   display: none;
 }
 
+.menu > #tab-contact {
+  margin-left: auto;
+}
+
 .menu > a:hover,
 .menu > a:focus-visible,
 .menu > a.active {
