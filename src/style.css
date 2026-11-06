@@ -236,6 +236,28 @@
   line-height: 1.6;
 }
 
+.resume-work-link {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  color: var(--foreground);
+  font-size: 0.8125rem;
+  font-weight: 400;
+  line-height: 1.8;
+  text-decoration: none;
+  text-underline-offset: 0.25em;
+}
+
+.resume-work-link:hover,
+.resume-work-link:focus-visible {
+  text-decoration: underline;
+}
+
+.resume-work-link > span {
+  color: inherit;
+  font-size: 1.125rem;
+}
+
 .resume-job ul {
   display: grid;
   gap: 0.5rem;
