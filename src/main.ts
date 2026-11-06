@@ -80,6 +80,8 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
           <li>Adobe Photoshop</li>
           <li>Figma</li>
           <li>ChatGPT Codex Design</li>
+          <li>CapCut</li>
+          <li>VLLO</li>
           <li>OPIc IH</li>
           <li>Python</li>
           <li>C++</li>
