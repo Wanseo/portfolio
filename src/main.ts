@@ -106,14 +106,14 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
           <li class="resume-job">
             <p class="resume-job__date">FREELANCE</p>
             <div class="resume-job__body">
-              <p class="resume-job__company">디자인 외주 <a class="resume-work-link" href="#work" data-work-link aria-label="디자인 외주 작업 보기"><span aria-hidden="true">↗</span></a></p>
-              <h3>프리랜스 디자이너</h3>
+              <p class="resume-job__company">디자인 외주 <a class="resume-work-link" href="#work" data-work-link aria-label="디자인 외주 작업 보기"><svg class="resume-work-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M4 8h8M8 4l4 4-4 4" /></svg></a></p>
+              <h3>프리랜서 디자이너</h3>
             </div>
           </li>
           <li class="resume-job">
             <p class="resume-job__date">2025 — 2026</p>
             <div class="resume-job__body">
-              <p class="resume-job__company">Build Up Korea <span>빌드업코리아</span> <a class="resume-work-link" href="#work" data-work-link>마케팅·디자인 작업 <span aria-hidden="true">↗</span></a></p>
+              <p class="resume-job__company">Build Up Korea <span>빌드업코리아</span> <a class="resume-work-link" href="#work" data-work-link>마케팅·디자인 작업 <svg class="resume-work-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M4 8h8M8 4l4 4-4 4" /></svg></a></p>
               <h3>사원</h3>
               <ul><li>마케팅 기획</li><li>SNS 홍보 배너 및 온·오프라인 게시물 디자인</li></ul>
             </div>
