@@ -60,7 +60,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     <section class="portfolio-panel about-panel" id="introduce" role="tabpanel" aria-labelledby="tab-introduce">
       <header class="about-header">
         <p class="about-eyebrow">COVER LETTER</p>
-        <h2>기술을 이해하고,<br>사람에게 전하는 마케터.</h2>
+        <h2>기술을 이해하고, 그 가치를 사람에게 전달하는 마케터.</h2>
       </header>
       <div class="about-story">
         <p>안녕하세요. 컴퓨터공학 전공과 개발·마케팅 실무 경험을 바탕으로, 기술의 핵심 가치를 발견하고 이를 효과적인 메시지와 콘텐츠로 전달할 수 있는 조완서입니다.</p>
