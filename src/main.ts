@@ -58,8 +58,8 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       <a id="tab-contact" href="#contact" role="button" aria-expanded="false" aria-controls="contact">contact</a>
     </nav>
     <section class="portfolio-panel about-panel" id="introduce" role="tabpanel" aria-labelledby="tab-introduce">
+      <p class="about-eyebrow">COVER LETTER</p>
       <header class="about-header">
-        <p class="about-eyebrow">COVER LETTER</p>
         <h2>기술을 이해하고,<br>그 가치를 전달하는 마케터.</h2>
       </header>
       <div class="about-story">

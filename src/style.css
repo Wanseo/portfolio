@@ -51,13 +51,16 @@
   display: grid;
   grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.7fr);
   gap: clamp(2rem, 4vw, 4.5rem);
+  row-gap: 1.25rem;
+  align-items: start;
   max-width: var(--layout-max-width);
   margin: 0 auto;
   padding: clamp(2.5rem, 5vw, 5rem) var(--layout-gutter) 5rem;
 }
 
 .about-eyebrow {
-  margin: 0 0 1.25rem;
+  grid-column: 1 / -1;
+  margin: 0;
   color: var(--muted);
   font: 0.6875rem 'Space Mono', monospace;
   letter-spacing: 0.08em;
