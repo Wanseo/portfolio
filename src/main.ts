@@ -135,7 +135,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     </section>
     <section class="portfolio-panel work-panel" id="work" role="tabpanel" aria-labelledby="tab-work" hidden>
       <header class="work-overview-heading">
-        <h2>build up korea</h2>
+        <h2>Build Up Korea</h2>
       </header>
       <div class="work-project-grid">
       <article class="work-project">
