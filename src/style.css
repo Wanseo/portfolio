@@ -33,6 +33,19 @@
   font-weight: 500;
 }
 
+.work-project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(1rem, 2vw, 2rem);
+}
+
+.work-project {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-width: 0;
+}
+
 .work-project__placeholder {
   width: 100%;
   aspect-ratio: 16 / 9;

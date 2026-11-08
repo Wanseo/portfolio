@@ -137,10 +137,18 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       <header class="work-overview-heading">
         <h2>build up korea</h2>
       </header>
+      <div class="work-project-grid">
       <article class="work-project">
         <h3>사이트 개편</h3>
         <div class="work-project__placeholder" role="img" aria-label="사이트 개편 대표 이미지 준비 중"></div>
       </article>
+      <article class="work-project work-project--placeholder" aria-label="작업 이미지 준비 중">
+        <div class="work-project__placeholder" aria-hidden="true"></div>
+      </article>
+      <article class="work-project work-project--placeholder" aria-label="작업 이미지 준비 중">
+        <div class="work-project__placeholder" aria-hidden="true"></div>
+      </article>
+      </div>
     </section>
     <section class="portfolio-panel bookshelf-panel" id="bookshelf" role="tabpanel" aria-labelledby="tab-bookshelf" hidden>
       <div class="bookshelf-layout">
