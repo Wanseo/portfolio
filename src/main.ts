@@ -134,74 +134,13 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       </div>
     </section>
     <section class="portfolio-panel work-panel" id="work" role="tabpanel" aria-labelledby="tab-work" hidden>
-      <div class="work-grid">
-        <article class="work-card">
-          <div class="work-card__media">project image 01</div>
-          <div class="work-card__body">
-            <span class="work-card__number">01</span>
-            <h2>Project title</h2>
-            <p>Add a short description of the project, its purpose, and the experience you created.</p>
-          </div>
-          <div class="work-card__footer">
-            <span>IDENTITY · WEB · INTERACTION</span><span aria-hidden="true">↗</span>
-          </div>
-        </article>
-        <article class="work-card">
-          <div class="work-card__media">project image 02</div>
-          <div class="work-card__body">
-            <span class="work-card__number">02</span>
-            <h2>Project title</h2>
-            <p>Add a short description of the project, its purpose, and the experience you created.</p>
-          </div>
-          <div class="work-card__footer">
-            <span>GRAPHIC · MOTION · DIGITAL</span><span aria-hidden="true">↗</span>
-          </div>
-        </article>
-        <article class="work-card">
-          <div class="work-card__media">project image 03</div>
-          <div class="work-card__body">
-            <span class="work-card__number">03</span>
-            <h2>Project title</h2>
-            <p>Add a short description of the project, its purpose, and the experience you created.</p>
-          </div>
-          <div class="work-card__footer">
-            <span>EDITORIAL · TYPE · CREATIVE</span><span aria-hidden="true">↗</span>
-          </div>
-        </article>
-        <article class="work-card">
-          <div class="work-card__media">project image 04</div>
-          <div class="work-card__body">
-            <span class="work-card__number">04</span>
-            <h2>Project title</h2>
-            <p>Add a short description of the project, its purpose, and the experience you created.</p>
-          </div>
-          <div class="work-card__footer">
-            <span>BRANDING · SYSTEM · STRATEGY</span><span aria-hidden="true">↗</span>
-          </div>
-        </article>
-        <article class="work-card">
-          <div class="work-card__media">project image 05</div>
-          <div class="work-card__body">
-            <span class="work-card__number">05</span>
-            <h2>Project title</h2>
-            <p>Add a short description of the project, its purpose, and the experience you created.</p>
-          </div>
-          <div class="work-card__footer">
-            <span>OBJECT · RESEARCH · EXPERIENCE</span><span aria-hidden="true">↗</span>
-          </div>
-        </article>
-        <article class="work-card">
-          <div class="work-card__media">project image 06</div>
-          <div class="work-card__body">
-            <span class="work-card__number">06</span>
-            <h2>Project title</h2>
-            <p>Add a short description of the project, its purpose, and the experience you created.</p>
-          </div>
-          <div class="work-card__footer">
-            <span>ART DIRECTION · IMAGE · SPACE</span><span aria-hidden="true">↗</span>
-          </div>
-        </article>
-      </div>
+      <header class="work-overview-heading">
+        <h2>build up korea</h2>
+      </header>
+      <article class="work-project">
+        <h3>사이트 개편</h3>
+        <div class="work-project__placeholder" role="img" aria-label="사이트 개편 대표 이미지 준비 중"></div>
+      </article>
     </section>
     <section class="portfolio-panel bookshelf-panel" id="bookshelf" role="tabpanel" aria-labelledby="tab-bookshelf" hidden>
       <div class="bookshelf-layout">
