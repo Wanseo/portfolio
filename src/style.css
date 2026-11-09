@@ -3363,3 +3363,6 @@ h1 {
 .everylife-card-caption strong { font-size: 26px; }
 .everylife-card-caption > span { font-size: 12px; }
 @media (max-width: 600px) { .everylife-dialog .dialog-copy h2 { font-size: 27px; } }
+
+.work-logo-preview { display: block; width: 100%; aspect-ratio: 1; overflow: hidden; background: #fff; }
+.work-logo-preview img { display: block; width: 100%; height: 100%; object-fit: contain; }

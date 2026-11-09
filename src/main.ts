@@ -158,7 +158,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         </article>
         <article class="work-project">
           <h3>연개청 로고제작</h3>
-          <div class="work-project__placeholder" role="img" aria-label="연개청 로고제작 대표 이미지 준비 중"></div>
+          <a class="work-logo-preview" href="./projects/yeongae-logo-clean.png" target="_blank" rel="noopener noreferrer" aria-label="연금개혁청년행동 로고 크게 보기"><img src="./projects/yeongae-logo-clean.png" alt="연금개혁청년행동 로고 — 검정, 초록, 청록 세 가지 색상" loading="lazy"></a>
         </article>
         <article class="work-project">
           <h3>연개청 책자제작</h3>
