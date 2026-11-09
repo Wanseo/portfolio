@@ -97,7 +97,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         <header class="resume-heading"><span>02</span><h2 id="experience-title">경력 <small>EXPERIENCE</small></h2></header>
         <ol class="resume-timeline">
           <li class="resume-job">
-            <p class="resume-job__date">2021 — 2024</p>
+            <p class="resume-job__date">2021.09 — 2024.06</p>
             <div class="resume-job__body">
               <p class="resume-job__company">STRADVISION <span>스트라드비젼</span></p>
               <h3>Lane Detection Algorithm Engineer</h3>
