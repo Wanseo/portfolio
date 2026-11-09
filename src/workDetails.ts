@@ -249,7 +249,7 @@ newsletterCase.innerHTML = `
       <p>빌드업코리아2025 행사 소식을 전하는 뉴스레터입니다. 행사 등록과 할인 혜택, 연사 라인업, 공식 슬로건을 회차별로 소개했습니다.</p>
       <dl class="goods-facts">
         <div><dt>Role</dt><dd>뉴스레터 기획 · 콘텐츠 제작</dd></div>
-        <div><dt>Contents</dt><dd>D-90 · D-49 · D-44</dd></div>
+        <div><dt>Tool</dt><dd>Stibee</dd></div>
       </dl>
     </div>
   </section>
