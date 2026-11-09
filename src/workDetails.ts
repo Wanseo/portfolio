@@ -33,7 +33,6 @@ document.querySelectorAll<HTMLAnchorElement>('[data-personal-project]').forEach(
         <video src="./projects/${project.asset}.mp4" poster="./projects/${project.asset}.jpg" muted loop playsinline controls preload="metadata" aria-label="${project.title} 상세 미리보기"></video>
       </div>
       <div class="personal-dialog-copy">
-        <span class="personal-dialog-eyebrow">Interactive Website 2026</span>
         <h2 id="personal-dialog-title">${project.title}</h2>
         <p>${project.description}</p>
         <dl><dt>Role</dt><dd>Planning · Development · Graphic Design</dd><dt>Tool</dt><dd>GPT Codex, Adobe Illustrator</dd></dl>
@@ -105,9 +104,7 @@ logoDialog.setAttribute('aria-labelledby', 'logo-dialog-title')
 logoDialog.innerHTML = `<button class="personal-dialog-close" type="button" aria-label="닫기">×</button>
   <article class="goods-case">
     <header class="goods-hero logo-case-hero">
-      <span>YEONGEUM REFORM YOUTH ACTION</span>
       <h2>연금개혁<br>청년행동</h2>
-      <p>LOGO DESIGN</p>
     </header>
     <section class="goods-section goods-overview dialog-copy">
       <span class="eyebrow">Brand Identity · Logo Design</span>
@@ -249,9 +246,7 @@ const newsletterCase = document.createElement('article')
 newsletterCase.className = 'goods-case'
 newsletterCase.innerHTML = `
   <header class="goods-hero newsletter-case-hero">
-    <span>BUILD UP KOREA 2025</span>
     <h2>Newsletter</h2>
-    <p>뉴스레터 기획/제작</p>
   </header>
   <section class="goods-section goods-overview dialog-copy">
     <span class="eyebrow">Content Planning · Newsletter</span>
@@ -280,9 +275,7 @@ const bookletCase = document.createElement('article')
 bookletCase.className = 'goods-case'
 bookletCase.innerHTML = `
   <header class="goods-hero booklet-case-hero">
-    <span>2024 PENSION REFORM</span>
     <h2>연금개혁</h2>
-    <p>연개청 책자 표지디자인</p>
   </header>
   <section class="goods-section goods-overview dialog-copy">
     <span class="eyebrow">Editorial · Cover Design</span>
@@ -313,7 +306,7 @@ blogDialog.className = 'personal-project-dialog everylife-dialog blog-case-dialo
 blogDialog.setAttribute('aria-labelledby', 'blog-case-title')
 blogDialog.innerHTML = `<button class="personal-dialog-close" type="button" aria-label="닫기">×</button>
   <article class="goods-case">
-    <header class="goods-hero blog-case-hero"><span>BUILD UP KOREA 2025</span><h2>Naver Blog</h2><p>블로그 기획/제작 · 운영</p></header>
+    <header class="goods-hero blog-case-hero"><h2>Naver Blog</h2></header>
     <section class="goods-section goods-overview dialog-copy">
       <span class="eyebrow">Content Planning · Blog</span><h2 id="blog-case-title">빌드업코리아 공식 블로그</h2>
       <div><p>빌드업코리아의 행사 소식과 콘텐츠를 전하는 네이버 블로그입니다. 행사 브랜드를 담은 메인 화면과 ABOUT, EVENTS, NEWSLETTER, NOTICE, CONTENTS 메뉴로 구성되어 있습니다.</p>
@@ -422,7 +415,7 @@ mmsDialog.className = 'personal-project-dialog everylife-dialog mms-case-dialog'
 mmsDialog.setAttribute('aria-labelledby', 'mms-case-title')
 mmsDialog.innerHTML = `<button class="personal-dialog-close" type="button" aria-label="닫기">×</button>
   <article class="goods-case">
-    <header class="goods-hero mms-case-hero"><span>BUILD UP KOREA</span><h2>MMS<br>Copywriting</h2><p>문자 메시지 카피라이팅</p></header>
+    <header class="goods-hero mms-case-hero"><h2>MMS<br>Copywriting</h2></header>
     <section class="goods-section goods-overview dialog-copy">
       <span class="eyebrow">Copywriting · Mobile Message</span><h2 id="mms-case-title">MMS 카피라이팅</h2>
       <div><p>빌드업코리아 행사 소식과 참여 안내를 전달하는 문자 메시지 카피라이팅 작업입니다.</p><dl class="goods-facts"><div><dt>Role</dt><dd>문자 카피라이팅</dd></div><div><dt>Channel</dt><dd>MMS</dd></div></dl></div>
@@ -491,7 +484,7 @@ kakaoDialog.className = 'personal-project-dialog everylife-dialog kakao-case-dia
 kakaoDialog.setAttribute('aria-labelledby', 'kakao-case-title')
 kakaoDialog.innerHTML = `<button class="personal-dialog-close" type="button" aria-label="닫기">×</button>
   <article class="goods-case">
-    <header class="goods-hero kakao-case-hero"><span>BUILD UP KOREA</span><h2>Kakao<br>Channel</h2><p>카카오톡 채널 운영</p></header>
+    <header class="goods-hero kakao-case-hero"><h2>Kakao<br>Channel</h2></header>
     <section class="goods-section goods-overview dialog-copy"><span class="eyebrow">Channel Management</span><h2 id="kakao-case-title">카카오톡 채널관리</h2>
       <div><p>빌드업코리아 카카오톡 채널 운영 작업입니다. 2025년 개설 초기와 2026년의 채널 친구 수를 비교해 정리했습니다.</p>
         <dl class="goods-facts"><div><dt>Role</dt><dd>카카오톡 채널 운영</dd></div><div><dt>Channel</dt><dd>KakaoTalk Channel</dd></div></dl>
@@ -529,7 +522,7 @@ snsDialog.className = 'personal-project-dialog everylife-dialog sns-case-dialog'
 snsDialog.setAttribute('aria-labelledby', 'sns-case-title')
 snsDialog.innerHTML = `<button class="personal-dialog-close" type="button" aria-label="닫기">×</button>
   <article class="goods-case">
-    <header class="goods-hero sns-case-hero"><span>BUILD UP KOREA · INSTAGRAM</span><h2>SNS Content</h2><p>콘텐츠 기획 및 제작</p></header>
+    <header class="goods-hero sns-case-hero"><h2>SNS Content</h2></header>
     <section class="goods-section goods-overview dialog-copy"><span class="eyebrow">Social Media · Content Planning</span><h2 id="sns-case-title">SNS 콘텐츠 기획 및 제작</h2>
       <div><p>행사 홍보와 팔로워 확보를 목표로 인스타그램 콘텐츠를 기획하고 제작했습니다. 연사 스피치, 행사 홍보 배너와 포스터를 활용해 다양한 홍보 콘텐츠를 제작·업로드했습니다.</p><dl class="goods-facts"><div><dt>Role</dt><dd>콘텐츠 기획 · 제작 · 업로드</dd></div><div><dt>Channel</dt><dd>Instagram</dd></div><div><dt>Period</dt><dd>2025.02 – 2026.01 · 12개월</dd></div></dl></div>
     </section>
@@ -570,7 +563,7 @@ renewalDialog.className = 'personal-project-dialog everylife-dialog renewal-case
 renewalDialog.setAttribute('aria-labelledby', 'renewal-case-title')
 renewalDialog.innerHTML = `<button class="personal-dialog-close" type="button" aria-label="닫기">×</button>
   <article class="goods-case">
-    <header class="goods-hero renewal-case-hero"><span>BUILD UP KOREA</span><h2>Website<br>Renewal</h2></header>
+    <header class="goods-hero renewal-case-hero"><h2>Website<br>Renewal</h2></header>
     <section class="goods-section goods-overview dialog-copy">
       <span class="eyebrow">Website Planning</span><h2 id="renewal-case-title">사이트 개편</h2>
       <div><p>메인 · About Us · 미디어 페이지의 콘텐츠 구성과 이동 흐름을 정리한 웹사이트 개편 시안입니다.</p><dl class="goods-facts"><div><dt>Role</dt><dd>페이지 구성 · 콘텐츠 기획</dd></div><div><dt>Tool</dt><dd>Canva, Adobe Illustrator</dd></div></dl></div>
