@@ -183,7 +183,11 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         </article>
         <article class="work-project">
           <h3>뉴스레터 기획/제작</h3>
-          <div class="work-project__placeholder" role="img" aria-label="뉴스레터 기획/제작 대표 이미지 준비 중"></div>
+          <button class="newsletter-preview" type="button" aria-label="빌드업코리아 뉴스레터 세 편 상세 보기">
+            <img src="./projects/newsletter-1.png" alt="빌드업코리아2025 뉴스레터 D-90" loading="lazy">
+            <img src="./projects/newsletter-2.png" alt="빌드업코리아2025 뉴스레터 D-49" loading="lazy">
+            <img src="./projects/newsletter-3.png" alt="빌드업코리아2025 뉴스레터 D-44" loading="lazy">
+          </button>
         </article>
         <article class="work-project">
           <h3>블로그 관리</h3>
@@ -2167,4 +2171,33 @@ logoDialog.addEventListener('click', (event) => {
   const bounds = logoDialog.getBoundingClientRect()
   if (event.clientX < bounds.left || event.clientX > bounds.right
     || event.clientY < bounds.top || event.clientY > bounds.bottom) logoDialog.close()
+})
+
+const newsletterTrigger = document.querySelector<HTMLButtonElement>('.newsletter-preview')
+const newsletterDialog = document.createElement('dialog')
+newsletterDialog.className = 'personal-project-dialog newsletter-dialog'
+newsletterDialog.setAttribute('aria-labelledby', 'newsletter-dialog-title')
+newsletterDialog.innerHTML = `<button class="personal-dialog-close" type="button" aria-label="닫기">×</button>
+  <header class="newsletter-dialog-header"><span>BUILD UP KOREA</span><h2 id="newsletter-dialog-title">뉴스레터 기획/제작</h2></header>
+  <div class="newsletter-dialog-pages">
+    <figure><figcaption>01 · D-90</figcaption><img src="./projects/newsletter-1.png" alt="빌드업코리아2025 D-90 뉴스레터 전체" loading="lazy"></figure>
+    <figure><figcaption>02 · D-49</figcaption><img src="./projects/newsletter-2.png" alt="빌드업코리아2025 D-49 뉴스레터 전체" loading="lazy"></figure>
+    <figure><figcaption>03 · D-44</figcaption><img src="./projects/newsletter-3.png" alt="빌드업코리아2025 D-44 뉴스레터 전체" loading="lazy"></figure>
+  </div>`
+document.body.append(newsletterDialog)
+newsletterTrigger?.addEventListener('click', () => {
+  newsletterDialog.showModal()
+  newsletterDialog.scrollTop = 0
+  document.body.style.overflow = 'hidden'
+})
+newsletterDialog.querySelector('button')?.addEventListener('click', () => newsletterDialog.close())
+newsletterDialog.addEventListener('close', () => {
+  document.body.style.overflow = ''
+  newsletterTrigger?.focus()
+})
+newsletterDialog.addEventListener('click', (event) => {
+  if (event.target !== newsletterDialog) return
+  const bounds = newsletterDialog.getBoundingClientRect()
+  if (event.clientX < bounds.left || event.clientX > bounds.right
+    || event.clientY < bounds.top || event.clientY > bounds.bottom) newsletterDialog.close()
 })

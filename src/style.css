@@ -3395,3 +3395,19 @@ h1 {
 @media (max-width: 480px) { .booklet-dialog-heading { padding: 56px 24px 24px; } }
 
 .work-logo-preview { border: 2px solid #00C853; box-sizing: border-box; }
+
+.newsletter-preview {
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: center;
+  width: 100%; aspect-ratio: 1; padding: 8%; gap: 4%; border: 0;
+  background: #fff; cursor: pointer; overflow: hidden;
+}
+.newsletter-preview img { display: block; width: 100%; height: auto; max-height: 100%; object-fit: contain; }
+.newsletter-dialog { background: #fff; }
+.newsletter-dialog .personal-dialog-close { position: sticky; float: right; margin: 12px 12px -56px 0; top: 12px; }
+.newsletter-dialog-header { padding: 48px 7% 24px; }
+.newsletter-dialog-header > span { font-size: 10px; letter-spacing: 1.5px; color: #777; }
+.newsletter-dialog-header h2 { font-size: 28px; margin: 16px 0 0; }
+.newsletter-dialog-pages { padding: 0 7% 7%; }
+.newsletter-dialog-pages figure { margin: 0; padding: 32px 0; border-top: 1px solid #e5e5e5; }
+.newsletter-dialog-pages figcaption { font-size: 11px; color: #777; margin-bottom: 24px; letter-spacing: 1px; }
+.newsletter-dialog-pages img { display: block; width: 100%; max-width: 540px; height: auto; margin-inline: auto; }
