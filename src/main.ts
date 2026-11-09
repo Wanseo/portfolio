@@ -192,7 +192,7 @@ if (!document.querySelector('#app > .intro')) document.querySelector<HTMLDivElem
         <article class="work-project">
           <h3>카카오톡 채널관리</h3>
           <button class="kakao-preview" type="button" aria-label="빌드업코리아 카카오톡 채널 운영 상세 보기">
-            <span class="kakao-preview-icon" aria-hidden="true">Ch</span>
+            <img class="kakao-preview-logo" src="./projects/kakao-channel-logo-transparent.png" alt="카카오톡 채널" loading="eager" decoding="async">
             <span class="kakao-preview-title">카카오톡 채널</span>
             <span class="kakao-preview-count"><span>273<small>2025 개설 초</small></span><span class="kakao-preview-arrow">→</span><span>1,089<small>2026</small></span></span>
           </button>

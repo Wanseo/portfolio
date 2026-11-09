@@ -3766,3 +3766,5 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 .sns-preview-instagram { display: block; width: 12cqw; height: 12cqw; object-fit: contain; }
 
 .sns-preview { background: #fff; }
+
+.kakao-preview-logo { display: block; width: 20cqw; height: 20cqw; object-fit: contain; }
