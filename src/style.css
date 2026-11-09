@@ -3768,3 +3768,5 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 .sns-preview { background: #fff; }
 
 .kakao-preview-logo { display: block; width: 20cqw; height: 20cqw; object-fit: contain; }
+
+.kakao-preview-logo { border-radius: 14%; }
