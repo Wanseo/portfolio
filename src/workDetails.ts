@@ -77,7 +77,7 @@ const bookletDialog = document.createElement('dialog')
 bookletDialog.className = 'personal-project-dialog booklet-dialog'
 bookletDialog.setAttribute('aria-label', '연개청 책자 표지디자인 상세 화면')
 bookletDialog.innerHTML = `<button class="personal-dialog-close" type="button" aria-label="닫기">×</button>
-  <img src="./projects/yeongae-booklet.png" alt="2024년 연금개혁 책자 전체 표지">
+  <img src="./projects/yeongae-booklet-white.svg" alt="2024년 연금개혁 책자 전체 표지">
   <img src="./projects/yeongae-booklet-photo.jpg" alt="연금개혁 행사 현장에서 촬영한 연개청 책자 실물" loading="lazy">`
 document.body.append(bookletDialog)
 bookletTrigger?.addEventListener('click', (event) => {
@@ -287,7 +287,7 @@ bookletCase.innerHTML = `
   </section>
   <section class="goods-section booklet-case-cover">
     <div class="goods-section-heading"><span class="goods-index">COVER DESIGN</span></div>
-    <img class="goods-board" src="./projects/yeongae-booklet.png" alt="MZ세대가 생각하는 국가 미래를 위한 연금개혁 방향 책자 전체 표지" loading="lazy">
+    <img class="goods-board" src="./projects/yeongae-booklet-white.svg" alt="MZ세대가 생각하는 국가 미래를 위한 연금개혁 방향 책자 전체 표지" loading="lazy">
   </section>
   <section class="goods-section goods-application">
     <div class="goods-section-heading"><span class="goods-index">APPLICATION</span></div>
