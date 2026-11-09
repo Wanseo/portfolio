@@ -3815,3 +3815,7 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 .sns-preview { justify-content: flex-start; padding-top: 17%; }
 .kakao-preview-logo { width: 16cqw; height: 16cqw; }
 .sns-preview-instagram { width: 16cqw; height: 16cqw; }
+
+.mms-preview { align-items: center; }
+.mms-preview-logo { display: block; width: 12.8cqw; height: 12.8cqw; object-fit: contain; }
+.mms-preview-screens { width: 100%; }
