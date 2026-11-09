@@ -3223,7 +3223,7 @@ h1 {
 .personal-project-arrow {
   position: absolute; right: 1rem; bottom: 1rem;
   display: grid; place-items: center; width: 2rem; height: 2rem;
-  border-radius: 50%; background: #fafaf8; color: #171715;
+  color: #171715;
   font-size: 1.25rem;
 }
 .personal-project-dialog {
