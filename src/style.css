@@ -3591,3 +3591,7 @@ h1 {
 .mms-image-toggle img { display: block; width: 100%; height: auto; }
 .mms-gallery figure.is-expanded { grid-column: 1 / -1; }
 .mms-gallery figure.is-expanded .mms-image-toggle { cursor: zoom-out; }
+
+.mms-image-toggle { overflow: hidden; }
+.mms-image-toggle img { margin-top: -12%; }
+.mms-preview-screens img { clip-path: inset(5.5% 0 0); }
