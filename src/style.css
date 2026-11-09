@@ -3762,3 +3762,5 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 .work-project > :is(.work-project__placeholder, a, button)::before { content: ""; position: absolute; inset: 0; z-index: 10; pointer-events: none; box-sizing: border-box; border: .5px solid #000; }
 
 .kakao-preview { background: #fff; }
+
+.sns-preview-instagram { display: block; width: 12cqw; height: 12cqw; object-fit: contain; }
