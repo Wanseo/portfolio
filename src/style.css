@@ -3730,3 +3730,6 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 .sns-approach dt { color: #1685a6; font-size: 12px; font-weight: 700; }
 .sns-approach dd { margin: 0; font-size: 14px; line-height: 1.8; word-break: keep-all; }
 @media (max-width: 760px) { .sns-preview { border-width: 1px; } }
+
+.work-project__placeholder, .work-logo-preview, .work-booklet-preview, .everylife-preview, .personal-project-preview, .newsletter-preview, .blog-preview, .mms-preview, .kakao-preview, .sns-preview { border-width: .25px; }
+.work-project-grid { row-gap: clamp(2.5rem, 5vw, 4rem); }
