@@ -3755,3 +3755,5 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 
 .mms-preview { background: #fff; }
 .mms-preview-screens img { box-shadow: 0 2cqw 5cqw #10284422; clip-path: inset(5.5% -20% -20%); }
+
+.newsletter-preview img.newsletter-platform-logo { display: block; position: absolute; left: 38%; bottom: 8%; width: 24%; height: auto; max-height: none; object-fit: contain; }
