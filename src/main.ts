@@ -198,7 +198,7 @@ if (!document.querySelector('#app > .intro')) document.querySelector<HTMLDivElem
         </article>
         <article class="work-project">
           <h3>SNS관리</h3>
-          <div class="work-project__placeholder" role="img" aria-label="SNS관리 대표 이미지 준비 중"></div>
+          <button class="sns-preview" type="button" aria-label="SNS 콘텐츠 기획 및 제작 상세 보기"><span class="sns-preview-label">INSTAGRAM</span><strong>SNS 콘텐츠<br>기획 및 제작</strong><span class="sns-preview-result">1,415 → 1.2만<small>팔로워</small></span></button>
         </article>
       </div>
       <header class="work-overview-heading">

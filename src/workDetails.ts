@@ -495,3 +495,33 @@ kakaoDialog.addEventListener('click', (event) => {
   if (event.clientX < bounds.left || event.clientX > bounds.right
     || event.clientY < bounds.top || event.clientY > bounds.bottom) kakaoDialog.close()
 })
+
+const snsTrigger = document.querySelector<HTMLButtonElement>('.sns-preview')
+const snsDialog = document.createElement('dialog')
+snsDialog.className = 'personal-project-dialog everylife-dialog sns-case-dialog'
+snsDialog.setAttribute('aria-labelledby', 'sns-case-title')
+snsDialog.innerHTML = `<button class="personal-dialog-close" type="button" aria-label="닫기">×</button>
+  <article class="goods-case">
+    <header class="goods-hero sns-case-hero"><span>BUILD UP KOREA · INSTAGRAM</span><h2>SNS Content</h2><p>콘텐츠 기획 및 제작</p></header>
+    <section class="goods-section goods-overview dialog-copy"><span class="eyebrow">Social Media · Content Planning</span><h2 id="sns-case-title">SNS 콘텐츠 기획 및 제작</h2>
+      <div><p>행사 홍보와 팔로워 확보를 목표로 인스타그램 콘텐츠를 기획하고 제작했습니다. 연사 스피치, 행사 홍보 배너와 포스터를 활용해 다양한 홍보 콘텐츠를 제작·업로드했습니다.</p><dl class="goods-facts"><div><dt>Role</dt><dd>콘텐츠 기획 · 제작 · 업로드</dd></div><div><dt>Period</dt><dd>2025.02 – 2026.01 · 12개월</dd></div></dl></div>
+    </section>
+    <section class="goods-section sns-case-result"><div class="goods-section-heading"><span class="goods-index">RESULT</span></div><p class="sns-growth">1,415명 <span>→</span> 1.2만 명</p><p>팔로워 수 변화</p></section>
+    <section class="goods-section"><div class="goods-section-heading"><span class="goods-index">APPROACH</span></div>
+      <dl class="sns-approach"><div><dt>WHY</dt><dd>SNS 초기 운영 당시 팔로워 확보를 위해 다양한 콘텐츠 중심의 홍보 기획 및 제작이 필요했습니다.</dd></div><div><dt>HOW</dt><dd>이전 행사 연사 스피치와 새로운 행사 홍보 배너·포스터를 바탕으로 트렌드에 맞는 콘텐츠를 기획·제작하고 업로드했습니다.</dd></div></dl>
+    </section>
+    <section class="goods-section"><div class="goods-section-heading"><span class="goods-index">PROJECT BOARD</span></div><a href="./projects/sns-management-sharp.png" target="_blank" rel="noopener noreferrer"><img class="goods-board" src="./projects/sns-management-sharp.png" alt="SNS 콘텐츠 기획 및 제작 프로젝트 보드 — 운영 목표, 기간, 과정 및 팔로워 변화" loading="lazy"></a></section>
+  </article>`
+document.body.append(snsDialog)
+snsTrigger?.addEventListener('click', () => {
+  snsDialog.showModal()
+  snsDialog.scrollTop = 0
+  document.body.style.overflow = 'hidden'
+})
+snsDialog.querySelector('button')?.addEventListener('click', () => snsDialog.close())
+snsDialog.addEventListener('close', () => { document.body.style.overflow = ''; snsTrigger?.focus() })
+snsDialog.addEventListener('click', (event) => {
+  if (event.target !== snsDialog) return
+  const bounds = snsDialog.getBoundingClientRect()
+  if (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom) snsDialog.close()
+})
