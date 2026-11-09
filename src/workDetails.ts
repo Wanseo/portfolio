@@ -650,7 +650,7 @@ instituteDialog.innerHTML = `<button class="personal-dialog-close" type="button"
     <header class="goods-hero"><h2>1776<br>Institute.</h2></header>
     <section class="goods-section goods-overview dialog-copy">
       <span class="eyebrow">Merch Sticker</span><h2 id="institute-dialog-title">1776연구소 굿즈작업</h2>
-      <div><p>1776연구소를 위한 굿즈 스티커 디자인입니다. 자유의 종, 캐릭터, 타이포그래피를 활용한 네 가지 스티커를 제작했습니다. 오프라인 부스에서 굿즈 항목으로 판매되었습니다.</p><dl class="goods-facts"><div><dt>Role</dt><dd>Illustration · Graphic Design</dd></div><div><dt>Tool</dt><dd>Adobe Illustrator</dd></div></dl></div>
+      <div><p>1776연구소를 위한 굿즈 스티커 디자인입니다. 1776연구소를 대표하는 자유의 종, 자유의 종을 캐릭터화한 일러스트, 연구소 문구를 활용한 일러스트, 타이포그래피를 각각 활용해 네 가지 스티커를 제작했습니다. 해당 스티커는 오프라인 부스에서 굿즈로 판매되었습니다.</p><dl class="goods-facts"><div><dt>Role</dt><dd>Illustration · Graphic Design</dd></div><div><dt>Tool</dt><dd>Adobe Illustrator</dd></div></dl></div>
     </section>
     <section class="goods-section"><div class="goods-section-heading"><span class="goods-index">COLOR PALETTE</span></div>
       <div class="goods-palette"><div><i style="background:#EFE8D5"></i><span>Cream</span><small>#EFE8D5</small></div><div><i style="background:#D8B128"></i><span>Gold</span><small>#D8B128</small></div><div><i style="background:#F6F5AF"></i><span>Lemon</span><small>#F6F5AF</small></div><div><i style="background:#E91D46"></i><span>Red</span><small>#E91D46</small></div><div><i style="background:#0B0D09"></i><span>Black</span><small>#0B0D09</small></div></div>
