@@ -305,7 +305,7 @@ blogDialog.innerHTML = `<button class="personal-dialog-close" type="button" aria
     <section class="goods-section goods-overview dialog-copy">
       <span class="eyebrow">Content Planning · Blog</span><h2 id="blog-case-title">빌드업코리아 공식 블로그</h2>
       <div><p>빌드업코리아의 행사 소식과 콘텐츠를 전하는 네이버 블로그입니다. 행사 브랜드를 담은 메인 화면과 ABOUT, EVENTS, NEWSLETTER, NOTICE, CONTENTS 메뉴로 구성되어 있습니다.</p>
-        <dl class="goods-facts"><div><dt>Role</dt><dd>블로그 기획 · 콘텐츠 제작 · 운영</dd></div><div><dt>Channel</dt><dd>Naver Blog</dd></div></dl>
+        <dl class="goods-facts"><div><dt>Role</dt><dd>블로그 기획 · 콘텐츠 제작 · 운영</dd></div><div><dt>Tool</dt><dd>Canva</dd></div></dl>
       </div>
     </section>
     <section class="goods-section blog-case-screen"><div class="goods-section-heading"><span class="goods-index">BLOG MAIN</span></div>
