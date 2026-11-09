@@ -179,6 +179,7 @@ if (!document.querySelector('#app > .intro')) document.querySelector<HTMLDivElem
         <article class="work-project">
           <h3>블로그 관리</h3>
           <button class="blog-preview" type="button" aria-label="빌드업코리아 네이버 블로그 작업 상세 보기">
+            <img class="blog-preview-logo" src="./projects/naver-blog-logo-transparent.png" alt="네이버 블로그" loading="eager" decoding="async">
             <span class="blog-preview-window"><span class="blog-preview-toolbar"><i></i><i></i><i></i><span>blog.naver.com/bukofficial</span></span><svg viewBox="0 29 1040 467" role="img" aria-label="빌드업코리아2025 블로그 메인 배너"><image href="./projects/previews/buildup-blog.jpg" width="1040" height="882" /></svg><span class="blog-preview-window-bottom">BUILD UP KOREA 2025</span></span>
           </button>
         </article>

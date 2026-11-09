@@ -3788,3 +3788,6 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 }
 
 .sns-preview-instagram { transform: scale(1.38); transform-origin: center; }
+
+.blog-preview-logo { position: absolute; top: 24%; left: 40%; width: 20cqw; height: 20cqw; object-fit: contain; }
+.blog-preview .blog-preview-window { position: absolute; top: 49%; left: 8%; width: 84%; }
