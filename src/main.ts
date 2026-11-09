@@ -202,13 +202,22 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       </header>
       <div class="work-project-grid">
         <article class="work-project">
-          <div class="work-project__placeholder" role="img" aria-label="Personal Project 1 대표 이미지 준비 중"></div>
+          <h3>SKYLRK</h3>
+          <a class="personal-project-preview" href="https://wanseo.github.io/swag2/" target="_blank" rel="noopener noreferrer" aria-label="SKYLRK 웹사이트 열기">
+            <video src="./projects/moodroom.mp4" poster="./projects/moodroom.jpg" autoplay muted loop playsinline preload="metadata" aria-label="SKYLRK 미리보기"></video>
+          </a>
         </article>
         <article class="work-project">
-          <div class="work-project__placeholder" role="img" aria-label="Personal Project 2 대표 이미지 준비 중"></div>
+          <h3>GLYF</h3>
+          <a class="personal-project-preview" href="https://wanseo.github.io/glyfing/" target="_blank" rel="noopener noreferrer" aria-label="GLYF 웹사이트 열기">
+            <video src="./projects/glyfing-main.mp4" poster="./projects/glyfing-main.jpg" autoplay muted loop playsinline preload="metadata" aria-label="GLYF 미리보기"></video>
+          </a>
         </article>
         <article class="work-project">
-          <div class="work-project__placeholder" role="img" aria-label="Personal Project 3 대표 이미지 준비 중"></div>
+          <h3>Guestbook</h3>
+          <a class="personal-project-preview" href="https://wanseo.github.io/myfirstweb/" target="_blank" rel="noopener noreferrer" aria-label="Guestbook 웹사이트 열기">
+            <video src="./projects/guestbook.mp4" poster="./projects/guestbook.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Guestbook 미리보기"></video>
+          </a>
         </article>
       </div>
     </section>

@@ -3199,3 +3199,22 @@ h1 {
   margin-inline: auto;
   padding-inline: var(--layout-gutter);
 }
+
+.personal-project-preview {
+  display: block;
+  aspect-ratio: 1;
+  overflow: hidden;
+  background: var(--work-media);
+}
+
+.personal-project-preview video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.personal-project-preview:focus-visible {
+  outline: 2px solid var(--foreground);
+  outline-offset: 4px;
+}
