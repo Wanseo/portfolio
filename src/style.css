@@ -3549,3 +3549,14 @@ h1 {
   letter-spacing: -.03em;
 }
 .newsletter-preview .newsletter-envelope { transform: translateY(12%); }
+
+.work-booklet-preview > img {
+  width: 108%;
+  left: -5.6%;
+  top: -40%;
+}
+.work-booklet-preview .booklet-preview-badge {
+  top: 19%;
+  left: 26%;
+  width: 48%;
+}
