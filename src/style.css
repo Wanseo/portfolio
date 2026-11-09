@@ -3970,3 +3970,6 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 
 .logo-dialog .logo-case-board { background: #fff; }
 .logo-dialog .logo-case-board .goods-index { color: #797b70; }
+
+.renewal-preview { position: relative; }
+.sns-preview { position: relative; }

@@ -232,7 +232,7 @@ if (!document.querySelector('#app > .intro')) document.querySelector<HTMLDivElem
         </article>
         <article class="work-project">
           <h3>SNS관리</h3>
-          <button class="sns-preview" type="button" aria-label="SNS 콘텐츠 기획 및 제작 상세 보기"><img class="sns-preview-instagram" src="./projects/instagram-transparent.png" alt="Instagram" loading="eager" decoding="async"><svg class="channel-preview-art sns-preview-art" viewBox="26 378 563 495" role="img" aria-label="인스타그램 운영 전후 프로필과 콘텐츠 편집 화면"><image href="./projects/sns-management-black.svg" width="1724" height="912" /></svg><span class="sns-preview-result"><span>1,415<small>운영 초기</small></span><span class="sns-preview-arrow">→</span><span>1.2만<small>팔로워</small></span></span></button>
+          <button class="sns-preview" type="button" aria-label="SNS 콘텐츠 기획 및 제작 상세 보기"><img class="sns-preview-instagram" src="./projects/instagram-transparent.png" alt="Instagram" loading="eager" decoding="async"><svg class="channel-preview-art sns-preview-art" viewBox="26 378 563 495" role="img" aria-label="인스타그램 운영 전후 프로필과 콘텐츠 편집 화면"><image href="./projects/sns-management-black.svg" width="1724" height="912" /></svg><span class="sns-preview-result"><span>1,415<small>운영 초기</small></span><span class="sns-preview-arrow">→</span><span>1.2만<small>팔로워</small></span></span><span class="work-card-arrow" aria-hidden="true">↗</span></button>
         </article>
       </div>
     </section>
