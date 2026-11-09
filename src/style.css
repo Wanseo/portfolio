@@ -3867,7 +3867,11 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 
 .renewal-screen-bar { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 12px 16px; border: 1px solid #dedbe8; border-bottom: 0; border-radius: 6px 6px 0 0; background: #fff; color: #655d70; font: 12px Arial, sans-serif; }
 .renewal-screen-bar small { font-size: 11px; }
-.renewal-screen { max-height: min(460px, 60svh); overflow-y: auto; overscroll-behavior-y: contain; scrollbar-gutter: stable; border: 1px solid #dedbe8; border-radius: 0 0 6px 6px; background: #fff; box-shadow: 0 8px 24px #23104b12; }
+.renewal-screen { max-height: min(380px, 50svh); overflow-y: scroll; overscroll-behavior-y: contain; scrollbar-gutter: stable; scrollbar-color: #8b8495 #eeecf1; border: 1px solid #dedbe8; border-radius: 0 0 6px 6px; background: #fff; box-shadow: 0 8px 24px #23104b12; }
+.renewal-screen::-webkit-scrollbar { width: 10px; }
+.renewal-screen::-webkit-scrollbar-track { background: #eeecf1; }
+.renewal-screen::-webkit-scrollbar-thumb { background: #8b8495; border: 2px solid #eeecf1; border-radius: 8px; }
+.renewal-screen::-webkit-scrollbar-thumb:hover { background: #655d70; }
 .renewal-case-pages .renewal-screen img { width: 100%; height: auto; border: 0; border-radius: 0; box-shadow: none; }
 .renewal-screen:focus-visible { outline: 2px solid #655d70; outline-offset: 3px; }
 
