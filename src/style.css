@@ -3879,3 +3879,12 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 .sns-preview-art { width: 43.2cqw; }
 .kakao-preview-count, .sns-preview-result { margin-top: auto; font-size: 6cqw; }
 .kakao-preview-count small, .sns-preview-result small { margin-top: 1cqw; }
+
+.institute-preview.everylife-preview { background: #fff; }
+.institute-preview.everylife-preview > img { width: 100%; height: 100%; object-fit: contain; padding: 8% 0 18%; }
+.institute-dialog .goods-case { --everylife-purple: #77715e; --everylife-on-purple: #fffdf5; }
+.institute-dialog .goods-hero h2 { font-size: clamp(60px, 12vw, 130px); }
+.institute-sticker-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.institute-sticker-grid a { display: block; overflow: hidden; border-radius: 4px; background: #fff; }
+.institute-sticker-grid img { display: block; width: 100%; height: auto; }
+@media (max-width: 480px) { .institute-sticker-grid { grid-template-columns: 1fr; gap: 16px; } }

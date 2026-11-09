@@ -141,7 +141,11 @@ if (!document.querySelector('#app > .intro')) document.querySelector<HTMLDivElem
       <div class="work-project-grid work-project-grid--freelance">
         <article class="work-project">
           <h3>1776연구소 굿즈작업</h3>
-          <div class="work-project__placeholder" role="img" aria-label="1776연구소 굿즈작업 대표 이미지 준비 중"></div>
+          <button class="institute-preview everylife-preview" type="button" aria-label="1776연구소 굿즈 프로젝트 상세 보기">
+            <img src="./projects/1776/sticker-4.png" alt="1776연구소 북극곰 캐릭터 스티커" loading="eager" decoding="async">
+            <span class="everylife-card-number">01</span>
+            <span class="everylife-card-caption"><strong>1776 Institute.</strong><span>Merch Sticker ↗</span></span>
+          </button>
         </article>
         <article class="work-project">
           <h3>연개청 로고제작</h3>

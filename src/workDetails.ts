@@ -53,7 +53,7 @@ everylifeDialog.className = 'personal-project-dialog everylife-dialog'
 everylifeDialog.setAttribute('aria-labelledby', 'everylife-dialog-title')
 everylifeDialog.innerHTML = '<button class="personal-dialog-close" type="button" aria-label="닫기">×</button>' + everylifeDetail
 document.body.append(everylifeDialog)
-const everylifeTrigger = document.querySelector<HTMLButtonElement>('.everylife-preview')
+const everylifeTrigger = document.querySelector<HTMLButtonElement>('.everylife-preview:not(.institute-preview)')
 everylifeTrigger?.addEventListener('click', () => {
   everylifeDialog.showModal()
   everylifeDialog.scrollTop = 0
@@ -575,4 +575,40 @@ renewalDialog.addEventListener('click', (event) => {
   const bounds = renewalDialog.getBoundingClientRect()
   if (event.clientX < bounds.left || event.clientX > bounds.right
     || event.clientY < bounds.top || event.clientY > bounds.bottom) renewalDialog.close()
+})
+
+const instituteTrigger = document.querySelector<HTMLButtonElement>('.institute-preview')
+const instituteDialog = document.createElement('dialog')
+instituteDialog.className = 'personal-project-dialog everylife-dialog institute-dialog'
+instituteDialog.setAttribute('aria-labelledby', 'institute-dialog-title')
+instituteDialog.innerHTML = `<button class="personal-dialog-close" type="button" aria-label="닫기">×</button>
+  <article class="goods-case">
+    <header class="goods-hero"><h2>1776<br>Institute.</h2></header>
+    <section class="goods-section goods-overview dialog-copy">
+      <span class="eyebrow">Merch Sticker</span><h2 id="institute-dialog-title">1776연구소 굿즈작업</h2>
+      <div><p>1776연구소를 위한 굿즈 스티커 디자인입니다. 자유의 종, 캐릭터, 타이포그래피를 활용한 네 가지 스티커를 제작했습니다.</p><dl class="goods-facts"><div><dt>Role</dt><dd>Illustration · Graphic Design</dd></div></dl></div>
+    </section>
+    <section class="goods-section"><div class="goods-section-heading"><span class="goods-index">COLOR PALETTE</span></div>
+      <div class="goods-palette"><div><i style="background:#EFE8D5"></i><span>Cream</span><small>#EFE8D5</small></div><div><i style="background:#D8B128"></i><span>Gold</span><small>#D8B128</small></div><div><i style="background:#F6F5AF"></i><span>Lemon</span><small>#F6F5AF</small></div><div><i style="background:#E91D46"></i><span>Red</span><small>#E91D46</small></div><div><i style="background:#0B0D09"></i><span>Black</span><small>#0B0D09</small></div></div>
+    </section>
+    <section class="goods-section goods-design-board"><div class="goods-section-heading"><span class="goods-index">DESIGN BOARD</span></div>
+      <div class="institute-sticker-grid">${[2, 3, 4, 7].map((number) => `<a href="./projects/1776/sticker-${number}.png" target="_blank" rel="noopener noreferrer" aria-label="1776 스티커 ${number} 크게 보기"><img src="./projects/1776/sticker-${number}.png" alt="1776연구소 스티커 ${number}" loading="lazy" decoding="async"></a>`).join('')}</div>
+    </section>
+  </article>`
+document.body.append(instituteDialog)
+instituteTrigger?.addEventListener('click', () => {
+  instituteDialog.showModal()
+  instituteDialog.scrollTop = 0
+  document.body.style.overflow = 'hidden'
+})
+instituteDialog.querySelector('.personal-dialog-close')?.addEventListener('click', () => instituteDialog.close())
+instituteDialog.addEventListener('close', () => {
+  document.body.style.overflow = ''
+  instituteTrigger?.focus()
+})
+instituteDialog.addEventListener('click', (event) => {
+  if (event.target !== instituteDialog) return
+  const bounds = instituteDialog.getBoundingClientRect()
+  if (event.clientX < bounds.left || event.clientX > bounds.right
+    || event.clientY < bounds.top || event.clientY > bounds.bottom) instituteDialog.close()
 })
