@@ -4034,4 +4034,5 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
   .sns-preview { background: #fff; }
 }
 
-.logo-grid-symbol-label { position: absolute; top: 8px; left: 2.85%; width: 8.8%; text-align: center; color: #777; font: 9px/1.5 Arial, sans-serif; letter-spacing: .08em; white-space: nowrap; }
+.logo-grid-labels { position: absolute; top: 8px; left: 2.85%; right: 0; display: grid; grid-template-columns: 9.1% 1fr; gap: 16px; color: #777; font: 8px/1.5 Arial, sans-serif; letter-spacing: .08em; white-space: nowrap; }
+.logo-grid-labels > span:first-child { text-align: center; }
