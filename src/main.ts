@@ -105,7 +105,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
             </div>
           </li>
           <li class="resume-job">
-            <p class="resume-job__date">2024 — 2025</p>
+            <p class="resume-job__date">2024.06 — 2024.12</p>
             <div class="resume-job__body">
               <p class="resume-job__company">Freelance Design Work <a class="resume-work-link" href="#work" data-work-link aria-label="Freelance Design Work 작업 보기"><svg class="resume-work-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M4 8h8M8 4l4 4-4 4" /></svg></a></p>
               <ul class="resume-freelance-projects"><li>1776연구소 굿즈작업</li><li>연개청 로고제작</li><li>연개청 책자제작</li><li>에브리라이프 굿즈작업</li></ul>
