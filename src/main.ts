@@ -218,16 +218,16 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
           </a>
         </article>
         <article class="work-project">
-          <h3>GLYF</h3>
-          <a class="personal-project-preview" href="https://wanseo.github.io/glyfing/" target="_blank" rel="noopener noreferrer" data-personal-project="GLYF" aria-label="GLYF 프로젝트 상세 보기">
-            <video src="./projects/glyfing-main.mp4" poster="./projects/glyfing-main.jpg" autoplay muted loop playsinline preload="metadata" aria-label="GLYF 미리보기"></video>
+          <h3>Guestbook</h3>
+          <a class="personal-project-preview" href="https://wanseo.github.io/myfirstweb/" target="_blank" rel="noopener noreferrer" data-personal-project="Guestbook" aria-label="Guestbook 프로젝트 상세 보기">
+            <video src="./projects/guestbook.mp4" poster="./projects/guestbook.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Guestbook 미리보기"></video>
             <span class="personal-project-arrow" aria-hidden="true">↗</span>
           </a>
         </article>
         <article class="work-project">
-          <h3>Guestbook</h3>
-          <a class="personal-project-preview" href="https://wanseo.github.io/myfirstweb/" target="_blank" rel="noopener noreferrer" data-personal-project="Guestbook" aria-label="Guestbook 프로젝트 상세 보기">
-            <video src="./projects/guestbook.mp4" poster="./projects/guestbook.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Guestbook 미리보기"></video>
+          <h3>GLYF</h3>
+          <a class="personal-project-preview" href="https://wanseo.github.io/glyfing/" target="_blank" rel="noopener noreferrer" data-personal-project="GLYF" aria-label="GLYF 프로젝트 상세 보기">
+            <video src="./projects/glyfing-main.mp4" poster="./projects/glyfing-main.jpg" autoplay muted loop playsinline preload="metadata" aria-label="GLYF 미리보기"></video>
             <span class="personal-project-arrow" aria-hidden="true">↗</span>
           </a>
         </article>
