@@ -203,20 +203,23 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       <div class="work-project-grid">
         <article class="work-project">
           <h3>SKYLRK</h3>
-          <a class="personal-project-preview" href="https://wanseo.github.io/swag2/" target="_blank" rel="noopener noreferrer" aria-label="SKYLRK 웹사이트 열기">
+          <a class="personal-project-preview" href="https://wanseo.github.io/swag2/" target="_blank" rel="noopener noreferrer" data-personal-project="SKYLRK" aria-label="SKYLRK 프로젝트 상세 보기">
             <video src="./projects/moodroom.mp4" poster="./projects/moodroom.jpg" autoplay muted loop playsinline preload="metadata" aria-label="SKYLRK 미리보기"></video>
+            <span class="personal-project-arrow" aria-hidden="true">↗</span>
           </a>
         </article>
         <article class="work-project">
           <h3>GLYF</h3>
-          <a class="personal-project-preview" href="https://wanseo.github.io/glyfing/" target="_blank" rel="noopener noreferrer" aria-label="GLYF 웹사이트 열기">
+          <a class="personal-project-preview" href="https://wanseo.github.io/glyfing/" target="_blank" rel="noopener noreferrer" data-personal-project="GLYF" aria-label="GLYF 프로젝트 상세 보기">
             <video src="./projects/glyfing-main.mp4" poster="./projects/glyfing-main.jpg" autoplay muted loop playsinline preload="metadata" aria-label="GLYF 미리보기"></video>
+            <span class="personal-project-arrow" aria-hidden="true">↗</span>
           </a>
         </article>
         <article class="work-project">
           <h3>Guestbook</h3>
-          <a class="personal-project-preview" href="https://wanseo.github.io/myfirstweb/" target="_blank" rel="noopener noreferrer" aria-label="Guestbook 웹사이트 열기">
+          <a class="personal-project-preview" href="https://wanseo.github.io/myfirstweb/" target="_blank" rel="noopener noreferrer" data-personal-project="Guestbook" aria-label="Guestbook 프로젝트 상세 보기">
             <video src="./projects/guestbook.mp4" poster="./projects/guestbook.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Guestbook 미리보기"></video>
+            <span class="personal-project-arrow" aria-hidden="true">↗</span>
           </a>
         </article>
       </div>
@@ -1999,4 +2002,51 @@ window.addEventListener('keydown', (event) => {
   if (event.key === 'Escape') closeBeautyLightbox()
   if (event.key === 'ArrowLeft') showBeautyNote(activeBeautyIndex - 1)
   if (event.key === 'ArrowRight') showBeautyNote(activeBeautyIndex + 1)
+})
+
+const personalProjects = [{"title": "SKYLRK", "asset": "moodroom-hd", "description": "Justin Bieber의 브랜드 SKYLRK에서 출시 예정인 뮤직 플레이어를 기대하면서 구성한 인터랙티브 웹사이트 개인작업입니다. Justin Bieber의 인스타그램 피드에서 샘플로 공개된 플레이어 외형을 사용했습니다. 플레이어 안에서는 Justin Bieber의 SWAG II 앨범을 미리듣기로 재생할 수 있으며, 음악의 분위기와 비트가 백그라운드의 색상에 반영되어 번지도록 했습니다. 플레이어의 버튼으로 곡 목록을 열거나 이전·다음 곡을 선택하고, 미리듣기를 재생할 수 있습니다.", "url": "https://wanseo.github.io/swag2/"}, {"title": "GLYF", "asset": "glyfing-detail", "description": "화장품 브랜드 GLYF의 바이럴콘텐츠로 활용할 인터렉티브 웹사이트를 기획하고 개발 및 디자인을 진행한 개인작업입니다. 브랜드 컨셉에 맞는 핑크 글리터 배경과 다양한 에셋들을 활용하여 웹사이트를 구성하였습니다. 방향키로 캐릭터를 움직일 수 있고, 화면을 구성하는 에셋을 누르면 게임 및 촬영 페이지로 연결됩니다.", "url": "https://wanseo.github.io/glyfing/"}, {"title": "Guestbook", "asset": "guestbook", "description": "픽셀 그래픽과 움직이는 배경으로 만든 작은 방명록입니다. 방문자들은 자신의 이름과 함께 방명록을 남길 수 있습니다. 말랑이 캐릭터는 랜덤으로 배정됩니다. 픽셀 형태의 말랑이, 말풍선, 배경, 입력창 등 웹사이트를 구성하는 모든 에셋을 디자인했습니다.", "url": "https://wanseo.github.io/myfirstweb/"}]
+
+const personalDialog = document.createElement('dialog')
+personalDialog.className = 'personal-project-dialog'
+personalDialog.setAttribute('aria-labelledby', 'personal-dialog-title')
+document.body.append(personalDialog)
+let personalTrigger: HTMLAnchorElement | null = null
+const closePersonalDialog = () => personalDialog.close()
+personalDialog.addEventListener('close', () => {
+  personalDialog.querySelector('video')?.pause()
+  document.body.style.overflow = ''
+  personalTrigger?.focus()
+})
+personalDialog.addEventListener('click', (event) => {
+  if (event.target !== personalDialog) return
+  const bounds = personalDialog.getBoundingClientRect()
+  if (event.clientX < bounds.left || event.clientX > bounds.right
+    || event.clientY < bounds.top || event.clientY > bounds.bottom) closePersonalDialog()
+})
+document.querySelectorAll<HTMLAnchorElement>('[data-personal-project]').forEach((link) => {
+  link.addEventListener('click', (event) => {
+    event.preventDefault()
+    const project = personalProjects.find((item) => item.title === link.dataset.personalProject)
+    if (!project) return
+    personalTrigger = link
+    personalDialog.innerHTML = `
+      <button class="personal-dialog-close" type="button" aria-label="닫기">×</button>
+      <div class="personal-dialog-art${project.title === 'GLYF' ? ' personal-dialog-art--glyf' : ''}">
+        <video src="./projects/${project.asset}.mp4" poster="./projects/${project.asset}.jpg" muted loop playsinline controls preload="metadata" aria-label="${project.title} 상세 미리보기"></video>
+      </div>
+      <div class="personal-dialog-copy">
+        <span class="personal-dialog-eyebrow">Interactive Website 2026</span>
+        <h2 id="personal-dialog-title">${project.title}</h2>
+        <p>${project.description}</p>
+        <dl><dt>Role</dt><dd>Planning · Development · Graphic Design</dd></dl>
+        <a href="${project.url}" target="_blank" rel="noopener noreferrer">VISIT WEBSITE <span aria-hidden="true">↗</span></a>
+      </div>`
+    personalDialog.querySelector('button')?.addEventListener('click', closePersonalDialog)
+    personalDialog.showModal()
+    personalDialog.scrollTop = 0
+    document.body.style.overflow = 'hidden'
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      personalDialog.querySelector('video')?.play().catch(() => {})
+    }
+  })
 })
