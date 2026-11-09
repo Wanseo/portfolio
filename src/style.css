@@ -3472,3 +3472,28 @@ h1 {
 
 .newsletter-preview { display: grid; place-items: center; padding: 12%; }
 .newsletter-preview .newsletter-envelope { display: block; width: 100%; height: auto; }
+
+.newsletter-case-dialog .newsletter-dialog-pages {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: start;
+  gap: 16px;
+}
+.newsletter-case-dialog .newsletter-dialog-pages > figure {
+  min-width: 0;
+  padding: 0;
+  border: 0;
+}
+.newsletter-case-dialog .newsletter-dialog-pages figcaption { font-size: 9px; margin-bottom: 12px; }
+.newsletter-case-dialog .newsletter-readable { padding: 0; }
+.newsletter-case-dialog .newsletter-readable header { padding-bottom: 12px; margin-bottom: 12px; }
+.newsletter-case-dialog .newsletter-readable header > span { font-size: 6px; }
+.newsletter-case-dialog .newsletter-readable h3 { font-size: 9px; line-height: 1.6; margin: 10px 0 0; }
+.newsletter-case-dialog .newsletter-readable p { font-size: 6px; line-height: 1.8; margin-bottom: 14px; word-break: normal; }
+.newsletter-case-dialog .newsletter-readable .newsletter-slogan { font-size: 8px; }
+.newsletter-case-dialog .newsletter-dialog-pages .newsletter-image-zoom img { width: 100%; max-width: 100%; }
+@media (max-width: 480px) {
+  .newsletter-case-dialog .newsletter-dialog-pages { gap: 8px; }
+  .newsletter-case-dialog .newsletter-readable p { font-size: 5px; }
+  .newsletter-case-dialog .newsletter-readable h3 { font-size: 7px; }
+}
