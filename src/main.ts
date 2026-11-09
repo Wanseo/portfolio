@@ -116,7 +116,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
             <div class="resume-job__body">
               <p class="resume-job__company">Build Up Korea <span>빌드업코리아</span> <a class="resume-work-link" href="#work-buildup" data-work-link="work-buildup" aria-label="빌드업코리아 작업 보기"><svg class="resume-work-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M4 8h8M8 4l4 4-4 4" /></svg></a></p>
               <h3>사원 (Marketing)</h3>
-              <ul><li>뉴스레터 기획/제작</li><li>블로그 기획/제작</li><li>문자 카피라이팅</li><li>카카오톡 채널 운영</li><li>홈페이지 리뉴얼</li><li>SNS(인스타그램) 릴스 및 홍보 배너 기획 및 제작</li><li>책자 제작</li><li>대행사 커뮤니케이션</li></ul>
+              <ul><li>뉴스레터 기획/제작</li><li>블로그 기획/제작</li><li>문자 카피라이팅</li><li>카카오톡 채널 운영</li><li>홈페이지 리뉴얼</li><li>SNS(인스타그램) 릴스 및 홍보 배너 기획 및 제작</li><li>영/한 홍보책자 제작</li><li>대행사 커뮤니케이션</li></ul>
             </div>
           </li>
           <li class="resume-job">
