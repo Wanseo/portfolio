@@ -3777,3 +3777,5 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 .sns-preview-result { display: flex; align-items: center; gap: 3cqw; color: #191919; font: 700 7cqw Arial, sans-serif; }
 .sns-preview-result small { margin-top: 2cqw; font-size: 2.6cqw; font-weight: 400; }
 .sns-preview-arrow { font-size: 5cqw; }
+
+.kakao-preview-logo { border-radius: 0; }
