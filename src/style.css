@@ -3797,3 +3797,14 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 
 .blog-preview-logo { top: 19%; left: 42%; width: 16cqw; height: 16cqw; }
 .blog-preview .blog-preview-window { top: 43%; }
+
+.kakao-preview-title,
+.sns-preview > strong {
+  font-family: Arial, 'Apple SD Gothic Neo', sans-serif;
+  font-size: 5cqw;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #000;
+}
+.mms-preview-title,
+.newsletter-preview-title { color: #000; }
