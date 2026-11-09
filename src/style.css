@@ -3411,3 +3411,12 @@ h1 {
 .newsletter-dialog-pages figure { margin: 0; padding: 32px 0; border-top: 1px solid #e5e5e5; }
 .newsletter-dialog-pages figcaption { font-size: 11px; color: #777; margin-bottom: 24px; letter-spacing: 1px; }
 .newsletter-dialog-pages img { display: block; width: 100%; max-width: 540px; height: auto; margin-inline: auto; }
+
+.work-booklet-preview .booklet-preview-badge {
+  position: absolute;
+  top: 8%;
+  left: 22%;
+  width: 56%;
+  height: auto;
+  z-index: 1;
+}

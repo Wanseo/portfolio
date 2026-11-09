@@ -162,7 +162,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         </article>
         <article class="work-project">
           <h3>연개청 책자 표지디자인</h3>
-          <a class="work-booklet-preview" href="./projects/yeongae-booklet.png" target="_blank" rel="noopener noreferrer" aria-label="연개청 책자 표지 크게 보기"><img src="./projects/yeongae-booklet.png" alt="2024년 연금개혁 — MZ세대가 생각하는 국가 미래를 위한 연금개혁 방향 책자 표지" loading="lazy"></a>
+          <a class="work-booklet-preview" href="./projects/yeongae-booklet.png" target="_blank" rel="noopener noreferrer" aria-label="연개청 책자 표지 크게 보기"><svg class="booklet-preview-badge" viewBox="875 390 700 140" role="img" aria-label="2024년 연금개혁"><image href="./projects/yeongae-booklet.png" width="2481" height="3508" /></svg><img src="./projects/yeongae-booklet.png" alt="2024년 연금개혁 — MZ세대가 생각하는 국가 미래를 위한 연금개혁 방향 책자 표지" loading="lazy"></a>
         </article>
         <article class="work-project">
           <h3>에브리라이프 굿즈작업</h3>
@@ -2088,11 +2088,6 @@ const bookletDialog = document.createElement('dialog')
 bookletDialog.className = 'personal-project-dialog booklet-dialog'
 bookletDialog.setAttribute('aria-label', '연개청 책자 표지디자인 상세 화면')
 bookletDialog.innerHTML = `<button class="personal-dialog-close" type="button" aria-label="닫기">×</button>
-  <header class="booklet-dialog-heading">
-    <svg viewBox="875 390 700 140" role="img" aria-label="2024년 연금개혁">
-      <image href="./projects/yeongae-booklet.png" width="2481" height="3508" />
-    </svg>
-  </header>
   <img src="./projects/yeongae-booklet.png" alt="2024년 연금개혁 책자 전체 표지">
   <img src="./projects/yeongae-booklet-photo.jpg" alt="연금개혁 행사 현장에서 촬영한 연개청 책자 실물" loading="lazy">`
 document.body.append(bookletDialog)
