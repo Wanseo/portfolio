@@ -171,7 +171,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       <header class="work-overview-heading">
         <h2 id="work-buildup" tabindex="-1">Build Up Korea</h2>
       </header>
-      <div class="work-project-grid">
+      <div class="work-project-grid work-project-grid--freelance">
         <article class="work-project">
           <h3>사이트 개편</h3>
           <div class="work-project__placeholder" role="img" aria-label="사이트 개편 대표 이미지 준비 중"></div>
@@ -195,6 +195,20 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         <article class="work-project">
           <h3>SNS관리</h3>
           <div class="work-project__placeholder" role="img" aria-label="SNS관리 대표 이미지 준비 중"></div>
+        </article>
+      </div>
+      <header class="work-overview-heading">
+        <h2 id="work-personal" tabindex="-1">Personal Project</h2>
+      </header>
+      <div class="work-project-grid">
+        <article class="work-project">
+          <div class="work-project__placeholder" role="img" aria-label="Personal Project 1 대표 이미지 준비 중"></div>
+        </article>
+        <article class="work-project">
+          <div class="work-project__placeholder" role="img" aria-label="Personal Project 2 대표 이미지 준비 중"></div>
+        </article>
+        <article class="work-project">
+          <div class="work-project__placeholder" role="img" aria-label="Personal Project 3 대표 이미지 준비 중"></div>
         </article>
       </div>
     </section>
