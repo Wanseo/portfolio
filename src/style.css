@@ -295,6 +295,10 @@
   text-underline-offset: 0.25em;
 }
 
+.resume-job ul.resume-freelance-projects {
+  margin-top: 1.125rem;
+}
+
 .resume-work-link:hover,
 .resume-work-link:focus-visible {
   text-decoration: underline;
