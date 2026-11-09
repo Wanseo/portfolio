@@ -3568,3 +3568,5 @@ h1 {
 .blog-readable u { text-decoration: underline; text-underline-offset: 3px; }
 .blog-readable a { color: #153ba1; text-decoration: underline; }
 .blog-readable span { overflow-wrap: anywhere; }
+
+.work-logo-preview img { transform: translateY(-.5%) scale(.85); }
