@@ -4002,7 +4002,8 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 
 }
 
-.logo-stroke-guides { stroke: #797b70; stroke-width: .6; stroke-dasharray: 3 3; opacity: .55; }
+.logo-stroke-guides { stroke: #666; stroke-width: .65; stroke-dasharray: 3 3; opacity: .75; }
+.logo-stroke-guides line { vector-effect: non-scaling-stroke; }
 
 .renewal-case-dialog .renewal-site-note { margin: 0; padding: 0 7% 32px; color: #777; font-size: 11px; line-height: 1.8; word-break: keep-all; }
 
