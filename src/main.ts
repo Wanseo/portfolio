@@ -112,7 +112,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
             </div>
           </li>
           <li class="resume-job">
-            <p class="resume-job__date">2025 — 2026</p>
+            <p class="resume-job__date">2025.02 - 2026.02</p>
             <div class="resume-job__body">
               <p class="resume-job__company">Build Up Korea <span>빌드업코리아</span> <a class="resume-work-link" href="#work" data-work-link aria-label="빌드업코리아 작업 보기"><svg class="resume-work-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M4 8h8M8 4l4 4-4 4" /></svg></a></p>
               <h3>사원</h3>
