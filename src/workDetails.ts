@@ -288,7 +288,8 @@ bookletCase.innerHTML = `
     <span class="eyebrow">Editorial · Cover Design</span>
     <h2 id="booklet-case-title">연개청 책자 표지디자인</h2>
     <div>
-      <p>「MZ세대가 생각하는 국가 미래를 위한 연금개혁 방향」 책자의 표지 디자인입니다. 제목과 연금 기금의 변화를 보여주는 그래픽을 중심으로 구성했습니다.</p>
+      <p>「MZ세대가 생각하는 국가 미래를 위한 연금개혁 방향」 책자의 표지 디자인입니다.</p>
+      <p>‘MZ세대’, ‘국가 미래를 위한’, ‘연금개혁’ 세 가지 핵심 키워드에 대비감 있는 컬러를 적용해 제목의 시각적 주목도를 높이고, 국가의 미래를 위한 연금개혁이라는 메시지를 강조했습니다. 현행 연금제도가 유지될 경우 예상되는 기금의 변화를 직관적인 그래픽으로 시각화했으며, 클라이언트의 요청에 따라 젊은 세대에게 친숙한 그래픽 스타일을 활용해 무거운 정책 주제를 보다 쉽게 전달하고자 했습니다.</p>
       <dl class="goods-facts">
         <div><dt>Role</dt><dd>책자 표지디자인 · Graphic Design</dd></div><div><dt>Tool</dt><dd>Adobe Illustrator</dd></div>
       </dl>
