@@ -36,7 +36,7 @@ document.querySelectorAll<HTMLAnchorElement>('[data-personal-project]').forEach(
         <span class="personal-dialog-eyebrow">Interactive Website 2026</span>
         <h2 id="personal-dialog-title">${project.title}</h2>
         <p>${project.description}</p>
-        <dl><dt>Role</dt><dd>Planning · Development · Graphic Design</dd></dl>
+        <dl><dt>Role</dt><dd>Planning · Development · Graphic Design</dd><dt>Tool</dt><dd>GPT Codex, Adobe Illustrator</dd></dl>
         <a href="${project.url}" target="_blank" rel="noopener noreferrer">VISIT WEBSITE <span aria-hidden="true">↗</span></a>
       </div>`
     personalDialog.querySelector('button')?.addEventListener('click', closePersonalDialog)
