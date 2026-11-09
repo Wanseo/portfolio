@@ -110,7 +110,7 @@ logoDialog.innerHTML = `<button class="personal-dialog-close" type="button" aria
       <span class="eyebrow">Brand Identity · Logo Design</span>
       <h2 id="logo-dialog-title">연금개혁청년행동</h2>
       <div>
-        <p>연금개혁청년행동을 위한 로고 디자인입니다. 심볼과 한글 로고타입을 결합하고, 검정·초록의 두 가지 색상으로 구성했습니다.</p>
+        <p>연금개혁청년행동을 위한 로고 디자인입니다. 심볼과 한글 로고타입을 결합하고, 검정·초록의 두 가지 색상으로 구성했습니다. 심볼과 로고는 채택되어 사용 중입니다.</p>
         <dl class="goods-facts">
           <div><dt>Role</dt><dd>Logo Design · Graphic Design</dd></div><div><dt>Tool</dt><dd>Adobe Illustrator</dd></div>
         </dl>
