@@ -3853,10 +3853,11 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 .renewal-preview { cursor: pointer; }
 .renewal-preview:focus-visible { outline: 2px solid var(--foreground); outline-offset: 4px; }
 .renewal-case-dialog { background: #fff; }
-.renewal-case-dialog .goods-case { --everylife-purple: #fff; --everylife-on-purple: #211b2c; }
+.renewal-case-dialog .goods-case { --everylife-purple: #171715; --everylife-on-purple: #fff; }
 .renewal-case-dialog .renewal-case-hero { padding: 48px 7%; }
 .renewal-case-hero > span { font-size: 10px; letter-spacing: 1.5px; }
-.renewal-case-dialog .renewal-case-hero h2 { margin: 36px 0 24px; font: 700 clamp(36px, 8vw, 66px)/1.1 Arial, sans-serif; letter-spacing: -.05em; }
+.renewal-case-dialog .renewal-case-hero h2 { margin: 40px 0 24px; font: 700 clamp(36px, 8vw, 66px)/1.1 Arial, sans-serif; letter-spacing: -.05em; }
+.renewal-case-dialog .renewal-case-hero > p { font-size: 16px; letter-spacing: 0; }
 .renewal-case-pages { background: #fff; }
 .renewal-case-pages figure { margin: 0; }
 .renewal-case-pages figure + figure { margin-top: 40px; }
