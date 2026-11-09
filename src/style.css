@@ -3380,7 +3380,7 @@ h1 {
 .logo-dialog .personal-dialog-close { position: sticky; float: right; margin: 12px 12px -56px 0; top: 12px; }
 
 .logo-dialog .goods-case { --everylife-purple: #008577; --everylife-on-purple: #fff; }
-.logo-dialog .logo-case-hero { padding: 48px 7%; }
+.logo-dialog .logo-case-hero { padding: 48px 7%; background: #01bd43; }
 .logo-dialog .logo-case-hero > span { font-size: 9px; letter-spacing: 1.5px; }
 .logo-dialog .logo-case-hero h2 { margin: 40px 0; font-family: Arial, 'Apple SD Gothic Neo', sans-serif; font-size: clamp(40px, 8vw, 76px); font-weight: 700; line-height: 1.12; letter-spacing: -.05em; }
 .logo-dialog .logo-case-hero > p { font: 10px Arial, sans-serif; letter-spacing: 2px; }
