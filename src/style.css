@@ -3621,3 +3621,28 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
   .everylife-card-caption > span { font-size: 3.2cqw; }
   .personal-project-arrow { right: 3.5cqw; bottom: 3.5cqw; width: 7cqw; height: 7cqw; font-size: 4.4cqw; }
 }
+
+.mms-gallery figure.is-expanded {
+  position: relative;
+  width: min(100%, 280px);
+  justify-self: center;
+  scroll-margin-top: 64px;
+}
+.mms-zoom-close:not([hidden]) {
+  display: grid;
+  place-items: center;
+  position: sticky;
+  top: 16px;
+  z-index: 3;
+  float: right;
+  width: 32px;
+  height: 32px;
+  margin: 0 8px -32px 0;
+  border: 1px solid #bbb;
+  border-radius: 50%;
+  background: #fff;
+  color: #111;
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+}

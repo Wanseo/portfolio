@@ -2439,8 +2439,29 @@ mmsDialog.addEventListener('click', (event) => {
     || event.clientY < bounds.top || event.clientY > bounds.bottom) mmsDialog.close()
 })
 mmsDialog.querySelectorAll<HTMLButtonElement>('.mms-image-toggle').forEach((button) => {
-  button.addEventListener('click', () => {
-    const expanded = button.closest('figure')?.classList.toggle('is-expanded') ?? false
+  const figure = button.closest('figure')!
+  const close = document.createElement('button')
+  close.type = 'button'
+  close.className = 'mms-zoom-close'
+  close.textContent = '×'
+  close.setAttribute('aria-label', '확대 이미지 닫기')
+  close.hidden = true
+  button.before(close)
+  const setExpanded = (expanded: boolean) => {
+    figure.classList.toggle('is-expanded', expanded)
     button.setAttribute('aria-pressed', String(expanded))
+    close.hidden = !expanded
+  }
+  button.addEventListener('click', () => {
+    const expanded = !figure.classList.contains('is-expanded')
+    setExpanded(expanded)
+    if (expanded) {
+      figure.scrollIntoView({ block: 'start', behavior: 'instant' })
+      close.focus({ preventScroll: true })
+    }
+  })
+  close.addEventListener('click', () => {
+    setExpanded(false)
+    button.focus({ preventScroll: true })
   })
 })
