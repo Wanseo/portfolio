@@ -561,7 +561,7 @@ renewalDialog.innerHTML = `<button class="personal-dialog-close" type="button" a
     <header class="goods-hero renewal-case-hero"><span>BUILD UP KOREA</span><h2>Website<br>Renewal</h2><p>사이트 개편 기획</p></header>
     <section class="goods-section goods-overview dialog-copy">
       <span class="eyebrow">Website Planning</span><h2 id="renewal-case-title">사이트 개편</h2>
-      <div><p>메인 · About Us · 미디어 페이지의 콘텐츠 구성과 이동 흐름을 정리한 웹사이트 개편 시안입니다.</p><dl class="goods-facts"><div><dt>Role</dt><dd>페이지 구성 · 콘텐츠 기획</dd></div><div><dt>Scope</dt><dd>Main · About Us · Media</dd></div></dl></div>
+      <div><p>메인 · About Us · 미디어 페이지의 콘텐츠 구성과 이동 흐름을 정리한 웹사이트 개편 시안입니다.</p><dl class="goods-facts"><div><dt>Role</dt><dd>페이지 구성 · 콘텐츠 기획</dd></div><div><dt>Tool</dt><dd>Canva, Adobe Illustrator</dd></div></dl></div>
     </section>
     <section class="goods-section renewal-case-pages">
       <figure><figcaption><span>01</span><h3>Main</h3><p>행사 영상과 뉴스레터 구독을 첫 화면에 배치하고, 단체 소개·행사·콘텐츠·샵으로 연결했습니다.</p></figcaption>${renewalScreens('main', 'Main', 8)}</figure>
