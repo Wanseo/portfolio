@@ -192,7 +192,6 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         <article class="work-project">
           <h3>블로그 관리</h3>
           <button class="blog-preview" type="button" aria-label="빌드업코리아 네이버 블로그 작업 상세 보기">
-            <span class="blog-preview-label">NAVER BLOG</span>
             <span class="blog-preview-window"><span class="blog-preview-toolbar"><i></i><i></i><i></i><span>blog.naver.com/bukofficial</span></span><svg viewBox="0 29 1040 467" role="img" aria-label="빌드업코리아2025 블로그 메인 배너"><image href="./projects/buildup-blog.png" width="1040" height="882" /></svg><span class="blog-preview-window-bottom">BUILD UP KOREA 2025</span></span>
             <span class="blog-preview-caption">빌드업코리아 공식 블로그 <span aria-hidden="true">↗</span></span>
           </button>
