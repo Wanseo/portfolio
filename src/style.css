@@ -3931,3 +3931,13 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 .work-card-arrow { position: absolute; right: 6%; bottom: 6%; z-index: 3; color: #171715; font: 600 5cqw/1.4 Arial, sans-serif; pointer-events: none; }
 .personal-project-preview .work-card-arrow, .everylife-preview:not(.institute-preview) .work-card-arrow { color: #fff; }
 .work-preview-caption { right: 14%; }
+
+.kakao-case-dialog, .sns-case-dialog { width: min(1100px, 96vw); max-width: 96vw; }
+.kakao-case-dialog .sns-project-board, .sns-case-dialog .sns-project-board { grid-template-columns: 1.35fr 1fr; gap: 36px; align-items: start; }
+.kakao-case-dialog .sns-board-copy, .sns-case-dialog .sns-board-copy { align-self: start; margin-top: 100px; padding-bottom: 0; }
+.sns-board-copy dd { font-size: 14px; line-height: 1.8; }
+@media (max-width: 760px) {
+  .kakao-case-dialog .sns-project-board, .sns-case-dialog .sns-project-board { grid-template-columns: 1fr; gap: 28px; }
+  .kakao-case-dialog .sns-board-screens, .sns-case-dialog .sns-board-screens { width: 100%; max-width: none; }
+  .kakao-case-dialog .sns-board-copy, .sns-case-dialog .sns-board-copy { margin-top: 0; }
+}
