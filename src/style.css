@@ -3394,15 +3394,7 @@ h1 {
 .booklet-dialog-heading svg { display: block; width: min(100%, 400px); height: auto; margin-inline: auto; }
 @media (max-width: 480px) { .booklet-dialog-heading { padding: 56px 24px 24px; } }
 
-.work-project__placeholder,
-.work-logo-preview,
-.work-booklet-preview,
-.everylife-preview,
-.personal-project-preview,
-.newsletter-preview {
-  border: 2px solid #000;
-  box-sizing: border-box;
-}
+
 
 .newsletter-preview {
   display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: center;
@@ -3446,3 +3438,13 @@ h1 {
 .newsletter-readable .newsletter-slogan { font-size: 18px; }
 .newsletter-speakers { display: block; width: 100%; height: auto; }
 @media (max-width: 480px) { .newsletter-readable { padding: 12px 0; } }
+
+.work-project__placeholder,
+.work-logo-preview,
+.work-booklet-preview,
+.everylife-preview,
+.personal-project-preview,
+.newsletter-preview {
+  border: 2px solid #000;
+  box-sizing: border-box;
+}
