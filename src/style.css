@@ -4015,3 +4015,21 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 
 .kakao-case-dialog .sns-board-copy dl, .sns-case-dialog .sns-board-copy dl { width: fit-content; max-width: 100%; }
 
+
+.logo-dialog .logo-case-board,
+.logo-dialog .logo-case-board .goods-board-link,
+.logo-dialog .logo-construction-grid { background: transparent; }
+.logo-dialog .logo-case-two-colors img { mix-blend-mode: multiply; }
+.logo-dialog .logo-case-board::after { display: none; }
+
+@media (max-width: 760px) {
+  .institute-preview.everylife-preview,
+  .work-logo-preview,
+  .work-booklet-preview,
+  .renewal-preview,
+  .newsletter-preview,
+  .blog-preview,
+  .mms-preview,
+  .kakao-preview,
+  .sns-preview { background: #fff; }
+}
