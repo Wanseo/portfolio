@@ -3599,3 +3599,25 @@ h1 {
 html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 
 .mms-gallery { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 24px 12px; }
+
+/* Preview elements scale with their card rather than the page viewport. */
+.work-project { container-type: inline-size; }
+.work-project > button, .work-project > a { min-height: 0; flex-shrink: 0; }
+.work-project > button { appearance: none; -webkit-appearance: none; }
+@supports (font-size: 1cqw) {
+  .newsletter-preview-title { font-size: 8cqw; }
+  .mms-preview-title { font-size: 6.4cqw; white-space: nowrap; }
+  .mms-preview { gap: 5cqw; }
+  .mms-preview-screens { flex: 0 0 auto; height: 52cqw; }
+  .mms-preview-screens img { border-radius: 2.1cqw; box-shadow: 0 1.3cqw 4cqw #1028441a; }
+  .blog-preview-window { border-radius: 1.6cqw; box-shadow: 0 3.2cqw 6.6cqw #152e7226; }
+  .blog-preview-toolbar { padding: 2.1cqw; gap: 1cqw; }
+  .blog-preview-toolbar i { width: 1cqw; height: 1cqw; flex-shrink: 0; }
+  .blog-preview-toolbar > span { margin-left: 1.6cqw; font-size: 1.6cqw; white-space: nowrap; }
+  .blog-preview-window-bottom { padding: 3.2cqw; font-size: 2.1cqw; letter-spacing: .26cqw; }
+  .everylife-card-number { top: 5.3cqw; left: 5.3cqw; font-size: 3.2cqw; }
+  .everylife-card-caption { bottom: 5.3cqw; left: 5.3cqw; right: 5.3cqw; gap: 2.1cqw; }
+  .everylife-card-caption strong { font-size: 6.9cqw; }
+  .everylife-card-caption > span { font-size: 3.2cqw; }
+  .personal-project-arrow { right: 3.5cqw; bottom: 3.5cqw; width: 7cqw; height: 7cqw; font-size: 4.4cqw; }
+}
