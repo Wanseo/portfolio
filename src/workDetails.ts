@@ -278,7 +278,7 @@ bookletCase.innerHTML = `
     <h2>연금개혁</h2>
   </header>
   <section class="goods-section goods-overview dialog-copy">
-    <span class="eyebrow">Editorial · Cover Design</span>
+    <span class="eyebrow">Cover Design</span>
     <h2 id="booklet-case-title">연개청 책자 표지디자인</h2>
     <div>
       <p>「MZ세대가 생각하는 국가 미래를 위한 연금개혁 방향」 책자의 표지 디자인입니다.</p>
