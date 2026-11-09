@@ -4005,3 +4005,10 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 .logo-stroke-guides { stroke: #797b70; stroke-width: .6; stroke-dasharray: 3 3; opacity: .55; }
 
 .renewal-case-dialog .renewal-site-note { margin: 0; padding: 0 7% 32px; color: #777; font-size: 11px; line-height: 1.8; word-break: keep-all; }
+
+.renewal-scroll-frame { position: relative; padding-right: 14px; background: #eeecf1; border-radius: 0 0 6px 6px; overflow: hidden; }
+.renewal-scroll-frame .renewal-screen { scrollbar-width: none; scrollbar-gutter: auto; border-radius: 0 0 0 6px; }
+.renewal-scroll-frame .renewal-screen::-webkit-scrollbar { display: none; }
+.renewal-scroll-track { position: absolute; inset: 0 0 0 auto; width: 14px; background: #eeecf1; touch-action: none; cursor: pointer; }
+.renewal-scroll-thumb { position: absolute; top: 0; left: 3px; right: 3px; min-height: 28px; background: #8b8495; border-radius: 6px; cursor: grab; }
+.renewal-scroll-thumb:active { cursor: grabbing; background: #655d70; }

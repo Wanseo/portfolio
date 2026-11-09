@@ -562,9 +562,9 @@ snsDialog.addEventListener('click', (event) => {
 
 const renewalScreens = (name: string, title: string, count: number) => `
   <div class="renewal-screen-bar"><span>${title}</span><small>화면 안에서 스크롤 ↓</small></div>
-  <div class="renewal-screen" tabindex="0" role="region" aria-label="${title} PDF 전체 ${count}페이지, 스크롤하여 보기">
+  <div class="renewal-scroll-frame"><div class="renewal-screen" tabindex="0" role="region" aria-label="${title} PDF 전체 ${count}페이지, 스크롤하여 보기">
     ${Array.from({ length: count }, (_, index) => `<img src="./projects/renewal/${name}-${index + 1}.jpg" alt="${title} 개편 시안 ${index + 1} / ${count}페이지" loading="lazy" decoding="async">`).join('')}
-  </div>`
+  </div><div class="renewal-scroll-track" aria-hidden="true"><div class="renewal-scroll-thumb"></div></div></div>`
 
 const renewalTrigger = document.querySelector<HTMLElement>('.renewal-preview')
 const renewalDialog = document.createElement('dialog')
@@ -585,6 +585,42 @@ renewalDialog.innerHTML = `<button class="personal-dialog-close" type="button" a
     <p class="renewal-site-note">*개편 내용을 적용해 웹사이트 개설했습니다. 현재는 사이트를 사용하지 않아 링크 제공이 어렵습니다.</p>
   </article>`
 document.body.append(renewalDialog)
+
+renewalDialog.querySelectorAll<HTMLElement>('.renewal-scroll-frame').forEach((frame) => {
+  const viewport = frame.querySelector<HTMLElement>('.renewal-screen')!
+  const track = frame.querySelector<HTMLElement>('.renewal-scroll-track')!
+  const thumb = frame.querySelector<HTMLElement>('.renewal-scroll-thumb')!
+  const update = () => {
+    const height = track.clientHeight
+    const thumbHeight = Math.min(height, Math.max(28, height * viewport.clientHeight / Math.max(1, viewport.scrollHeight)))
+    const progress = viewport.scrollTop / Math.max(1, viewport.scrollHeight - viewport.clientHeight)
+    thumb.style.height = `${thumbHeight}px`
+    thumb.style.transform = `translateY(${progress * (height - thumbHeight)}px)`
+  }
+  viewport.addEventListener('scroll', update, { passive: true })
+  viewport.querySelectorAll('img').forEach((image) => image.addEventListener('load', update))
+  const observer = new ResizeObserver(update)
+  observer.observe(viewport)
+  let grabOffset = 0
+  const move = (event: PointerEvent) => {
+    const travel = track.clientHeight - thumb.offsetHeight
+    const progress = Math.max(0, Math.min(1, (event.clientY - track.getBoundingClientRect().top - grabOffset) / Math.max(1, travel)))
+    viewport.scrollTop = progress * (viewport.scrollHeight - viewport.clientHeight)
+  }
+  track.addEventListener('pointerdown', (event) => {
+    event.preventDefault()
+    grabOffset = event.target === thumb ? event.clientY - thumb.getBoundingClientRect().top : thumb.offsetHeight / 2
+    track.setPointerCapture(event.pointerId)
+    move(event)
+  })
+  track.addEventListener('pointermove', (event) => {
+    if (track.hasPointerCapture(event.pointerId)) move(event)
+  })
+  track.addEventListener('pointerup', (event) => {
+    if (track.hasPointerCapture(event.pointerId)) track.releasePointerCapture(event.pointerId)
+  })
+})
+
 renewalTrigger?.addEventListener('click', () => {
   renewalDialog.showModal()
   renewalDialog.scrollTop = 0
