@@ -102,7 +102,7 @@ if (!document.querySelector('#app > .intro')) document.querySelector<HTMLDivElem
             <p class="resume-job__date">2024.06 — 2024.12</p>
             <div class="resume-job__body">
               <p class="resume-job__company">Freelance Design Work <span>디자인 외주</span> <a class="resume-work-link" href="#work-freelance" data-work-link="work-freelance" aria-label="Freelance Design Work 작업 보기"><svg class="resume-work-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M4 8h8M8 4l4 4-4 4" /></svg></a></p>
-              <ul class="resume-freelance-projects"><li>1776연구소 굿즈작업</li><li>연개청 로고제작</li><li>연개청 책자 표지디자인</li><li>에브리라이프 굿즈작업</li></ul>
+              <ul class="resume-freelance-projects"><li>1776연구소 굿즈작업</li><li>연개청 로고제작</li><li>에브리라이프 굿즈작업</li></ul>
             </div>
           </li>
           <li class="resume-job">
@@ -172,7 +172,7 @@ if (!document.querySelector('#app > .intro')) document.querySelector<HTMLDivElem
           <h3>연개청 로고제작</h3>
           <a class="work-logo-preview" href="./projects/yeongae-logo-sharp.png" target="_blank" rel="noopener noreferrer" aria-label="연금개혁청년행동 로고 크게 보기"><img src="./projects/yeongae-logo-green-transparent.png" alt="연금개혁청년행동 초록색 로고" loading="eager" decoding="async"><span class="work-card-arrow" aria-hidden="true">↗</span></a>
         </article>
-        <article class="work-project">
+        <article class="work-project" hidden>
           <h3>연개청 책자 표지디자인</h3>
           <a class="work-booklet-preview" href="./projects/yeongae-booklet-white.svg" target="_blank" rel="noopener noreferrer" aria-label="연개청 책자 표지 크게 보기"><svg class="booklet-preview-badge" viewBox="875 390 700 140" role="img" aria-label="2024년 연금개혁"><image href="./projects/yeongae-booklet-white.svg" width="2481" height="3508" /></svg><img src="./projects/yeongae-booklet-white.svg" alt="2024년 연금개혁 — MZ세대가 생각하는 국가 미래를 위한 연금개혁 방향 책자 표지" loading="eager" decoding="async"><span class="work-card-arrow" aria-hidden="true">↗</span></a>
         </article>

@@ -4047,3 +4047,5 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
   .mms-zoom-nav--previous { left: -34px; }
   .mms-zoom-nav--next { right: -34px; }
 }
+
+.work-project[hidden] { display: none; }
