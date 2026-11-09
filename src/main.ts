@@ -2104,3 +2104,28 @@ bookletDialog.addEventListener('click', (event) => {
   if (event.clientX < bounds.left || event.clientX > bounds.right
     || event.clientY < bounds.top || event.clientY > bounds.bottom) bookletDialog.close()
 })
+
+const logoTrigger = document.querySelector<HTMLAnchorElement>('.work-logo-preview')
+const logoDialog = document.createElement('dialog')
+logoDialog.className = 'personal-project-dialog logo-dialog'
+logoDialog.setAttribute('aria-label', '연금개혁청년행동 로고 디자인')
+logoDialog.innerHTML = `<button class="personal-dialog-close" type="button" aria-label="닫기">×</button>
+  <img src="./projects/yeongae-logo-clean.png" alt="연금개혁청년행동 로고 — 검정, 초록, 청록 세 가지 색상">`
+document.body.append(logoDialog)
+logoTrigger?.addEventListener('click', (event) => {
+  event.preventDefault()
+  logoDialog.showModal()
+  logoDialog.scrollTop = 0
+  document.body.style.overflow = 'hidden'
+})
+logoDialog.querySelector('button')?.addEventListener('click', () => logoDialog.close())
+logoDialog.addEventListener('close', () => {
+  document.body.style.overflow = ''
+  logoTrigger?.focus()
+})
+logoDialog.addEventListener('click', (event) => {
+  if (event.target !== logoDialog) return
+  const bounds = logoDialog.getBoundingClientRect()
+  if (event.clientX < bounds.left || event.clientX > bounds.right
+    || event.clientY < bounds.top || event.clientY > bounds.bottom) logoDialog.close()
+})
