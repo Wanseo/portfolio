@@ -530,6 +530,12 @@ snsDialog.addEventListener('click', (event) => {
   if (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom) snsDialog.close()
 })
 
+const renewalScreens = (name: string, title: string, count: number) => `
+  <div class="renewal-screen-bar"><span>${title}</span><small>화면 안에서 스크롤 ↓</small></div>
+  <div class="renewal-screen" tabindex="0" role="region" aria-label="${title} PDF 전체 ${count}페이지, 스크롤하여 보기">
+    ${Array.from({ length: count }, (_, index) => `<img src="./projects/renewal/${name}-${index + 1}.jpg" alt="${title} 개편 시안 ${index + 1} / ${count}페이지" loading="lazy" decoding="async">`).join('')}
+  </div>`
+
 const renewalTrigger = document.querySelector<HTMLElement>('.renewal-preview')
 const renewalDialog = document.createElement('dialog')
 renewalDialog.className = 'personal-project-dialog everylife-dialog renewal-case-dialog'
@@ -542,9 +548,9 @@ renewalDialog.innerHTML = `<button class="personal-dialog-close" type="button" a
       <div><p>메인 · About Us · 미디어 페이지의 콘텐츠 구성과 이동 흐름을 정리한 웹사이트 개편 시안입니다.</p><dl class="goods-facts"><div><dt>Role</dt><dd>페이지 구성 · 콘텐츠 기획</dd></div><div><dt>Scope</dt><dd>Main · About Us · Media</dd></div></dl></div>
     </section>
     <section class="goods-section renewal-case-pages">
-      <figure><figcaption><span>01</span><h3>Main</h3><p>행사 영상과 뉴스레터 구독을 첫 화면에 배치하고, 단체 소개·행사·콘텐츠·샵으로 연결했습니다.</p></figcaption><img src="./projects/previews/renewal-main.jpg" alt="뉴스레터 구독과 주요 메뉴를 배치한 메인 페이지 개편 시안" loading="lazy"></figure>
-      <figure><figcaption><span>02</span><h3>About Us</h3><p>단체 소개와 미션·비전을 한영 콘텐츠로 정리하고, 지난 행사와 연도별 활동을 구성했습니다.</p></figcaption><img src="./projects/previews/renewal-about.jpg" alt="단체 소개, 미션, 비전을 정리한 About Us 페이지 개편 시안" loading="lazy"></figure>
-      <figure><figcaption><span>03</span><h3>Media</h3><p>인스타그램·유튜브 콘텐츠를 모아 보여주고, 뉴스레터 구독과 카카오톡 채널로 연결했습니다.</p></figcaption><img src="./projects/previews/renewal-media.jpg" alt="인스타그램과 유튜브 콘텐츠를 모은 미디어 페이지 개편 시안" loading="lazy"></figure>
+      <figure><figcaption><span>01</span><h3>Main</h3><p>행사 영상과 뉴스레터 구독을 첫 화면에 배치하고, 단체 소개·행사·콘텐츠·샵으로 연결했습니다.</p></figcaption>${renewalScreens('main', 'Main', 8)}</figure>
+      <figure><figcaption><span>02</span><h3>About Us</h3><p>단체 소개와 미션·비전을 한영 콘텐츠로 정리하고, 지난 행사와 연도별 활동을 구성했습니다.</p></figcaption>${renewalScreens('about', 'About Us', 6)}</figure>
+      <figure><figcaption><span>03</span><h3>Media</h3><p>인스타그램·유튜브 콘텐츠를 모아 보여주고, 뉴스레터 구독과 카카오톡 채널로 연결했습니다.</p></figcaption>${renewalScreens('media', 'Media', 3)}</figure>
     </section>
   </article>`
 document.body.append(renewalDialog)
