@@ -3896,3 +3896,6 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 
 .kakao-preview-logo { width: 17cqw; height: 17cqw; top: 13%; }
 .sns-preview-instagram { width: 23cqw; height: 23cqw; top: 10%; }
+
+.institute-sticker-grid a { overflow: visible; border-radius: 0; background: transparent; }
+.institute-sticker-grid img { filter: drop-shadow(0 5px 7px #00000018); }

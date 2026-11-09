@@ -592,7 +592,7 @@ instituteDialog.innerHTML = `<button class="personal-dialog-close" type="button"
       <div class="goods-palette"><div><i style="background:#EFE8D5"></i><span>Cream</span><small>#EFE8D5</small></div><div><i style="background:#D8B128"></i><span>Gold</span><small>#D8B128</small></div><div><i style="background:#F6F5AF"></i><span>Lemon</span><small>#F6F5AF</small></div><div><i style="background:#E91D46"></i><span>Red</span><small>#E91D46</small></div><div><i style="background:#0B0D09"></i><span>Black</span><small>#0B0D09</small></div></div>
     </section>
     <section class="goods-section goods-design-board"><div class="goods-section-heading"><span class="goods-index">DESIGN BOARD</span></div>
-      <div class="institute-sticker-grid">${[2, 3, 4, 7].map((number) => `<a href="./projects/1776/sticker-${number}.png" target="_blank" rel="noopener noreferrer" aria-label="1776 스티커 ${number} 크게 보기"><img src="./projects/1776/sticker-${number}.png" alt="1776연구소 스티커 ${number}" loading="lazy" decoding="async"></a>`).join('')}</div>
+      <div class="institute-sticker-grid">${[2, 3, 4, 7].map((number) => `<a href="./projects/1776/sticker-${number}-cutout.png" target="_blank" rel="noopener noreferrer" aria-label="1776 스티커 ${number} 크게 보기"><img src="./projects/1776/sticker-${number}-cutout.png" alt="1776연구소 스티커 ${number}" loading="lazy" decoding="async"></a>`).join('')}</div>
     </section>
   </article>`
 document.body.append(instituteDialog)
