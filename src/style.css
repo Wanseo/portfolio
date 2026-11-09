@@ -3983,8 +3983,6 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 .logo-dialog .logo-case-two-colors { height: clamp(150px, 25vw, 230px); display: flex; align-items: center; justify-content: center; }
 .logo-dialog .logo-case-two-colors img { width: 76%; flex-shrink: 0; }
 .logo-construction { padding-top: 48px; }
-.logo-construction h3 { margin: 0 0 8px; font: 400 10px/1.5 Arial, sans-serif; letter-spacing: .1em; }
-.logo-construction > p { margin: 0; color: #797b70; font-size: 10px; }
 .logo-construction-grid { position: relative; margin: 48px auto 12px; padding: 24px 0; width: 88%; background: #fff; }
 .logo-construction-grid svg { display: block; width: 100%; height: auto; mix-blend-mode: multiply; }
 .logo-guide { position: absolute; left: -12px; right: -12px; border-top: 1px dashed #0005; }
@@ -4017,5 +4015,3 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 
 .kakao-case-dialog .sns-board-copy dl, .sns-case-dialog .sns-board-copy dl { width: fit-content; max-width: 100%; }
 
-.logo-symbol-content { display: flex; flex-direction: column; align-items: flex-start; gap: 20px; }
-.logo-symbol-only { display: block; width: 64px; height: auto; }

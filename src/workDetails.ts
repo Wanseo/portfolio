@@ -132,8 +132,7 @@ logoDialog.innerHTML = `<button class="personal-dialog-close" type="button" aria
         <img class="goods-board" src="./projects/yeongae-logo-sharp.png" alt="연금개혁청년행동 로고의 검정·초록 색상 버전" loading="lazy">
       </div>
       <div class="logo-construction">
-        <h3>LOGOTYPE CONSTRUCTION</h3>
-        <p>심볼과 커스텀 한글 레터링의 구성</p>
+        <div class="goods-section-heading"><span class="goods-index">LOGOTYPE CONSTRUCTION</span></div>
         <figure class="logo-construction-grid">
           <svg viewBox="100 552 1050 172" role="img" aria-label="그린 로고의 세로 획과 가로 획에 맞춘 구성 가이드"><image href="./projects/yeongae-logo-sharp.png" width="1254" height="1254" /><g class="logo-stroke-guides"><line x1="130" y1="552" x2="130" y2="724" /><line x1="162" y1="552" x2="162" y2="724" /><line x1="191" y1="552" x2="191" y2="724" /><line x1="222" y1="552" x2="222" y2="724" /><line x1="269" y1="552" x2="269" y2="724" /><line x1="290" y1="552" x2="290" y2="724" /><line x1="334" y1="552" x2="334" y2="724" /><line x1="367" y1="552" x2="367" y2="724" /><line x1="430" y1="552" x2="430" y2="724" /><line x1="484" y1="552" x2="484" y2="724" /><line x1="505" y1="552" x2="505" y2="724" /><line x1="515" y1="552" x2="515" y2="724" /><line x1="533" y1="552" x2="533" y2="724" /><line x1="539" y1="552" x2="539" y2="724" /><line x1="556" y1="552" x2="556" y2="724" /><line x1="650" y1="552" x2="650" y2="724" /><line x1="671" y1="552" x2="671" y2="724" /><line x1="770" y1="552" x2="770" y2="724" /><line x1="790" y1="552" x2="790" y2="724" /><line x1="810" y1="552" x2="810" y2="724" /><line x1="831" y1="552" x2="831" y2="724" /><line x1="839" y1="552" x2="839" y2="724" /><line x1="905" y1="552" x2="905" y2="724" /><line x1="985" y1="552" x2="985" y2="724" /><line x1="1002" y1="552" x2="1002" y2="724" /><line x1="1008" y1="552" x2="1008" y2="724" /><line x1="1025" y1="552" x2="1025" y2="724" /><line x1="114" y1="566" x2="1138" y2="566" /><line x1="114" y1="598" x2="1138" y2="598" /><line x1="114" y1="628" x2="1138" y2="628" /><line x1="114" y1="652" x2="1138" y2="652" /><line x1="114" y1="680" x2="1138" y2="680" /><line x1="114" y1="701" x2="1138" y2="701" /></g></svg>
         </figure>
@@ -145,7 +144,7 @@ logoDialog.innerHTML = `<button class="personal-dialog-close" type="button" aria
       <div class="logo-detail-list">
         <div><h3>Color</h3><p>다양한 그린 계열 중 청년 단체의 젊고 역동적인 이미지를 반영하면서, 화폐를 연상시키는 컬러를 선정했습니다. 블랙과 화이트 배경 모두에서 높은 시인성과 대비를 확보할 수 있도록 고려했으며, 그린을 메인 컬러로 적용하고 블랙 버전을 추가해 활용성을 높였습니다.</p></div>
         <div><h3>Typography</h3><p>‘연’, ‘혁’, ‘년’ 등 획이 많은 한글의 구조적 특성을 고려해 불필요한 획을 최소화하고, 간결하면서도 명확한 형태의 커스텀 레터링을 제작했습니다. 이를 통해 시각적 복잡도를 낮추고 로고의 가독성과 완성도를 높이고자 했습니다.</p></div>
-        <div><h3>Symbol</h3><div class="logo-symbol-content"><svg class="logo-symbol-only" viewBox="126 562 100 140" role="img" aria-label="연금개혁청년행동 그린 심볼"><image href="./projects/yeongae-logo-sharp.png" width="1254" height="1254" /></svg><p>청년 세대와 중장년 세대의 연대와 협력을 상징하는 맞잡은 손의 형태를 심볼에 반영했습니다. 동시에 지폐의 외곽 형태를 모티브로 활용해 연금 개혁이라는 단체의 정체성을 시각적으로 표현했습니다.</p></div></div>
+        <div><h3>Symbol</h3><p>청년 세대와 중장년 세대의 연대와 협력을 상징하는 맞잡은 손의 형태를 심볼에 반영했습니다. 동시에 지폐의 외곽 형태를 모티브로 활용해 연금 개혁이라는 단체의 정체성을 시각적으로 표현했습니다.</p></div>
       </div>
     </section>
   </article>`
