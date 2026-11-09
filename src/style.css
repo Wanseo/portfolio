@@ -3456,7 +3456,7 @@ h1 {
 }
 
 .newsletter-case-dialog .goods-case { --everylife-purple: #4265ff; --everylife-on-purple: #fff; }
-.newsletter-case-dialog .newsletter-case-hero { padding: 48px 7%; }
+.newsletter-case-dialog .newsletter-case-hero { padding: 48px 7%; background: #fc4446; }
 .newsletter-case-dialog .newsletter-case-hero > span { font-size: 10px; letter-spacing: 1.5px; }
 .newsletter-case-dialog .newsletter-case-hero h2 { margin: 40px 0 24px; font: 700 clamp(38px, 8vw, 72px)/1.1 Arial, sans-serif; letter-spacing: -.05em; }
 .newsletter-case-dialog .newsletter-case-hero > p { font-size: 15px; letter-spacing: 0; }
