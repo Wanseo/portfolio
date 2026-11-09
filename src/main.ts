@@ -2196,3 +2196,18 @@ newsletterDialog.addEventListener('click', (event) => {
   if (event.clientX < bounds.left || event.clientX > bounds.right
     || event.clientY < bounds.top || event.clientY > bounds.bottom) newsletterDialog.close()
 })
+
+newsletterDialog.querySelectorAll<HTMLImageElement>('.newsletter-dialog-pages img').forEach((img) => {
+  const button = document.createElement('button')
+  button.type = 'button'
+  button.className = 'newsletter-image-zoom'
+  button.setAttribute('aria-label', `${img.alt} 확대`)
+  button.setAttribute('aria-pressed', 'false')
+  img.before(button)
+  button.append(img)
+  button.addEventListener('click', () => {
+    const expanded = button.classList.toggle('is-expanded')
+    button.setAttribute('aria-pressed', String(expanded))
+    button.setAttribute('aria-label', `${img.alt} ${expanded ? '원본 크기로 보기' : '확대'}`)
+  })
+})
