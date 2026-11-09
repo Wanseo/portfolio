@@ -3951,3 +3951,5 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 
 .blog-intro-post .blog-readable > img { display: block; width: 100%; max-width: 760px; height: auto; margin: 24px auto; }
 .blog-intro-post .blog-post-viewport { overscroll-behavior-y: contain; }
+
+.work-project-grid--personal { margin-bottom: clamp(3rem, 5vw, 5rem); }

@@ -136,6 +136,29 @@ if (!document.querySelector('#app > .intro')) document.querySelector<HTMLDivElem
     </section>
     <section class="portfolio-panel work-panel" id="work" role="tabpanel" aria-labelledby="tab-work" hidden>
       <header class="work-overview-heading">
+        <h2 id="work-personal" tabindex="-1">Personal Project</h2>
+      </header>
+      <div class="work-project-grid work-project-grid--personal">
+        <article class="work-project">
+          <h3>SKYLRK</h3>
+          <a class="personal-project-preview" href="https://wanseo.github.io/swag2/" target="_blank" rel="noopener noreferrer" data-personal-project="SKYLRK" aria-label="SKYLRK 프로젝트 상세 보기">
+            <video data-preview-src="./projects/moodroom.mp4" data-preview-poster="./projects/moodroom.jpg" muted loop playsinline preload="none" aria-label="SKYLRK 미리보기"></video>
+          <span class="work-card-arrow" aria-hidden="true">↗</span></a>
+        </article>
+        <article class="work-project">
+          <h3>Guestbook</h3>
+          <a class="personal-project-preview" href="https://wanseo.github.io/myfirstweb/" target="_blank" rel="noopener noreferrer" data-personal-project="Guestbook" aria-label="Guestbook 프로젝트 상세 보기">
+            <video data-preview-src="./projects/guestbook.mp4" data-preview-poster="./projects/guestbook.jpg" muted loop playsinline preload="none" aria-label="Guestbook 미리보기"></video>
+          <span class="work-card-arrow" aria-hidden="true">↗</span></a>
+        </article>
+        <article class="work-project">
+          <h3>GLYF</h3>
+          <a class="personal-project-preview" href="https://wanseo.github.io/glyfing/" target="_blank" rel="noopener noreferrer" data-personal-project="GLYF" aria-label="GLYF 프로젝트 상세 보기">
+            <video data-preview-src="./projects/glyfing-main.mp4" data-preview-poster="./projects/glyfing-main.jpg" muted loop playsinline preload="none" aria-label="GLYF 미리보기"></video>
+          <span class="work-card-arrow" aria-hidden="true">↗</span></a>
+        </article>
+      </div>
+      <header class="work-overview-heading">
         <h2 id="work-freelance" tabindex="-1">Freelance Design Work</h2>
       </header>
       <div class="work-project-grid work-project-grid--freelance">
@@ -213,29 +236,6 @@ if (!document.querySelector('#app > .intro')) document.querySelector<HTMLDivElem
         <article class="work-project">
           <h3>SNS관리</h3>
           <button class="sns-preview" type="button" aria-label="SNS 콘텐츠 기획 및 제작 상세 보기"><img class="sns-preview-instagram" src="./projects/instagram-transparent.png" alt="Instagram" loading="eager" decoding="async"><svg class="channel-preview-art sns-preview-art" viewBox="26 378 563 495" role="img" aria-label="인스타그램 운영 전후 프로필과 콘텐츠 편집 화면"><image href="./projects/sns-management-black.svg" width="1724" height="912" /></svg><span class="sns-preview-result"><span>1,415<small>운영 초기</small></span><span class="sns-preview-arrow">→</span><span>1.2만<small>팔로워</small></span></span><span class="work-card-arrow" aria-hidden="true">↗</span></button>
-        </article>
-      </div>
-      <header class="work-overview-heading">
-        <h2 id="work-personal" tabindex="-1">Personal Project</h2>
-      </header>
-      <div class="work-project-grid">
-        <article class="work-project">
-          <h3>SKYLRK</h3>
-          <a class="personal-project-preview" href="https://wanseo.github.io/swag2/" target="_blank" rel="noopener noreferrer" data-personal-project="SKYLRK" aria-label="SKYLRK 프로젝트 상세 보기">
-            <video data-preview-src="./projects/moodroom.mp4" data-preview-poster="./projects/moodroom.jpg" muted loop playsinline preload="none" aria-label="SKYLRK 미리보기"></video>
-          <span class="work-card-arrow" aria-hidden="true">↗</span></a>
-        </article>
-        <article class="work-project">
-          <h3>Guestbook</h3>
-          <a class="personal-project-preview" href="https://wanseo.github.io/myfirstweb/" target="_blank" rel="noopener noreferrer" data-personal-project="Guestbook" aria-label="Guestbook 프로젝트 상세 보기">
-            <video data-preview-src="./projects/guestbook.mp4" data-preview-poster="./projects/guestbook.jpg" muted loop playsinline preload="none" aria-label="Guestbook 미리보기"></video>
-          <span class="work-card-arrow" aria-hidden="true">↗</span></a>
-        </article>
-        <article class="work-project">
-          <h3>GLYF</h3>
-          <a class="personal-project-preview" href="https://wanseo.github.io/glyfing/" target="_blank" rel="noopener noreferrer" data-personal-project="GLYF" aria-label="GLYF 프로젝트 상세 보기">
-            <video data-preview-src="./projects/glyfing-main.mp4" data-preview-poster="./projects/glyfing-main.jpg" muted loop playsinline preload="none" aria-label="GLYF 미리보기"></video>
-          <span class="work-card-arrow" aria-hidden="true">↗</span></a>
         </article>
       </div>
     </section>
