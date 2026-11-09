@@ -4,7 +4,7 @@ import { initTitleDust } from './titleDust'
 const titleSurfaceEffectsEnabled = false
 const cornerVerseEnabled = false
 
-document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
+if (!document.querySelector('#app > .intro')) document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <main class="intro${titleSurfaceEffectsEnabled ? '' : ' title-surface-effects-off'}">
     <canvas class="title-dust" aria-hidden="true"></canvas>
     <div class="brand">
@@ -145,16 +145,16 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         </article>
         <article class="work-project">
           <h3>연개청 로고제작</h3>
-          <a class="work-logo-preview" href="./projects/yeongae-logo-sharp.png" target="_blank" rel="noopener noreferrer" aria-label="연금개혁청년행동 로고 크게 보기"><img src="./projects/yeongae-logo-sharp.png" alt="연금개혁청년행동 초록색 로고" loading="lazy"></a>
+          <a class="work-logo-preview" href="./projects/yeongae-logo-sharp.png" target="_blank" rel="noopener noreferrer" aria-label="연금개혁청년행동 로고 크게 보기"><img src="./projects/previews/yeongae-logo-sharp.jpg" alt="연금개혁청년행동 초록색 로고" loading="eager" decoding="async"></a>
         </article>
         <article class="work-project">
           <h3>연개청 책자 표지디자인</h3>
-          <a class="work-booklet-preview" href="./projects/yeongae-booklet.png" target="_blank" rel="noopener noreferrer" aria-label="연개청 책자 표지 크게 보기"><svg class="booklet-preview-badge" viewBox="875 390 700 140" role="img" aria-label="2024년 연금개혁"><image href="./projects/yeongae-booklet.png" width="2481" height="3508" /></svg><img src="./projects/yeongae-booklet.png" alt="2024년 연금개혁 — MZ세대가 생각하는 국가 미래를 위한 연금개혁 방향 책자 표지" loading="lazy"></a>
+          <a class="work-booklet-preview" href="./projects/yeongae-booklet.png" target="_blank" rel="noopener noreferrer" aria-label="연개청 책자 표지 크게 보기"><svg class="booklet-preview-badge" viewBox="875 390 700 140" role="img" aria-label="2024년 연금개혁"><image href="./projects/previews/yeongae-booklet.jpg" width="2481" height="3508" /></svg><img src="./projects/previews/yeongae-booklet.jpg" alt="2024년 연금개혁 — MZ세대가 생각하는 국가 미래를 위한 연금개혁 방향 책자 표지" loading="eager" decoding="async"></a>
         </article>
         <article class="work-project">
           <h3>에브리라이프 굿즈작업</h3>
           <button class="everylife-preview" type="button" aria-label="everylife 굿즈 프로젝트 상세 보기">
-            <img src="./projects/everylife-card.webp" alt="everylife 로고와 기저귀·아기 스티커" loading="lazy">
+            <img src="./projects/everylife-card.webp" alt="everylife 로고와 기저귀·아기 스티커" loading="eager" decoding="async">
             <span class="everylife-card-number">01</span>
             <span class="everylife-card-caption"><strong>everylife</strong><span>Merch Sticker ↗</span></span>
           </button>
@@ -178,14 +178,14 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         <article class="work-project">
           <h3>블로그 관리</h3>
           <button class="blog-preview" type="button" aria-label="빌드업코리아 네이버 블로그 작업 상세 보기">
-            <span class="blog-preview-window"><span class="blog-preview-toolbar"><i></i><i></i><i></i><span>blog.naver.com/bukofficial</span></span><svg viewBox="0 29 1040 467" role="img" aria-label="빌드업코리아2025 블로그 메인 배너"><image href="./projects/buildup-blog.png" width="1040" height="882" /></svg><span class="blog-preview-window-bottom">BUILD UP KOREA 2025</span></span>
+            <span class="blog-preview-window"><span class="blog-preview-toolbar"><i></i><i></i><i></i><span>blog.naver.com/bukofficial</span></span><svg viewBox="0 29 1040 467" role="img" aria-label="빌드업코리아2025 블로그 메인 배너"><image href="./projects/previews/buildup-blog.jpg" width="1040" height="882" /></svg><span class="blog-preview-window-bottom">BUILD UP KOREA 2025</span></span>
           </button>
         </article>
         <article class="work-project">
           <h3>MMS 카피라이팅</h3>
           <button class="mms-preview" type="button" aria-label="MMS 카피라이팅 작업 10개 상세 보기">
             <span class="mms-preview-title">MMS Copywriting</span>
-            <span class="mms-preview-screens"><img src="./projects/mms-2.png" alt="문자 카피라이팅 작업 예시" loading="lazy"><img src="./projects/mms-1.png" alt="빌드업코리아 문자 메시지" loading="lazy"><img src="./projects/mms-3.png" alt="문자 카피라이팅 작업 예시" loading="lazy"></span>
+            <span class="mms-preview-screens"><img src="./projects/previews/mms-2.jpg" alt="문자 카피라이팅 작업 예시" loading="eager" decoding="async"><img src="./projects/previews/mms-1.jpg" alt="빌드업코리아 문자 메시지" loading="eager" decoding="async"><img src="./projects/previews/mms-3.jpg" alt="문자 카피라이팅 작업 예시" loading="eager" decoding="async"></span>
           </button>
         </article>
         <article class="work-project">
