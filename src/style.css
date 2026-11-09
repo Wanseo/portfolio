@@ -3948,3 +3948,6 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 .kakao-case-dialog .sns-board-copy dt, .sns-case-dialog .sns-board-copy dt { font-size: 10px; }
 .kakao-case-dialog .sns-board-copy h3, .sns-case-dialog .sns-board-copy h3 { font-size: 18px; }
 .sns-case-dialog .sns-board-growth { font-size: 12px; }
+
+.blog-intro-post .blog-readable > img { display: block; width: 100%; max-width: 760px; height: auto; margin: 24px auto; }
+.blog-intro-post .blog-post-viewport { overscroll-behavior-y: contain; }
