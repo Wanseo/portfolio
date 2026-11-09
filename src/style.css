@@ -3808,3 +3808,10 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 }
 .mms-preview-title,
 .newsletter-preview-title { color: #000; }
+
+.blog-preview-logo { top: 14%; left: 43.6%; width: 12.8cqw; height: 12.8cqw; }
+.blog-preview .blog-preview-window { top: 36%; }
+.kakao-preview,
+.sns-preview { justify-content: flex-start; padding-top: 17%; }
+.kakao-preview-logo { width: 16cqw; height: 16cqw; }
+.sns-preview-instagram { width: 16cqw; height: 16cqw; }
