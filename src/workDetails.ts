@@ -469,14 +469,9 @@ kakaoDialog.innerHTML = `<button class="personal-dialog-close" type="button" ari
         <dl class="goods-facts"><div><dt>Role</dt><dd>카카오톡 채널 운영</dd></div><div><dt>Channel</dt><dd>KakaoTalk Channel</dd></div></dl>
       </div>
     </section>
-    <section class="goods-section kakao-results"><div class="goods-section-heading"><span class="goods-index">CHANNEL GROWTH</span></div>
-      <div class="kakao-comparison">
-        <section class="kakao-channel-card"><span class="kakao-period">2025 · 개설 초</span><div class="kakao-card-brand"><span class="kakao-brand-icon">BUK</span><strong>빌드업코리아 <span class="kakao-verified" aria-label="인증 채널">✓</span></strong></div><span class="kakao-count-label">채널 친구 수</span><p class="kakao-count">273<span>명</span></p></section>
-        <section class="kakao-channel-card kakao-channel-card--current"><span class="kakao-period">2026</span><div class="kakao-card-brand"><span class="kakao-brand-icon">BUK</span><strong>빌드업코리아 <span class="kakao-verified" aria-label="인증 채널">✓</span></strong></div><span class="kakao-count-label">채널 친구 수</span><p class="kakao-count">1,089<span>명</span></p></section>
-      </div>
-      <p class="kakao-source-note">제공된 채널 화면 기준 · 가독성을 위해 텍스트와 수치로 재구성</p>
-      <img class="kakao-source-image" src="./projects/kakao-channel.png" alt="2025년 개설 초기와 2026년 빌드업코리아 카카오톡 채널 실제 화면" loading="lazy">
-    </section>
+    <section class="goods-section kakao-results"><div class="goods-section-heading"><span class="goods-index">RESULT</span></div><p class="kakao-growth">273명 <span>→</span> 1,089명</p><p>채널 친구 수 변화 · 2025년 개설 초 → 2026년</p></section>
+    <section class="goods-section"><div class="goods-section-heading"><span class="goods-index">CHANNEL OVERVIEW</span></div><dl class="sns-approach"><div><dt>CHANNEL</dt><dd>빌드업코리아 카카오톡 채널</dd></div><div><dt>ROLE</dt><dd>카카오톡 채널 운영 및 관리</dd></div></dl></section>
+    <section class="goods-section"><div class="goods-section-heading"><span class="goods-index">PROJECT BOARD</span></div><a href="./projects/kakao-channel-clean.jpg" target="_blank" rel="noopener noreferrer"><img class="goods-board" src="./projects/kakao-channel-clean.jpg" alt="2025년 개설 초기와 2026년 카카오톡 채널 비교 화면" loading="lazy"></a></section>
   </article>`
 document.body.append(kakaoDialog)
 kakaoTrigger?.addEventListener('click', () => {
