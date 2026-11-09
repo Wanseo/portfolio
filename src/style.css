@@ -3941,3 +3941,10 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
   .kakao-case-dialog .sns-board-screens, .sns-case-dialog .sns-board-screens { width: 100%; max-width: none; }
   .kakao-case-dialog .sns-board-copy, .sns-case-dialog .sns-board-copy { margin-top: 0; }
 }
+
+.kakao-case-dialog .sns-project-board, .sns-case-dialog .sns-project-board { padding-inline: 0; column-gap: 28px; }
+.kakao-case-dialog .sns-board-copy, .sns-case-dialog .sns-board-copy { padding-inline: 0; min-width: 0; }
+.kakao-case-dialog .sns-board-copy dd, .sns-case-dialog .sns-board-copy dd { font-size: 12px; line-height: 1.8; }
+.kakao-case-dialog .sns-board-copy dt, .sns-case-dialog .sns-board-copy dt { font-size: 10px; }
+.kakao-case-dialog .sns-board-copy h3, .sns-case-dialog .sns-board-copy h3 { font-size: 18px; }
+.sns-case-dialog .sns-board-growth { font-size: 12px; }
