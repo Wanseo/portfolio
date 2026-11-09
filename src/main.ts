@@ -119,6 +119,12 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
               <ul><li>마케팅 기획</li><li>SNS 홍보 배너 및 온·오프라인 게시물 디자인</li></ul>
             </div>
           </li>
+          <li class="resume-job">
+            <div class="resume-job__date"></div>
+            <div class="resume-job__body">
+              <p class="resume-job__company">Personal Project <span>개인 프로젝트</span></p>
+            </div>
+          </li>
         </ol>
       </section>
       <section class="resume-education" aria-labelledby="education-title">
