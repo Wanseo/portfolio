@@ -3661,3 +3661,29 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
     margin-bottom: .75rem;
   }
 }
+
+@media (max-width: 760px) {
+  .work-project__placeholder,
+  .work-logo-preview,
+  .work-booklet-preview,
+  .everylife-preview,
+  .personal-project-preview,
+  .newsletter-preview,
+  .blog-preview,
+  .mms-preview {
+    position: relative;
+    border: 1px solid #000;
+    box-sizing: border-box;
+  }
+  .work-project > a::after,
+  .work-project > button::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    pointer-events: none;
+    border: 1px solid #000;
+    background: transparent;
+    box-sizing: border-box;
+  }
+}
