@@ -107,7 +107,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
           <li class="resume-job">
             <p class="resume-job__date">FREELANCE</p>
             <div class="resume-job__body">
-              <p class="resume-job__company">디자인 외주 <a class="resume-work-link" href="#work" data-work-link aria-label="디자인 외주 작업 보기"><svg class="resume-work-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M4 8h8M8 4l4 4-4 4" /></svg></a></p>
+              <p class="resume-job__company">Freelance Design Work <a class="resume-work-link" href="#work" data-work-link aria-label="Freelance Design Work 작업 보기"><svg class="resume-work-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M4 8h8M8 4l4 4-4 4" /></svg></a></p>
               <h3>프리랜서 디자이너</h3>
             </div>
           </li>
