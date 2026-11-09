@@ -4036,3 +4036,14 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 
 .logo-grid-labels { position: absolute; top: 8px; left: 2.85%; right: 0; display: grid; grid-template-columns: 9.1% 1fr; gap: 16px; color: #777; font: 8px/1.5 Arial, sans-serif; letter-spacing: .08em; white-space: nowrap; }
 .logo-grid-labels > span:first-child { text-align: center; }
+
+.mms-zoom-nav { display: none; }
+.mms-gallery figure.is-expanded .mms-zoom-nav { display: grid; place-items: center; position: absolute; top: min(30svh, 200px); z-index: 2; width: 32px; height: 44px; padding: 0; border: 1px solid #ddd; border-radius: 6px; background: #fff; color: #171715; box-shadow: 0 2px 8px #0002; font: 32px/1 Arial, sans-serif; cursor: pointer; }
+.mms-zoom-nav--previous { left: -38px; }
+.mms-zoom-nav--next { right: -38px; }
+.mms-zoom-nav:focus-visible { outline: 2px solid #3272c7; outline-offset: 2px; }
+@media (max-width: 480px) {
+  .mms-gallery figure.is-expanded { width: min(calc(100% - 64px), 280px); }
+  .mms-zoom-nav--previous { left: -34px; }
+  .mms-zoom-nav--next { right: -34px; }
+}

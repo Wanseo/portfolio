@@ -441,7 +441,8 @@ mmsDialog.addEventListener('click', (event) => {
   if (event.clientX < bounds.left || event.clientX > bounds.right
     || event.clientY < bounds.top || event.clientY > bounds.bottom) mmsDialog.close()
 })
-mmsDialog.querySelectorAll<HTMLButtonElement>('.mms-image-toggle').forEach((button) => {
+const mmsImageButtons = Array.from(mmsDialog.querySelectorAll<HTMLButtonElement>('.mms-image-toggle'))
+mmsImageButtons.forEach((button, index) => {
   const figure = button.closest('figure')!
   const close = document.createElement('button')
   close.type = 'button'
@@ -450,6 +451,26 @@ mmsDialog.querySelectorAll<HTMLButtonElement>('.mms-image-toggle').forEach((butt
   close.setAttribute('aria-label', '확대 이미지 닫기')
   close.hidden = true
   button.before(close)
+  const navigate = (direction: number) => {
+    const next = (index + direction + mmsImageButtons.length) % mmsImageButtons.length
+    mmsImageButtons[next]?.click()
+  }
+  for (const direction of [-1, 1]) {
+    const arrow = document.createElement('button')
+    arrow.type = 'button'
+    arrow.className = `mms-zoom-nav mms-zoom-nav--${direction < 0 ? 'previous' : 'next'}`
+    arrow.textContent = direction < 0 ? '‹' : '›'
+    arrow.setAttribute('aria-label', direction < 0 ? '이전 문자 보기' : '다음 문자 보기')
+    arrow.addEventListener('click', () => navigate(direction))
+    figure.append(arrow)
+  }
+  figure.addEventListener('keydown', (event) => {
+    if (!figure.classList.contains('is-expanded')) return
+    if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+      event.preventDefault()
+      navigate(event.key === 'ArrowLeft' ? -1 : 1)
+    }
+  })
   const setExpanded = (expanded: boolean) => {
     figure.classList.toggle('is-expanded', expanded)
     button.setAttribute('aria-pressed', String(expanded))
