@@ -1,4 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400&display=swap');
+@font-face {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../public/fonts/space-mono-latin-400.ttf') format('truetype');
+}
 
 /* Reveal only the sections added after the archived first design. */
 #app .portfolio-panel,
