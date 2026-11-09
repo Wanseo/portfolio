@@ -149,11 +149,11 @@ if (!document.querySelector('#app > .intro')) document.querySelector<HTMLDivElem
         </article>
         <article class="work-project">
           <h3>연개청 로고제작</h3>
-          <a class="work-logo-preview" href="./projects/yeongae-logo-sharp.png" target="_blank" rel="noopener noreferrer" aria-label="연금개혁청년행동 로고 크게 보기"><img src="./projects/yeongae-logo-green-transparent.png" alt="연금개혁청년행동 초록색 로고" loading="eager" decoding="async"></a>
+          <a class="work-logo-preview" href="./projects/yeongae-logo-sharp.png" target="_blank" rel="noopener noreferrer" aria-label="연금개혁청년행동 로고 크게 보기"><img src="./projects/yeongae-logo-green-transparent.png" alt="연금개혁청년행동 초록색 로고" loading="eager" decoding="async"><span class="work-preview-caption">fairpensionforall <span aria-hidden="true">↗</span></span></a>
         </article>
         <article class="work-project">
           <h3>연개청 책자 표지디자인</h3>
-          <a class="work-booklet-preview" href="./projects/yeongae-booklet.png" target="_blank" rel="noopener noreferrer" aria-label="연개청 책자 표지 크게 보기"><svg class="booklet-preview-badge" viewBox="875 390 700 140" role="img" aria-label="2024년 연금개혁"><image href="./projects/previews/yeongae-booklet.jpg" width="2481" height="3508" /></svg><img src="./projects/previews/yeongae-booklet.jpg" alt="2024년 연금개혁 — MZ세대가 생각하는 국가 미래를 위한 연금개혁 방향 책자 표지" loading="eager" decoding="async"></a>
+          <a class="work-booklet-preview" href="./projects/yeongae-booklet.png" target="_blank" rel="noopener noreferrer" aria-label="연개청 책자 표지 크게 보기"><svg class="booklet-preview-badge" viewBox="875 390 700 140" role="img" aria-label="2024년 연금개혁"><image href="./projects/previews/yeongae-booklet.jpg" width="2481" height="3508" /></svg><img src="./projects/previews/yeongae-booklet.jpg" alt="2024년 연금개혁 — MZ세대가 생각하는 국가 미래를 위한 연금개혁 방향 책자 표지" loading="eager" decoding="async"><span class="work-preview-caption">airpensionforall Book Cover <span aria-hidden="true">↗</span></span></a>
         </article>
         <article class="work-project">
           <h3>에브리라이프 굿즈작업</h3>
