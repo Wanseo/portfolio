@@ -3705,7 +3705,7 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 @media (max-width: 760px) { .kakao-preview { border-width: 1px; } }
 @media (max-width: 480px) { .kakao-comparison { gap: 10px; } .kakao-channel-card { padding: 16px 12px; } .kakao-card-brand { flex-wrap: wrap; } }
 
-.blog-preview { background: #edf9f1; }
+.blog-preview { background: #fff; }
 
 .newsletter-preview-title { font-size: 6.4cqw; top: 18%; }
 .newsletter-preview .newsletter-envelope { width: 80%; justify-self: center; transform: translateY(12%); }
