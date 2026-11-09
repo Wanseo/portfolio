@@ -3794,3 +3794,6 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 
 .newsletter-preview img.newsletter-platform-logo { top: 18%; bottom: auto; }
 .newsletter-preview-title { top: 31%; }
+
+.blog-preview-logo { top: 19%; left: 42%; width: 16cqw; height: 16cqw; }
+.blog-preview .blog-preview-window { top: 43%; }
