@@ -142,7 +142,7 @@ if (!document.querySelector('#app > .intro')) document.querySelector<HTMLDivElem
         <article class="work-project">
           <h3>1776연구소 굿즈작업</h3>
           <button class="institute-preview everylife-preview" type="button" aria-label="1776연구소 굿즈 프로젝트 상세 보기">
-            <img src="./projects/1776/sticker-4-cover.svg" alt="1776연구소 북극곰 캐릭터 스티커" loading="eager" decoding="async">
+            <img src="./projects/1776/sticker-4-cover-hires.png" alt="1776연구소 북극곰 캐릭터 스티커" loading="eager" decoding="async">
             <span class="everylife-card-number">01</span>
             <span class="everylife-card-caption"><strong>1776 Institute.</strong><span>Merch Sticker ↗</span></span>
           </button>
