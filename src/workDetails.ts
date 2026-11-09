@@ -114,7 +114,7 @@ logoDialog.innerHTML = `<button class="personal-dialog-close" type="button" aria
       <div>
         <p>연금개혁청년행동을 위한 로고 디자인입니다. 심볼과 한글 로고타입을 결합하고, 검정·초록의 두 가지 색상으로 구성했습니다.</p>
         <dl class="goods-facts">
-          <div><dt>Role</dt><dd>Logo Design · Graphic Design</dd></div>
+          <div><dt>Role</dt><dd>Logo Design · Graphic Design</dd></div><div><dt>Tool</dt><dd>Adobe Illustrator</dd></div>
           <div><dt>Format</dt><dd>Symbol + Korean Logotype</dd></div>
         </dl>
       </div>
@@ -279,7 +279,7 @@ bookletCase.innerHTML = `
     <div>
       <p>「MZ세대가 생각하는 국가 미래를 위한 연금개혁 방향」 책자의 표지 디자인입니다. 제목과 연금 기금의 변화를 보여주는 그래픽을 중심으로 구성했습니다.</p>
       <dl class="goods-facts">
-        <div><dt>Role</dt><dd>책자 표지디자인 · Graphic Design</dd></div>
+        <div><dt>Role</dt><dd>책자 표지디자인 · Graphic Design</dd></div><div><dt>Tool</dt><dd>Adobe Illustrator</dd></div>
         <div><dt>Year</dt><dd>2024</dd></div>
       </dl>
     </div>
@@ -586,7 +586,7 @@ instituteDialog.innerHTML = `<button class="personal-dialog-close" type="button"
     <header class="goods-hero"><h2>1776<br>Institute.</h2></header>
     <section class="goods-section goods-overview dialog-copy">
       <span class="eyebrow">Merch Sticker</span><h2 id="institute-dialog-title">1776연구소 굿즈작업</h2>
-      <div><p>1776연구소를 위한 굿즈 스티커 디자인입니다. 자유의 종, 캐릭터, 타이포그래피를 활용한 네 가지 스티커를 제작했습니다.</p><dl class="goods-facts"><div><dt>Role</dt><dd>Illustration · Graphic Design</dd></div></dl></div>
+      <div><p>1776연구소를 위한 굿즈 스티커 디자인입니다. 자유의 종, 캐릭터, 타이포그래피를 활용한 네 가지 스티커를 제작했습니다.</p><dl class="goods-facts"><div><dt>Role</dt><dd>Illustration · Graphic Design</dd></div><div><dt>Tool</dt><dd>Adobe Illustrator</dd></div></dl></div>
     </section>
     <section class="goods-section"><div class="goods-section-heading"><span class="goods-index">COLOR PALETTE</span></div>
       <div class="goods-palette"><div><i style="background:#EFE8D5"></i><span>Cream</span><small>#EFE8D5</small></div><div><i style="background:#D8B128"></i><span>Gold</span><small>#D8B128</small></div><div><i style="background:#F6F5AF"></i><span>Lemon</span><small>#F6F5AF</small></div><div><i style="background:#E91D46"></i><span>Red</span><small>#E91D46</small></div><div><i style="background:#0B0D09"></i><span>Black</span><small>#0B0D09</small></div></div>
