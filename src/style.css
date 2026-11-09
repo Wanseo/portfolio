@@ -3819,3 +3819,5 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 .mms-preview { align-items: center; }
 .mms-preview-logo { display: block; width: 12.8cqw; height: 12.8cqw; object-fit: contain; }
 .mms-preview-screens { width: 100%; }
+
+.mms-preview-logo { background: #fff; border-radius: 23%; }
