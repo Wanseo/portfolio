@@ -39,6 +39,10 @@
   gap: clamp(1rem, 2vw, 2rem);
 }
 
+.work-project-grid--freelance {
+  margin-bottom: clamp(3rem, 5vw, 5rem);
+}
+
 .work-project {
   display: flex;
   flex-direction: column;

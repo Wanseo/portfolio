@@ -137,6 +137,24 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       <header class="work-overview-heading">
         <h2>Freelance Design Work</h2>
       </header>
+      <div class="work-project-grid work-project-grid--freelance">
+        <article class="work-project">
+          <h3>1776연구소 굿즈작업</h3>
+          <div class="work-project__placeholder" role="img" aria-label="1776연구소 굿즈작업 대표 이미지 준비 중"></div>
+        </article>
+        <article class="work-project">
+          <h3>연개청 로고제작</h3>
+          <div class="work-project__placeholder" role="img" aria-label="연개청 로고제작 대표 이미지 준비 중"></div>
+        </article>
+        <article class="work-project">
+          <h3>연개청 책자제작</h3>
+          <div class="work-project__placeholder" role="img" aria-label="연개청 책자제작 대표 이미지 준비 중"></div>
+        </article>
+        <article class="work-project">
+          <h3>에브리라이프 굿즈작업</h3>
+          <div class="work-project__placeholder" role="img" aria-label="에브리라이프 굿즈작업 대표 이미지 준비 중"></div>
+        </article>
+      </div>
       <header class="work-overview-heading">
         <h2>Build Up Korea</h2>
       </header>
