@@ -3445,7 +3445,7 @@ h1 {
 .everylife-preview,
 .personal-project-preview,
 .newsletter-preview {
-  border: 1px solid #000;
+  border: 0.5px solid #000;
   box-sizing: border-box;
 }
 
