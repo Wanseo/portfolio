@@ -3791,3 +3791,6 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 
 .blog-preview-logo { position: absolute; top: 24%; left: 40%; width: 20cqw; height: 20cqw; object-fit: contain; }
 .blog-preview .blog-preview-window { position: absolute; top: 49%; left: 8%; width: 84%; }
+
+.newsletter-preview img.newsletter-platform-logo { top: 18%; bottom: auto; }
+.newsletter-preview-title { top: 31%; }
