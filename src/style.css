@@ -3519,7 +3519,7 @@ h1 {
 .blog-preview-window-bottom { display: block; padding: 12px; font-size: 8px; letter-spacing: 1px; }
 .blog-preview-caption { display: flex; justify-content: space-between; font-size: 11px; }
 .blog-case-dialog .goods-case { --everylife-purple: #153ba1; --everylife-on-purple: #fff; }
-.blog-case-dialog .blog-case-hero { padding: 48px 7%; }
+.blog-case-dialog .blog-case-hero { padding: 48px 7%; background: #05e371; }
 .blog-case-dialog .blog-case-hero > span { font-size: 10px; letter-spacing: 1.5px; }
 .blog-case-dialog .blog-case-hero h2 { margin: 40px 0 24px; font: 700 clamp(38px, 8vw, 72px)/1.1 Arial, sans-serif; letter-spacing: -.05em; }
 .blog-case-dialog .blog-case-hero > p { font-size: 16px; }
