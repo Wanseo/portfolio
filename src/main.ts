@@ -656,8 +656,20 @@ menuLinks.forEach((menuLink) => {
     portfolioPanels.forEach((panel) => {
       panel.hidden = panel.id !== menuLink.dataset.panel
     })
+    try {
+      window.sessionStorage.setItem('portfolio-panel', menuLink.dataset.panel ?? 'introduce')
+    } catch {
+      // Navigation works even when browser storage is unavailable.
+    }
   })
 })
+
+try {
+  const savedPanel = window.sessionStorage.getItem('portfolio-panel')
+  Array.from(menuLinks).find((link) => !link.hidden && link.dataset.panel === savedPanel)?.click()
+} catch {
+  // Use the default Cover Letter when browser storage is unavailable.
+}
 
 document.querySelectorAll<HTMLAnchorElement>('[data-work-link]').forEach((link) => {
   link.addEventListener('click', (event) => {
