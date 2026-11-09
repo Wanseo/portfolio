@@ -3393,3 +3393,5 @@ h1 {
 .booklet-dialog-heading { padding: 40px 64px 24px; background: #ebeeef; }
 .booklet-dialog-heading svg { display: block; width: min(100%, 400px); height: auto; margin-inline: auto; }
 @media (max-width: 480px) { .booklet-dialog-heading { padding: 56px 24px 24px; } }
+
+.work-logo-preview { border: 2px solid #00C853; box-sizing: border-box; }
