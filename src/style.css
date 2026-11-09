@@ -3888,3 +3888,8 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 .institute-sticker-grid a { display: block; overflow: hidden; border-radius: 4px; background: #fff; }
 .institute-sticker-grid img { display: block; width: 100%; height: auto; }
 @media (max-width: 480px) { .institute-sticker-grid { grid-template-columns: 1fr; gap: 16px; } }
+
+.kakao-preview, .sns-preview { padding: 10%; gap: 5cqw; }
+.kakao-preview-logo, .sns-preview-instagram { position: absolute; top: 15.1%; left: 50%; width: 12.8cqw; height: 12.8cqw; object-fit: contain; transform: translateX(-50%); }
+.kakao-preview .channel-preview-art, .sns-preview .channel-preview-art { position: absolute; top: 35%; left: 50%; transform: translateX(-50%); }
+.kakao-preview-count, .sns-preview-result { position: absolute; bottom: 9%; left: 50%; transform: translateX(-50%); white-space: nowrap; }
