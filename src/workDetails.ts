@@ -617,3 +617,28 @@ instituteDialog.addEventListener('click', (event) => {
   if (event.clientX < bounds.left || event.clientX > bounds.right
     || event.clientY < bounds.top || event.clientY > bounds.bottom) instituteDialog.close()
 })
+
+const stickerZoomDialog = document.createElement('dialog')
+stickerZoomDialog.className = 'institute-sticker-zoom'
+stickerZoomDialog.setAttribute('aria-label', '1776 스티커 확대 보기')
+stickerZoomDialog.innerHTML = '<button class="sticker-zoom-close" type="button" aria-label="확대 이미지 닫기">×</button><img alt="">'
+document.body.append(stickerZoomDialog)
+let stickerZoomTrigger: HTMLAnchorElement | null = null
+instituteDialog.querySelectorAll<HTMLAnchorElement>('.institute-sticker-grid a').forEach((link) => {
+  link.addEventListener('click', (event) => {
+    event.preventDefault()
+    stickerZoomTrigger = link
+    const image = stickerZoomDialog.querySelector('img')!
+    image.src = link.href
+    image.alt = link.querySelector('img')?.alt ?? '1776 스티커'
+    stickerZoomDialog.showModal()
+  })
+})
+stickerZoomDialog.querySelector('button')?.addEventListener('click', () => stickerZoomDialog.close())
+stickerZoomDialog.addEventListener('close', () => stickerZoomTrigger?.focus({ preventScroll: true }))
+stickerZoomDialog.addEventListener('click', (event) => {
+  if (event.target !== stickerZoomDialog) return
+  const bounds = stickerZoomDialog.getBoundingClientRect()
+  if (event.clientX < bounds.left || event.clientX > bounds.right
+    || event.clientY < bounds.top || event.clientY > bounds.bottom) stickerZoomDialog.close()
+})
