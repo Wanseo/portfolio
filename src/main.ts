@@ -189,7 +189,11 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         </article>
         <article class="work-project">
           <h3>블로그 관리</h3>
-          <div class="work-project__placeholder" role="img" aria-label="블로그 관리 대표 이미지 준비 중"></div>
+          <button class="blog-preview" type="button" aria-label="빌드업코리아 네이버 블로그 작업 상세 보기">
+            <span class="blog-preview-label">NAVER BLOG</span>
+            <span class="blog-preview-window"><span class="blog-preview-toolbar"><i></i><i></i><i></i><span>blog.naver.com/bukofficial</span></span><svg viewBox="0 29 1040 467" role="img" aria-label="빌드업코리아2025 블로그 메인 배너"><image href="./projects/buildup-blog.png" width="1040" height="882" /></svg><span class="blog-preview-window-bottom">BUILD UP KOREA 2025</span></span>
+            <span class="blog-preview-caption">빌드업코리아 공식 블로그 <span aria-hidden="true">↗</span></span>
+          </button>
         </article>
         <article class="work-project">
           <h3>문자관리</h3>
@@ -2305,3 +2309,39 @@ bookletCase.innerHTML = `
 bookletDialog.replaceChildren(...(bookletCloseButton ? [bookletCloseButton] : []), bookletCase)
 bookletDialog.setAttribute('aria-labelledby', 'booklet-case-title')
 bookletDialog.removeAttribute('aria-label')
+
+const blogTrigger = document.querySelector<HTMLButtonElement>('.blog-preview')
+const blogDialog = document.createElement('dialog')
+blogDialog.className = 'personal-project-dialog everylife-dialog blog-case-dialog'
+blogDialog.setAttribute('aria-labelledby', 'blog-case-title')
+blogDialog.innerHTML = `<button class="personal-dialog-close" type="button" aria-label="닫기">×</button>
+  <article class="goods-case">
+    <header class="goods-hero blog-case-hero"><span>BUILD UP KOREA 2025</span><h2>Naver Blog</h2><p>블로그 기획/제작 · 운영</p></header>
+    <section class="goods-section goods-overview dialog-copy">
+      <span class="eyebrow">Content Planning · Blog</span><h2 id="blog-case-title">빌드업코리아 공식 블로그</h2>
+      <div><p>빌드업코리아의 행사 소식과 콘텐츠를 전하는 네이버 블로그입니다. 행사 브랜드를 담은 메인 화면과 ABOUT, EVENTS, NEWSLETTER, NOTICE, CONTENTS 메뉴로 구성되어 있습니다.</p>
+        <dl class="goods-facts"><div><dt>Role</dt><dd>블로그 기획 · 콘텐츠 제작 · 운영</dd></div><div><dt>Channel</dt><dd>Naver Blog</dd></div></dl>
+      </div>
+    </section>
+    <section class="goods-section blog-case-screen"><div class="goods-section-heading"><span class="goods-index">BLOG MAIN</span></div>
+      <img class="goods-board" src="./projects/buildup-blog.png" alt="빌드업코리아 네이버 블로그 전체 화면" loading="lazy">
+    </section>
+    <section class="goods-section blog-case-link"><a href="https://blog.naver.com/bukofficial" target="_blank" rel="noopener noreferrer">VISIT BLOG <span aria-hidden="true">↗</span></a></section>
+  </article>`
+document.body.append(blogDialog)
+blogTrigger?.addEventListener('click', () => {
+  blogDialog.showModal()
+  blogDialog.scrollTop = 0
+  document.body.style.overflow = 'hidden'
+})
+blogDialog.querySelector('button')?.addEventListener('click', () => blogDialog.close())
+blogDialog.addEventListener('close', () => {
+  document.body.style.overflow = ''
+  blogTrigger?.focus()
+})
+blogDialog.addEventListener('click', (event) => {
+  if (event.target !== blogDialog) return
+  const bounds = blogDialog.getBoundingClientRect()
+  if (event.clientX < bounds.left || event.clientX > bounds.right
+    || event.clientY < bounds.top || event.clientY > bounds.bottom) blogDialog.close()
+})

@@ -3501,3 +3501,21 @@ h1 {
 .work-booklet-preview { background: #f5f7f8; }
 .work-booklet-preview > img,
 .work-booklet-preview .booklet-preview-badge { filter: brightness(1.045); }
+
+.blog-preview { display: flex; flex-direction: column; justify-content: center; gap: 7%; width: 100%; aspect-ratio: 1; padding: 8%; border: .5px solid #000; background: #eef2ff; color: #152e72; cursor: pointer; text-align: left; }
+.blog-preview-label { font-size: 10px; letter-spacing: 2px; font-weight: 700; }
+.blog-preview-window { display: block; overflow: hidden; border-radius: 6px; background: #fff; box-shadow: 0 12px 25px #152e7226; }
+.blog-preview-toolbar { display: flex; align-items: center; gap: 4px; padding: 8px; background: #fafafa; }
+.blog-preview-toolbar i { width: 4px; height: 4px; border-radius: 50%; background: #bfc9db; }
+.blog-preview-toolbar > span { margin-left: 6px; font-size: 6px; color: #6b7280; }
+.blog-preview-window svg { display: block; width: 100%; height: auto; }
+.blog-preview-window-bottom { display: block; padding: 12px; font-size: 8px; letter-spacing: 1px; }
+.blog-preview-caption { display: flex; justify-content: space-between; font-size: 11px; }
+.blog-case-dialog .goods-case { --everylife-purple: #153ba1; --everylife-on-purple: #fff; }
+.blog-case-dialog .blog-case-hero { padding: 48px 7%; }
+.blog-case-dialog .blog-case-hero > span { font-size: 10px; letter-spacing: 1.5px; }
+.blog-case-dialog .blog-case-hero h2 { margin: 40px 0 24px; font: 700 clamp(38px, 8vw, 72px)/1.1 Arial, sans-serif; letter-spacing: -.05em; }
+.blog-case-dialog .blog-case-hero > p { font-size: 16px; }
+.blog-case-dialog .blog-case-screen { background: #eef2ff; }
+.blog-case-link a { display: inline-flex; justify-content: space-between; gap: 48px; padding: 16px 24px; border: 1px solid #171715; color: #171715; text-decoration: none; font-size: 12px; }
+.blog-case-link a:hover { background: #171715; color: #fff; }
