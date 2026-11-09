@@ -2078,3 +2078,28 @@ everylifeDialog.addEventListener('click', (event) => {
   if (event.clientX < bounds.left || event.clientX > bounds.right
     || event.clientY < bounds.top || event.clientY > bounds.bottom) everylifeDialog.close()
 })
+
+const bookletTrigger = document.querySelector<HTMLAnchorElement>('.work-booklet-preview')
+const bookletDialog = document.createElement('dialog')
+bookletDialog.className = 'personal-project-dialog booklet-dialog'
+bookletDialog.setAttribute('aria-label', '연개청 책자제작 상세 화면')
+bookletDialog.innerHTML = `<button class="personal-dialog-close" type="button" aria-label="닫기">×</button>
+  <img src="./projects/yeongae-booklet.png" alt="2024년 연금개혁 책자 전체 표지">`
+document.body.append(bookletDialog)
+bookletTrigger?.addEventListener('click', (event) => {
+  event.preventDefault()
+  bookletDialog.showModal()
+  bookletDialog.scrollTop = 0
+  document.body.style.overflow = 'hidden'
+})
+bookletDialog.querySelector('button')?.addEventListener('click', () => bookletDialog.close())
+bookletDialog.addEventListener('close', () => {
+  document.body.style.overflow = ''
+  bookletTrigger?.focus()
+})
+bookletDialog.addEventListener('click', (event) => {
+  if (event.target !== bookletDialog) return
+  const bounds = bookletDialog.getBoundingClientRect()
+  if (event.clientX < bounds.left || event.clientX > bounds.right
+    || event.clientY < bounds.top || event.clientY > bounds.bottom) bookletDialog.close()
+})
