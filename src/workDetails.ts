@@ -456,3 +456,41 @@ mmsDialog.querySelectorAll<HTMLButtonElement>('.mms-image-toggle').forEach((butt
     button.focus({ preventScroll: true })
   })
 })
+
+const kakaoTrigger = document.querySelector<HTMLButtonElement>('.kakao-preview')
+const kakaoDialog = document.createElement('dialog')
+kakaoDialog.className = 'personal-project-dialog everylife-dialog kakao-case-dialog'
+kakaoDialog.setAttribute('aria-labelledby', 'kakao-case-title')
+kakaoDialog.innerHTML = `<button class="personal-dialog-close" type="button" aria-label="닫기">×</button>
+  <article class="goods-case">
+    <header class="goods-hero kakao-case-hero"><span>BUILD UP KOREA</span><h2>Kakao<br>Channel</h2><p>카카오톡 채널 운영</p></header>
+    <section class="goods-section goods-overview dialog-copy"><span class="eyebrow">Channel Management</span><h2 id="kakao-case-title">카카오톡 채널관리</h2>
+      <div><p>빌드업코리아 카카오톡 채널 운영 작업입니다. 2025년 개설 초기와 2026년의 채널 친구 수를 비교해 정리했습니다.</p>
+        <dl class="goods-facts"><div><dt>Role</dt><dd>카카오톡 채널 운영</dd></div><div><dt>Channel</dt><dd>KakaoTalk Channel</dd></div></dl>
+      </div>
+    </section>
+    <section class="goods-section kakao-results"><div class="goods-section-heading"><span class="goods-index">CHANNEL GROWTH</span></div>
+      <div class="kakao-comparison">
+        <section class="kakao-channel-card"><span class="kakao-period">2025 · 개설 초</span><div class="kakao-card-brand"><span class="kakao-brand-icon">BUK</span><strong>빌드업코리아 <span class="kakao-verified" aria-label="인증 채널">✓</span></strong></div><span class="kakao-count-label">채널 친구 수</span><p class="kakao-count">273<span>명</span></p></section>
+        <section class="kakao-channel-card kakao-channel-card--current"><span class="kakao-period">2026</span><div class="kakao-card-brand"><span class="kakao-brand-icon">BUK</span><strong>빌드업코리아 <span class="kakao-verified" aria-label="인증 채널">✓</span></strong></div><span class="kakao-count-label">채널 친구 수</span><p class="kakao-count">1,089<span>명</span></p></section>
+      </div>
+      <p class="kakao-source-note">제공된 채널 화면 기준 · 가독성을 위해 텍스트와 수치로 재구성</p>
+    </section>
+  </article>`
+document.body.append(kakaoDialog)
+kakaoTrigger?.addEventListener('click', () => {
+  kakaoDialog.showModal()
+  kakaoDialog.scrollTop = 0
+  document.body.style.overflow = 'hidden'
+})
+kakaoDialog.querySelector('button')?.addEventListener('click', () => kakaoDialog.close())
+kakaoDialog.addEventListener('close', () => {
+  document.body.style.overflow = ''
+  kakaoTrigger?.focus()
+})
+kakaoDialog.addEventListener('click', (event) => {
+  if (event.target !== kakaoDialog) return
+  const bounds = kakaoDialog.getBoundingClientRect()
+  if (event.clientX < bounds.left || event.clientX > bounds.right
+    || event.clientY < bounds.top || event.clientY > bounds.bottom) kakaoDialog.close()
+})

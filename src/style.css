@@ -3676,3 +3676,31 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
     box-sizing: border-box;
   }
 }
+
+.kakao-preview { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 5cqw; width: 100%; aspect-ratio: 1; padding: 10%; border: .5px solid #000; background: #fee500; color: #191919; cursor: pointer; }
+.kakao-preview-icon { display: grid; place-items: center; position: relative; width: 20cqw; height: 17cqw; border-radius: 40%; background: #191919; color: #fee500; font: 700 10cqw Arial, sans-serif; }
+.kakao-preview-icon::after { content: ''; position: absolute; left: 3cqw; bottom: -2cqw; border-top: 4cqw solid #191919; border-right: 4cqw solid transparent; }
+.kakao-preview-title { font-size: 5.5cqw; font-weight: 700; }
+.kakao-preview-count { display: flex; align-items: center; gap: 3cqw; font: 700 7cqw Arial, sans-serif; }
+.kakao-preview-count small { display: block; margin-top: 2cqw; font-size: 2.6cqw; font-weight: 400; }
+.kakao-preview-arrow { font-size: 5cqw; }
+.kakao-case-dialog .goods-case { --everylife-purple: #fee500; --everylife-on-purple: #191919; }
+.kakao-case-dialog .kakao-case-hero { padding: 48px 7%; }
+.kakao-case-dialog .kakao-case-hero > span { font-size: 10px; letter-spacing: 1.5px; }
+.kakao-case-dialog .kakao-case-hero h2 { margin: 40px 0 24px; font: 700 clamp(40px, 8vw, 72px)/1.1 Arial, sans-serif; letter-spacing: -.05em; }
+.kakao-case-dialog .kakao-case-hero > p { font-size: 16px; }
+.kakao-results { background: #f5f5f2; }
+.kakao-comparison { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.kakao-channel-card { min-width: 0; padding: 24px; background: #fff; border: 1px solid #ddd; border-radius: 12px; }
+.kakao-channel-card--current { border-color: #d3bc00; }
+.kakao-period { display: block; margin-bottom: 24px; font-size: 12px; color: #777; }
+.kakao-card-brand { display: flex; align-items: center; gap: 8px; margin-bottom: 24px; }
+.kakao-card-brand strong { font-size: 13px; }
+.kakao-brand-icon { display: grid; place-items: center; flex-shrink: 0; width: 36px; height: 36px; border-radius: 50%; background: #153ba1; color: #fff; font: 700 10px Arial, sans-serif; }
+.kakao-verified { color: #2787da; }
+.kakao-count-label { font-size: 11px; color: #777; }
+.kakao-case-dialog .kakao-count { margin: 10px 0 0; color: #191919; font: 700 clamp(24px, 5vw, 42px)/1.2 Arial, sans-serif; }
+.kakao-count > span { margin-left: 6px; font-size: 13px; font-weight: 400; }
+.kakao-case-dialog .kakao-source-note { margin-top: 20px; font-size: 10px; color: #777; }
+@media (max-width: 760px) { .kakao-preview { border-width: 1px; } }
+@media (max-width: 480px) { .kakao-comparison { gap: 10px; } .kakao-channel-card { padding: 16px 12px; } .kakao-card-brand { flex-wrap: wrap; } }

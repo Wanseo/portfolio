@@ -190,7 +190,11 @@ if (!document.querySelector('#app > .intro')) document.querySelector<HTMLDivElem
         </article>
         <article class="work-project">
           <h3>카카오톡 채널관리</h3>
-          <div class="work-project__placeholder" role="img" aria-label="카카오톡 채널관리 대표 이미지 준비 중"></div>
+          <button class="kakao-preview" type="button" aria-label="빌드업코리아 카카오톡 채널 운영 상세 보기">
+            <span class="kakao-preview-icon" aria-hidden="true">Ch</span>
+            <span class="kakao-preview-title">카카오톡 채널</span>
+            <span class="kakao-preview-count"><span>273<small>2025 개설 초</small></span><span class="kakao-preview-arrow">→</span><span>1,089<small>2026</small></span></span>
+          </button>
         </article>
         <article class="work-project">
           <h3>SNS관리</h3>
