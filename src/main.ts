@@ -2229,3 +2229,18 @@ if (thirdNewsletter) {
       <svg class="newsletter-speakers" viewBox="0 460 244 164" role="img" aria-label="빌드업코리아2025 연사 안내 포스터"><image href="./projects/newsletter-3.png" width="244" height="624" /></svg>
     </article>`
 }
+
+const secondNewsletter = newsletterDialog.querySelectorAll('figure')[1]
+if (secondNewsletter) {
+  secondNewsletter.innerHTML = `<figcaption>02 · D-49</figcaption>
+    <article class="newsletter-readable">
+      <header><span>Newsletter</span><h3>빌드업코리아2025 (D-49)</h3></header>
+      <p><strong>빌드업코리아2025 (D-49) 연사 라인업 1차 오픈!</strong><br>일시: 09.05-06 (금-토) 9:00-18:00, 장소: 킨텍스 제2전시장 8홀</p>
+      <p>-<br>안녕하세요, 빌더님😊<br>빌드업코리아2025 소식 전달드립니다.</p>
+      <p>🎉공식사이트에서 <strong>빌드업코리아2025 연사 정보가 오픈</strong>되었습니다!<br>지금 바로 공식사이트를 방문해 빌드업코리아2025 연사정보를 확인하세요!</p>
+      <p><strong>빌드업코리아2025 연사정보 확인 &gt;&gt; <a href="https://www.buildupkorea.org/" target="_blank" rel="noopener noreferrer">https://www.buildupkorea.org/</a></strong></p>
+      <p>🎁뉴스레터 구독자에게 빌드업코리아2025 <strong>10% 추가할인 티켓 링크</strong>를 보내드립니다.</p>
+      <p><strong>BUK 2025 티켓 10% 추가할인 링크 &gt;&gt; <a href="https://booking.naver.com/booking/5/bizes/1102750/items/6875487?preview=1" target="_blank" rel="noopener noreferrer">https://booking.naver.com/booking/5/bizes/1102750/items/6875487?preview=1</a></strong></p>
+      <p>감사합니다.</p>
+    </article>`
+}
