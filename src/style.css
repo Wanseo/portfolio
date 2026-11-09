@@ -3967,11 +3967,11 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 .work-logo-preview > img { padding-bottom: 0; }
 
 @media (min-width: 761px) {
-  .kakao-case-dialog .sns-project-board, .sns-case-dialog .sns-project-board { margin-left: -24px; grid-template-columns: 1fr 1.25fr; column-gap: 16px; }
+  .kakao-case-dialog .sns-project-board, .sns-case-dialog .sns-project-board { position: relative; left: 20px; margin-left: -24px; grid-template-columns: 1fr 1.25fr; column-gap: 16px; }
 }
 .sns-case-dialog .sns-board-screens { width: 94%; margin-left: 0; margin-right: auto; }
 @media (max-width: 760px) {
-  .kakao-case-dialog .sns-project-board, .sns-case-dialog .sns-project-board { margin-left: -8px; }
+  .kakao-case-dialog .sns-project-board, .sns-case-dialog .sns-project-board { position: relative; left: 8px; margin-left: -8px; }
 }
 
 .logo-dialog .logo-case-board { background: #fff; }
