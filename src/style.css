@@ -3472,7 +3472,7 @@ h1 {
 .booklet-case-dialog .booklet-case-hero > span { font-size: 10px; letter-spacing: 1.5px; }
 .booklet-case-dialog .booklet-case-hero h2 { margin: 40px 0 24px; font: 700 clamp(44px, 9vw, 80px)/1.1 Arial, sans-serif; letter-spacing: -.05em; }
 .booklet-case-dialog .booklet-case-hero > p { font-size: 16px; letter-spacing: 0; }
-.booklet-case-dialog .booklet-case-cover { background: #ebeeef; }
+.booklet-case-dialog .booklet-case-cover { background: #fff; }
 .booklet-case-dialog .goods-application-image { margin-top: 0; }
 .booklet-case-dialog .personal-dialog-close { margin-top: 16px; margin-right: 16px; top: 16px; }
 
