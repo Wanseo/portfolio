@@ -3570,3 +3570,5 @@ h1 {
 .blog-readable span { overflow-wrap: anywhere; }
 
 .work-logo-preview img { transform: translateY(-.5%) scale(.85); }
+
+.work-logo-preview img, .logo-dialog .logo-case-two-colors img { filter: contrast(1.12) saturate(1.05); }

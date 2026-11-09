@@ -151,7 +151,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         </article>
         <article class="work-project">
           <h3>연개청 로고제작</h3>
-          <a class="work-logo-preview" href="./projects/yeongae-logo-clean.png" target="_blank" rel="noopener noreferrer" aria-label="연금개혁청년행동 로고 크게 보기"><img src="./projects/yeongae-logo-clean.png" alt="연금개혁청년행동 초록색 로고" loading="lazy"></a>
+          <a class="work-logo-preview" href="./projects/yeongae-logo-sharp.png" target="_blank" rel="noopener noreferrer" aria-label="연금개혁청년행동 로고 크게 보기"><img src="./projects/yeongae-logo-sharp.png" alt="연금개혁청년행동 초록색 로고" loading="lazy"></a>
         </article>
         <article class="work-project">
           <h3>연개청 책자 표지디자인</h3>
@@ -2135,7 +2135,7 @@ logoDialog.innerHTML = `<button class="personal-dialog-close" type="button" aria
     <section class="goods-section goods-design-board logo-case-board">
       <div class="goods-section-heading"><span class="goods-index">DESIGN BOARD</span></div>
       <div class="goods-board-link logo-case-two-colors">
-        <img class="goods-board" src="./projects/yeongae-logo-clean.png" alt="연금개혁청년행동 로고의 검정·초록 색상 버전" loading="lazy">
+        <img class="goods-board" src="./projects/yeongae-logo-sharp.png" alt="연금개혁청년행동 로고의 검정·초록 색상 버전" loading="lazy">
       </div>
     </section>
     <section class="goods-section logo-case-system">
