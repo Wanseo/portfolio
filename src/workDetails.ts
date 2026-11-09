@@ -252,7 +252,8 @@ newsletterCase.innerHTML = `
     <span class="eyebrow">Content Planning · Newsletter</span>
     <h2>빌드업코리아 뉴스레터</h2>
     <div>
-      <p>빌드업코리아2025 행사 소식을 전하는 뉴스레터입니다. 행사 등록과 할인 혜택, 연사 라인업, 공식 슬로건을 회차별로 소개했습니다.</p>
+      <p>빌드업코리아 2025 국제 컨퍼런스의 인지도 확대와 참가자 유입을 목적으로 기획·제작한 뉴스레터입니다.</p>
+      <p>행사 등록 및 얼리버드 할인 혜택, 글로벌 연사 라인업, 공식 슬로건 등 주요 정보를 효과적으로 전달할 수 있도록 콘텐츠를 구성했습니다. 잠재 참가자의 관심과 참여를 유도하는 동시에, 단체의 브랜드 메시지를 일관되게 전달하고 지속적인 구독자 및 팔로워 확보로 이어질 수 있도록 기획했습니다.</p>
       <dl class="goods-facts">
         <div><dt>Role</dt><dd>뉴스레터 기획 · 콘텐츠 제작</dd></div>
         <div><dt>Tool</dt><dd>Stibee</dd></div>
@@ -260,7 +261,7 @@ newsletterCase.innerHTML = `
     </div>
   </section>
   <section class="goods-section newsletter-case-work">
-    <div class="goods-section-heading"><span class="goods-index">NEWSLETTER ARCHIVE</span></div>
+    <div class="goods-section-heading"><span class="goods-index">NEWSLETTER SAMPLE</span></div>
   </section>`
 const newsletterPages = newsletterDialog.querySelector('.newsletter-dialog-pages')
 if (newsletterPages) newsletterCase.querySelector('.newsletter-case-work')?.append(newsletterPages)
