@@ -3927,3 +3927,7 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 .kakao-case-dialog .sns-board-copy h3 { margin: 0 0 20px; font-size: clamp(16px, 2.5vw, 24px); font-weight: 700; }
 .sns-case-result { background: #fff; }
 .sns-case-dialog .sns-growth, .sns-case-dialog .sns-growth span { color: #171715; }
+
+.work-card-arrow { position: absolute; right: 6%; bottom: 6%; z-index: 3; color: #171715; font: 600 5cqw/1.4 Arial, sans-serif; pointer-events: none; }
+.personal-project-preview .work-card-arrow, .everylife-preview:not(.institute-preview) .work-card-arrow { color: #fff; }
+.work-preview-caption { right: 14%; }

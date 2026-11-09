@@ -143,24 +143,24 @@ if (!document.querySelector('#app > .intro')) document.querySelector<HTMLDivElem
           <h3>1776연구소 굿즈작업</h3>
           <button class="institute-preview everylife-preview" type="button" aria-label="1776연구소 굿즈 프로젝트 상세 보기">
             <img src="./projects/1776/sticker-4-cover-hires.png" alt="1776연구소 북극곰 캐릭터 스티커" loading="eager" decoding="async">
-            <span class="everylife-card-caption"><strong>1776 Institute.</strong><span>Merch Sticker ↗</span></span>
-          </button>
+            <span class="everylife-card-caption"><strong>1776 Institute.</strong><span>Merch Sticker</span></span>
+          <span class="work-card-arrow" aria-hidden="true">↗</span></button>
         </article>
         <article class="work-project">
           <h3>연개청 로고제작</h3>
-          <a class="work-logo-preview" href="./projects/yeongae-logo-sharp.png" target="_blank" rel="noopener noreferrer" aria-label="연금개혁청년행동 로고 크게 보기"><img src="./projects/yeongae-logo-green-transparent.png" alt="연금개혁청년행동 초록색 로고" loading="eager" decoding="async"><span class="work-preview-caption">fairpensionforall <span aria-hidden="true">↗</span></span></a>
+          <a class="work-logo-preview" href="./projects/yeongae-logo-sharp.png" target="_blank" rel="noopener noreferrer" aria-label="연금개혁청년행동 로고 크게 보기"><img src="./projects/yeongae-logo-green-transparent.png" alt="연금개혁청년행동 초록색 로고" loading="eager" decoding="async"><span class="work-preview-caption">fairpensionforall</span><span class="work-card-arrow" aria-hidden="true">↗</span></a>
         </article>
         <article class="work-project">
           <h3>연개청 책자 표지디자인</h3>
-          <a class="work-booklet-preview" href="./projects/yeongae-booklet.png" target="_blank" rel="noopener noreferrer" aria-label="연개청 책자 표지 크게 보기"><svg class="booklet-preview-badge" viewBox="875 390 700 140" role="img" aria-label="2024년 연금개혁"><image href="./projects/previews/yeongae-booklet.jpg" width="2481" height="3508" /></svg><img src="./projects/previews/yeongae-booklet.jpg" alt="2024년 연금개혁 — MZ세대가 생각하는 국가 미래를 위한 연금개혁 방향 책자 표지" loading="eager" decoding="async"><span class="work-preview-caption">airpensionforall Book Cover <span aria-hidden="true">↗</span></span></a>
+          <a class="work-booklet-preview" href="./projects/yeongae-booklet.png" target="_blank" rel="noopener noreferrer" aria-label="연개청 책자 표지 크게 보기"><svg class="booklet-preview-badge" viewBox="875 390 700 140" role="img" aria-label="2024년 연금개혁"><image href="./projects/previews/yeongae-booklet.jpg" width="2481" height="3508" /></svg><img src="./projects/previews/yeongae-booklet.jpg" alt="2024년 연금개혁 — MZ세대가 생각하는 국가 미래를 위한 연금개혁 방향 책자 표지" loading="eager" decoding="async"><span class="work-preview-caption">airpensionforall Book Cover</span><span class="work-card-arrow" aria-hidden="true">↗</span></a>
         </article>
         <article class="work-project">
           <h3>에브리라이프 굿즈작업</h3>
           <button class="everylife-preview" type="button" aria-label="everylife 굿즈 프로젝트 상세 보기">
             <img src="./projects/everylife-card.webp" alt="everylife 로고와 기저귀·아기 스티커" loading="eager" decoding="async">
             <span class="everylife-card-number">01</span>
-            <span class="everylife-card-caption"><strong>everylife</strong><span>Merch Sticker ↗</span></span>
-          </button>
+            <span class="everylife-card-caption"><strong>everylife</strong><span>Merch Sticker</span></span>
+          <span class="work-card-arrow" aria-hidden="true">↗</span></button>
         </article>
       </div>
       <header class="work-overview-heading">
@@ -178,7 +178,7 @@ if (!document.querySelector('#app > .intro')) document.querySelector<HTMLDivElem
                 <figure><img src="./projects/previews/renewal-media.jpg" alt="인스타그램·유튜브 콘텐츠를 모은 미디어 페이지 시안" loading="lazy" decoding="async"><figcaption>Media</figcaption></figure>
               </div>
             </div>
-            <span class="renewal-preview-caption">메인 · About Us · 미디어 페이지 기획</span>
+            <span class="renewal-preview-caption">메인 · About Us · 미디어 페이지 기획</span><span class="work-card-arrow" aria-hidden="true">↗</span>
           </div>
         </article>
         <article class="work-project">
@@ -186,21 +186,21 @@ if (!document.querySelector('#app > .intro')) document.querySelector<HTMLDivElem
           <button class="newsletter-preview" type="button" aria-label="빌드업코리아 뉴스레터 세 편 상세 보기">
             <svg class="newsletter-envelope" viewBox="60 85 275 205" role="img" aria-label="파란 봉투 메시지 그래픽"><image href="./projects/newsletter-1.png" width="397" height="689" /></svg>
             <img class="newsletter-platform-logo" src="./projects/stibee-logo-transparent.png" alt="stibee" loading="eager" decoding="async">
-          </button>
+          <span class="work-card-arrow" aria-hidden="true">↗</span></button>
         </article>
         <article class="work-project">
           <h3>네이버 블로그 관리</h3>
           <button class="blog-preview" type="button" aria-label="빌드업코리아 네이버 블로그 작업 상세 보기">
             <img class="blog-preview-logo" src="./projects/naver-blog-logo-transparent.png" alt="네이버 블로그" loading="eager" decoding="async">
             <span class="blog-preview-window"><span class="blog-preview-toolbar"><i></i><i></i><i></i><span>blog.naver.com/bukofficial</span></span><svg viewBox="0 29 1040 467" role="img" aria-label="빌드업코리아2025 블로그 메인 배너"><image href="./projects/previews/buildup-blog.jpg" width="1040" height="882" /></svg><span class="blog-preview-window-bottom">BUILD UP KOREA 2025</span></span>
-          </button>
+          <span class="work-card-arrow" aria-hidden="true">↗</span></button>
         </article>
         <article class="work-project">
           <h3>MMS 카피라이팅</h3>
           <button class="mms-preview" type="button" aria-label="MMS 카피라이팅 작업 10개 상세 보기">
             <img class="mms-preview-logo" src="./projects/messages-logo.svg" alt="메시지" loading="eager" decoding="async">
             <span class="mms-preview-screens"><img src="./projects/previews/mms-2.jpg" alt="문자 카피라이팅 작업 예시" loading="eager" decoding="async"><img src="./projects/previews/mms-1.jpg" alt="빌드업코리아 문자 메시지" loading="eager" decoding="async"><img src="./projects/previews/mms-3.jpg" alt="문자 카피라이팅 작업 예시" loading="eager" decoding="async"></span>
-          </button>
+          <span class="work-card-arrow" aria-hidden="true">↗</span></button>
         </article>
         <article class="work-project">
           <h3>카카오톡 채널관리</h3>
@@ -208,11 +208,11 @@ if (!document.querySelector('#app > .intro')) document.querySelector<HTMLDivElem
             <img class="kakao-preview-logo" src="./projects/kakao-channel-bubble.png" alt="카카오톡 채널" loading="eager" decoding="async">
             <img class="channel-preview-art kakao-preview-art" src="./projects/kakao-channel-black.svg" alt="빌드업코리아 카카오톡 채널 운영 전후 화면" loading="lazy" decoding="async">
             <span class="kakao-preview-count"><span>273<small>2025 개설 초</small></span><span class="kakao-preview-arrow">→</span><span>1,089<small>2026</small></span></span>
-          </button>
+          <span class="work-card-arrow" aria-hidden="true">↗</span></button>
         </article>
         <article class="work-project">
           <h3>SNS관리</h3>
-          <button class="sns-preview" type="button" aria-label="SNS 콘텐츠 기획 및 제작 상세 보기"><img class="sns-preview-instagram" src="./projects/instagram-transparent.png" alt="Instagram" loading="eager" decoding="async"><svg class="channel-preview-art sns-preview-art" viewBox="26 378 563 495" role="img" aria-label="인스타그램 운영 전후 프로필과 콘텐츠 편집 화면"><image href="./projects/sns-management-black.svg" width="1724" height="912" /></svg><span class="sns-preview-result"><span>1,415<small>운영 초기</small></span><span class="sns-preview-arrow">→</span><span>1.2만<small>팔로워</small></span></span></button>
+          <button class="sns-preview" type="button" aria-label="SNS 콘텐츠 기획 및 제작 상세 보기"><img class="sns-preview-instagram" src="./projects/instagram-transparent.png" alt="Instagram" loading="eager" decoding="async"><svg class="channel-preview-art sns-preview-art" viewBox="26 378 563 495" role="img" aria-label="인스타그램 운영 전후 프로필과 콘텐츠 편집 화면"><image href="./projects/sns-management-black.svg" width="1724" height="912" /></svg><span class="sns-preview-result"><span>1,415<small>운영 초기</small></span><span class="sns-preview-arrow">→</span><span>1.2만<small>팔로워</small></span></span><span class="work-card-arrow" aria-hidden="true">↗</span></button>
         </article>
       </div>
       <header class="work-overview-heading">
@@ -223,22 +223,19 @@ if (!document.querySelector('#app > .intro')) document.querySelector<HTMLDivElem
           <h3>SKYLRK</h3>
           <a class="personal-project-preview" href="https://wanseo.github.io/swag2/" target="_blank" rel="noopener noreferrer" data-personal-project="SKYLRK" aria-label="SKYLRK 프로젝트 상세 보기">
             <video data-preview-src="./projects/moodroom.mp4" data-preview-poster="./projects/moodroom.jpg" muted loop playsinline preload="none" aria-label="SKYLRK 미리보기"></video>
-            <span class="personal-project-arrow" aria-hidden="true">↗</span>
-          </a>
+          <span class="work-card-arrow" aria-hidden="true">↗</span></a>
         </article>
         <article class="work-project">
           <h3>Guestbook</h3>
           <a class="personal-project-preview" href="https://wanseo.github.io/myfirstweb/" target="_blank" rel="noopener noreferrer" data-personal-project="Guestbook" aria-label="Guestbook 프로젝트 상세 보기">
             <video data-preview-src="./projects/guestbook.mp4" data-preview-poster="./projects/guestbook.jpg" muted loop playsinline preload="none" aria-label="Guestbook 미리보기"></video>
-            <span class="personal-project-arrow" aria-hidden="true">↗</span>
-          </a>
+          <span class="work-card-arrow" aria-hidden="true">↗</span></a>
         </article>
         <article class="work-project">
           <h3>GLYF</h3>
           <a class="personal-project-preview" href="https://wanseo.github.io/glyfing/" target="_blank" rel="noopener noreferrer" data-personal-project="GLYF" aria-label="GLYF 프로젝트 상세 보기">
             <video data-preview-src="./projects/glyfing-main.mp4" data-preview-poster="./projects/glyfing-main.jpg" muted loop playsinline preload="none" aria-label="GLYF 미리보기"></video>
-            <span class="personal-project-arrow" aria-hidden="true">↗</span>
-          </a>
+          <span class="work-card-arrow" aria-hidden="true">↗</span></a>
         </article>
       </div>
     </section>
