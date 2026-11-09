@@ -4015,7 +4015,7 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 .renewal-scroll-thumb { position: absolute; top: 0; left: 3px; right: 3px; min-height: 28px; background: #8b8495; border-radius: 6px; cursor: grab; }
 .renewal-scroll-thumb:active { cursor: grabbing; background: #655d70; }
 
-.kakao-case-dialog .sns-board-copy dl { width: fit-content; max-width: 100%; }
+.kakao-case-dialog .sns-board-copy dl, .sns-case-dialog .sns-board-copy dl { width: fit-content; max-width: 100%; }
 
 .logo-symbol-heading { display: flex; flex-direction: column; align-items: flex-start; gap: 20px; }
 .logo-symbol-only { display: block; width: 64px; height: auto; }
