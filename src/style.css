@@ -3848,3 +3848,17 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 .renewal-preview-pages img { display: block; width: 100%; aspect-ratio: 1.9; object-fit: cover; object-position: top; border: 1px solid #eeeaf3; }
 .renewal-preview-pages figcaption { margin-top: 1.5cqw; font: 500 2.5cqw Arial, sans-serif; text-align: center; }
 .renewal-preview-caption { font: 400 2.8cqw/1.4 Arial, 'Apple SD Gothic Neo', sans-serif; color: #6d657b; text-align: center; }
+
+.renewal-preview { cursor: pointer; }
+.renewal-preview:focus-visible { outline: 2px solid var(--foreground); outline-offset: 4px; }
+.renewal-case-dialog .goods-case { --everylife-purple: #514079; --everylife-on-purple: #fff; }
+.renewal-case-dialog .renewal-case-hero { padding: 48px 7%; }
+.renewal-case-hero > span { font-size: 10px; letter-spacing: 1.5px; }
+.renewal-case-dialog .renewal-case-hero h2 { margin: 36px 0 24px; font: 700 clamp(36px, 8vw, 66px)/1.1 Arial, sans-serif; letter-spacing: -.05em; }
+.renewal-case-pages { background: #f4f2fa; }
+.renewal-case-pages figure { margin: 0; }
+.renewal-case-pages figure + figure { margin-top: 40px; }
+.renewal-case-pages figcaption > span { color: #80738e; font-size: 10px; letter-spacing: 1px; }
+.renewal-case-pages h3 { margin: 8px 0; color: #211b2c; font: 700 24px Arial, sans-serif; }
+.renewal-case-pages p { margin: 0 0 18px; color: #655d70; font-size: 13px; line-height: 1.7; }
+.renewal-case-pages img { display: block; width: 100%; height: auto; border: 1px solid #dedbe8; border-radius: 6px; }

@@ -166,7 +166,7 @@ if (!document.querySelector('#app > .intro')) document.querySelector<HTMLDivElem
       <div class="work-project-grid work-project-grid--freelance">
         <article class="work-project">
           <h3>사이트 개편</h3>
-          <div class="renewal-preview" aria-label="빌드업코리아 메인, About Us, 미디어 페이지 개편 시안">
+          <div class="renewal-preview" role="button" tabindex="0" aria-haspopup="dialog" aria-label="빌드업코리아 사이트 개편 상세 보기">
             <span class="renewal-preview-title">Website Renewal</span>
             <div class="renewal-preview-browser">
               <div class="renewal-preview-toolbar" aria-hidden="true"><i></i><i></i><i></i><span>BUILD UP KOREA</span></div>
