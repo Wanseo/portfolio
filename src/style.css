@@ -3899,3 +3899,14 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 
 .institute-sticker-grid a { overflow: visible; border-radius: 0; background: transparent; }
 .institute-sticker-grid img { filter: drop-shadow(0 5px 7px #00000018); }
+
+.sns-project-board { display: grid; grid-template-columns: .9fr 1.5fr; align-items: center; gap: 28px; background: #fff; padding: 20px 0; }
+.sns-board-screens { display: block; width: 100%; height: auto; }
+.sns-board-copy { align-self: center; padding-bottom: 24px; color: #171715; }
+.sns-case-dialog .sns-board-copy h3 { margin: 0 0 8px; font-size: clamp(16px, 2.5vw, 24px); font-weight: 700; }
+.sns-case-dialog .sns-board-growth { margin: 0 0 20px; color: #171715; font-weight: 700; }
+.sns-board-copy dl { margin: 0; border-top: 1px solid #00bfd8; }
+.sns-board-copy dl > div { display: grid; grid-template-columns: 64px 1fr; gap: 12px; align-items: start; padding-top: 16px; }
+.sns-board-copy dt { padding: 5px 4px; border-radius: 20px; background: #00bfd8; color: #fff; font: 700 11px/1.4 Arial, sans-serif; text-align: center; }
+.sns-board-copy dd { margin: 0; font-size: 12px; line-height: 1.7; word-break: keep-all; }
+@media (max-width: 600px) { .sns-project-board { grid-template-columns: 1fr; gap: 24px; } .sns-board-screens { max-width: 320px; margin-inline: auto; } .sns-board-copy { padding-bottom: 0; } }
