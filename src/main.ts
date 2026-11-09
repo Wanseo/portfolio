@@ -199,7 +199,7 @@ if (!document.querySelector('#app > .intro')) document.querySelector<HTMLDivElem
         </article>
         <article class="work-project">
           <h3>SNS관리</h3>
-          <button class="sns-preview" type="button" aria-label="SNS 콘텐츠 기획 및 제작 상세 보기"><img class="sns-preview-instagram" src="./projects/instagram-transparent.png" alt="Instagram" loading="eager" decoding="async"><strong>SNS 콘텐츠<br>기획 및 제작</strong><span class="sns-preview-result">1,415 → 1.2만<small>팔로워</small></span></button>
+          <button class="sns-preview" type="button" aria-label="SNS 콘텐츠 기획 및 제작 상세 보기"><img class="sns-preview-instagram" src="./projects/instagram-transparent.png" alt="Instagram" loading="eager" decoding="async"><strong>SNS 콘텐츠 기획 및 제작</strong><span class="sns-preview-result"><span>1,415<small>운영 초기</small></span><span class="sns-preview-arrow">→</span><span>1.2만<small>팔로워</small></span></span></button>
         </article>
       </div>
       <header class="work-overview-heading">

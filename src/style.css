@@ -3770,3 +3770,10 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 .kakao-preview-logo { display: block; width: 20cqw; height: 20cqw; object-fit: contain; }
 
 .kakao-preview-logo { border-radius: 14%; }
+
+.sns-preview { align-items: center; text-align: center; gap: 5cqw; padding: 10%; }
+.sns-preview-instagram { width: 20cqw; height: 20cqw; object-fit: cover; object-position: center; }
+.sns-preview > strong { font-size: 5cqw; line-height: 1.4; white-space: nowrap; }
+.sns-preview-result { display: flex; align-items: center; gap: 3cqw; color: #191919; font: 700 7cqw Arial, sans-serif; }
+.sns-preview-result small { margin-top: 2cqw; font-size: 2.6cqw; font-weight: 400; }
+.sns-preview-arrow { font-size: 5cqw; }
