@@ -3967,3 +3967,6 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 @media (max-width: 760px) {
   .kakao-case-dialog .sns-project-board, .sns-case-dialog .sns-project-board { margin-left: -8px; }
 }
+
+.logo-dialog .logo-case-board { background: #fff; }
+.logo-dialog .logo-case-board .goods-index { color: #797b70; }
