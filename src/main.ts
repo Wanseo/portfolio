@@ -185,6 +185,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         <article class="work-project">
           <h3>뉴스레터 기획/제작</h3>
           <button class="newsletter-preview" type="button" aria-label="빌드업코리아 뉴스레터 세 편 상세 보기">
+            <span class="newsletter-preview-title">Newsletter</span>
             <svg class="newsletter-envelope" viewBox="60 85 275 205" role="img" aria-label="파란 봉투 메시지 그래픽"><image href="./projects/newsletter-1.png" width="397" height="689" /></svg>
           </button>
         </article>
