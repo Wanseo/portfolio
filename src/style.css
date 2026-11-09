@@ -3752,3 +3752,6 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
     pointer-events: none;
   }
 }
+
+.mms-preview { background: #fff; }
+.mms-preview-screens img { box-shadow: 0 2cqw 5cqw #10284422; clip-path: inset(5.5% -20% -20%); }
