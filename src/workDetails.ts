@@ -116,7 +116,6 @@ logoDialog.innerHTML = `<button class="personal-dialog-close" type="button" aria
         <p>연금개혁청년행동을 위한 로고 디자인입니다. 심볼과 한글 로고타입을 결합하고, 검정·초록의 두 가지 색상으로 구성했습니다.</p>
         <dl class="goods-facts">
           <div><dt>Role</dt><dd>Logo Design · Graphic Design</dd></div><div><dt>Tool</dt><dd>Adobe Illustrator</dd></div>
-          <div><dt>Format</dt><dd>Symbol + Korean Logotype</dd></div>
         </dl>
       </div>
     </section>
