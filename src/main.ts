@@ -2274,3 +2274,36 @@ newsletterDialog.querySelector('.newsletter-dialog-header')?.remove()
 newsletterDialog.append(newsletterCase)
 newsletterDialog.setAttribute('aria-label', '빌드업코리아 뉴스레터 기획 및 제작')
 newsletterDialog.removeAttribute('aria-labelledby')
+
+bookletDialog.classList.add('everylife-dialog', 'booklet-case-dialog')
+const bookletCloseButton = bookletDialog.querySelector('button')
+const bookletCase = document.createElement('article')
+bookletCase.className = 'goods-case'
+bookletCase.innerHTML = `
+  <header class="goods-hero booklet-case-hero">
+    <span>2024 PENSION REFORM</span>
+    <h2>연금개혁</h2>
+    <p>연개청 책자 표지디자인</p>
+  </header>
+  <section class="goods-section goods-overview dialog-copy">
+    <span class="eyebrow">Editorial · Cover Design</span>
+    <h2 id="booklet-case-title">연개청 책자 표지디자인</h2>
+    <div>
+      <p>「MZ세대가 생각하는 국가 미래를 위한 연금개혁 방향」 책자의 표지 디자인입니다. 제목과 연금 기금의 변화를 보여주는 그래픽을 중심으로 구성했습니다.</p>
+      <dl class="goods-facts">
+        <div><dt>Role</dt><dd>책자 표지디자인 · Graphic Design</dd></div>
+        <div><dt>Year</dt><dd>2024</dd></div>
+      </dl>
+    </div>
+  </section>
+  <section class="goods-section booklet-case-cover">
+    <div class="goods-section-heading"><span class="goods-index">COVER DESIGN</span></div>
+    <img class="goods-board" src="./projects/yeongae-booklet.png" alt="MZ세대가 생각하는 국가 미래를 위한 연금개혁 방향 책자 전체 표지" loading="lazy">
+  </section>
+  <section class="goods-section goods-application">
+    <div class="goods-section-heading"><span class="goods-index">APPLICATION</span></div>
+    <img class="goods-application-image" src="./projects/yeongae-booklet-photo.jpg" alt="연금개혁 행사 현장에서 촬영한 책자 실물" loading="lazy">
+  </section>`
+bookletDialog.replaceChildren(...(bookletCloseButton ? [bookletCloseButton] : []), bookletCase)
+bookletDialog.setAttribute('aria-labelledby', 'booklet-case-title')
+bookletDialog.removeAttribute('aria-label')
