@@ -3786,3 +3786,5 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 @media (max-width: 760px) {
   .work-project { --work-outline-width: 1px; }
 }
+
+.sns-preview-instagram { transform: scale(1.38); transform-origin: center; }
