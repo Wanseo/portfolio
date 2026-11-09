@@ -161,7 +161,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         </article>
         <article class="work-project">
           <h3>연개청 책자제작</h3>
-          <div class="work-project__placeholder" role="img" aria-label="연개청 책자제작 대표 이미지 준비 중"></div>
+          <a class="work-booklet-preview" href="./projects/yeongae-booklet.png" target="_blank" rel="noopener noreferrer" aria-label="연개청 책자 표지 크게 보기"><img src="./projects/yeongae-booklet.png" alt="2024년 연금개혁 — MZ세대가 생각하는 국가 미래를 위한 연금개혁 방향 책자 표지" loading="lazy"></a>
         </article>
         <article class="work-project">
           <h3>에브리라이프 굿즈작업</h3>
