@@ -99,7 +99,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
           <li class="resume-job">
             <p class="resume-job__date">2021.09 — 2024.06</p>
             <div class="resume-job__body">
-              <p class="resume-job__company">STRADVISION <span>스트라드비젼</span> <a class="resume-work-link" href="#work-stradvision" data-work-link="work-stradvision" aria-label="STRADVISION 작업 보기"><svg class="resume-work-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M4 8h8M8 4l4 4-4 4" /></svg></a></p>
+              <p class="resume-job__company">STRADVISION <span>스트라드비젼</span></p>
               <h3>Lane Detection Algorithm Engineer</h3>
               <ul><li>LD Algorithm 개선</li><li>최적 모델 학습</li><li>데이터베이스 구축 및 관리</li></ul>
             </div>
@@ -141,14 +141,6 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       </div>
     </section>
     <section class="portfolio-panel work-panel" id="work" role="tabpanel" aria-labelledby="tab-work" hidden>
-      <header class="work-overview-heading">
-        <h2 id="work-stradvision" tabindex="-1">STRADVISION</h2>
-      </header>
-      <div class="work-project-grid work-project-grid--freelance">
-        <article class="work-project">
-          <div class="work-project__placeholder" role="img" aria-label="STRADVISION 대표 이미지 준비 중"></div>
-        </article>
-      </div>
       <header class="work-overview-heading">
         <h2 id="work-freelance" tabindex="-1">Freelance Design Work</h2>
       </header>
