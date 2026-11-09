@@ -3597,3 +3597,5 @@ h1 {
 .mms-preview-screens img { clip-path: inset(5.5% 0 0); }
 
 html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+
+.mms-gallery { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 24px 12px; }

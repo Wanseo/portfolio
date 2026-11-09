@@ -2418,7 +2418,7 @@ mmsDialog.innerHTML = `<button class="personal-dialog-close" type="button" aria-
       <div><p>빌드업코리아 행사 소식과 참여 안내를 전달하는 문자 메시지 카피라이팅 작업입니다.</p><dl class="goods-facts"><div><dt>Role</dt><dd>문자 카피라이팅</dd></div><div><dt>Channel</dt><dd>MMS</dd></div></dl></div>
     </section>
     <section class="goods-section mms-case-gallery"><div class="goods-section-heading"><span class="goods-index">MESSAGE ARCHIVE</span></div>
-      <div class="mms-gallery">${Array.from({ length: 10 }, (_, index) => `<figure><figcaption>${String(index + 1).padStart(2, '0')}</figcaption><button class="mms-image-toggle" type="button" aria-label="문자 작업 ${index + 1} 확대" aria-pressed="false"><img src="./projects/mms-${index + 1}.png" alt="MMS 카피라이팅 작업 ${index + 1}" loading="lazy"></button></figure>`).join('')}</div>
+      <div class="mms-gallery">${Array.from({ length: 10 }, (_, index) => 10 - index).map((number) => `<figure><figcaption>${String(number).padStart(2, '0')}</figcaption><button class="mms-image-toggle" type="button" aria-label="문자 작업 ${number} 확대" aria-pressed="false"><img src="./projects/mms-${number}.png" alt="MMS 카피라이팅 작업 ${number}" loading="lazy"></button></figure>`).join('')}</div>
     </section>
   </article>`
 document.body.append(mmsDialog)
