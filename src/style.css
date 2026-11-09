@@ -3504,7 +3504,7 @@ h1 {
   .newsletter-case-dialog .newsletter-readable h3 { font-size: 7px; }
 }
 
-.work-booklet-preview { background: #f5f7f8; }
+.work-booklet-preview { background: #fff; }
 .work-booklet-preview > img,
 .work-booklet-preview .booklet-preview-badge { filter: brightness(1.045); }
 
