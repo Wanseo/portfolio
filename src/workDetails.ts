@@ -510,7 +510,7 @@ snsDialog.innerHTML = `<button class="personal-dialog-close" type="button" aria-
     <section class="goods-section"><div class="goods-section-heading"><span class="goods-index">APPROACH</span></div>
       <dl class="sns-approach"><div><dt>WHY</dt><dd>SNS 초기 운영 당시 팔로워 확보를 위해 다양한 콘텐츠 중심의 홍보 기획 및 제작이 필요했습니다.</dd></div><div><dt>HOW</dt><dd>이전 행사 연사 스피치와 새로운 행사 홍보 배너·포스터를 바탕으로 트렌드에 맞는 콘텐츠를 기획·제작하고 업로드했습니다.</dd></div></dl>
     </section>
-    <section class="goods-section"><div class="goods-section-heading"><span class="goods-index">PROJECT BOARD</span></div><a href="./projects/sns-management-sharp.png" target="_blank" rel="noopener noreferrer"><img class="goods-board" src="./projects/sns-management-sharp.png" alt="SNS 콘텐츠 기획 및 제작 프로젝트 보드 — 운영 목표, 기간, 과정 및 팔로워 변화" loading="lazy"></a></section>
+    <section class="goods-section"><div class="goods-section-heading"><span class="goods-index">PROJECT BOARD</span></div><a href="./projects/sns-management-sharp.jpg" target="_blank" rel="noopener noreferrer"><img class="goods-board" src="./projects/sns-management-sharp.jpg" alt="SNS 콘텐츠 기획 및 제작 프로젝트 보드 — 운영 목표, 기간, 과정 및 팔로워 변화" loading="lazy"></a></section>
   </article>`
 document.body.append(snsDialog)
 snsTrigger?.addEventListener('click', () => {
