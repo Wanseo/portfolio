@@ -16,7 +16,6 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         <span class="brand-highlight" data-hover-text="Wanseo's">Wanseo's</span>
         <span class="brand-highlight" data-hover-text="portfolio">portfolio</span>
       </h1>
-      <p class="role brand-highlight" data-hover-text="Designer &amp; Developer">Designer &amp; Developer</p>
     </div>
     <div class="theme-control">
       <div class="theme-labels" aria-hidden="true">
