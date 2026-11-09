@@ -3275,7 +3275,7 @@ h1 {
   width: 120%;
   max-width: none;
   height: auto;
-  top: -54%;
+  top: -49%;
   left: -12%;
   clip-path: inset(49% 14% 19% 17%);
 }
@@ -3497,3 +3497,7 @@ h1 {
   .newsletter-case-dialog .newsletter-readable p { font-size: 5px; }
   .newsletter-case-dialog .newsletter-readable h3 { font-size: 7px; }
 }
+
+.work-booklet-preview { background: #f5f7f8; }
+.work-booklet-preview > img,
+.work-booklet-preview .booklet-preview-badge { filter: brightness(1.045); }
