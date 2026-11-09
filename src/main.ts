@@ -101,7 +101,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
             <div class="resume-job__body">
               <p class="resume-job__company">STRADVISION <span>스트라드비젼</span></p>
               <h3>Lane Detection Algorithm Engineer</h3>
-              <ul><li>LD Algorithm 개선</li><li>모델 학습</li><li>데이터베이스 구축 및 관리</li></ul>
+              <ul><li>LD Algorithm 개선</li><li>최적 모델 학습</li><li>데이터베이스 구축 및 관리</li></ul>
             </div>
           </li>
           <li class="resume-job">
