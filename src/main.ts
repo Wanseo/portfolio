@@ -99,7 +99,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
           <li class="resume-job">
             <p class="resume-job__date">2021.09 — 2024.06</p>
             <div class="resume-job__body">
-              <p class="resume-job__company">STRADVISION <span>스트라드비젼</span></p>
+              <p class="resume-job__company">STRADVISION <span>스트라드비젼</span> <a class="resume-work-link" href="#work" data-work-link aria-label="STRADVISION 작업 보기"><svg class="resume-work-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M4 8h8M8 4l4 4-4 4" /></svg></a></p>
               <h3>Lane Detection Algorithm Engineer</h3>
               <ul><li>LD Algorithm 개선</li><li>최적 모델 학습</li><li>데이터베이스 구축 및 관리</li></ul>
             </div>
