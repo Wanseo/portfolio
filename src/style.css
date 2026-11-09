@@ -3959,3 +3959,11 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 .everylife-preview:not(.institute-preview) > img { object-position: center; transform: translateY(8%); }
 .everylife-preview:not(.institute-preview)::after { display: none; }
 .work-logo-preview > img { padding-bottom: 0; }
+
+@media (min-width: 761px) {
+  .kakao-case-dialog .sns-project-board, .sns-case-dialog .sns-project-board { margin-left: -24px; grid-template-columns: 1.25fr 1fr; column-gap: 20px; }
+}
+.sns-case-dialog .sns-board-screens { width: 94%; margin-left: 0; margin-right: auto; }
+@media (max-width: 760px) {
+  .kakao-case-dialog .sns-project-board, .sns-case-dialog .sns-project-board { margin-left: -8px; }
+}
