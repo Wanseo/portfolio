@@ -4049,3 +4049,18 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 }
 
 .work-project[hidden] { display: none; }
+
+.newsletter-case-dialog .newsletter-dialog-pages { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.newsletter-dialog-pages > figure { position: relative; }
+.newsletter-sample-open { position: absolute; inset: 0; width: 100%; border: 0; padding: 0; background: transparent; cursor: zoom-in; }
+.newsletter-sample-open:focus-visible { outline: 2px solid #fc4446; outline-offset: 4px; }
+.newsletter-sample-envelope { display: block; width: 90%; height: auto; margin: 20px auto; }
+.newsletter-sample-viewer { background: #fff; padding: 56px 24px 24px; }
+.newsletter-viewer-toolbar { position: sticky; top: -56px; z-index: 2; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 8px 0; margin-bottom: 24px; background: #fff; color: #555; font: 12px/1.5 Arial, sans-serif; }
+.newsletter-viewer-toolbar button { width: 40px; height: 40px; border: 1px solid #ddd; border-radius: 6px; background: #fff; color: #171715; font: 30px/1 Arial, sans-serif; cursor: pointer; }
+.newsletter-viewer-content > img { display: block; width: 100%; max-width: 580px; height: auto; margin: auto; }
+.newsletter-sample-viewer .newsletter-readable { padding: 0; }
+@media (max-width: 480px) {
+  .newsletter-case-dialog .newsletter-dialog-pages { gap: 16px; }
+  .newsletter-sample-viewer { padding-inline: 16px; }
+}

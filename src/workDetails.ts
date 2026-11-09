@@ -193,21 +193,6 @@ newsletterDialog.addEventListener('click', (event) => {
     || event.clientY < bounds.top || event.clientY > bounds.bottom) newsletterDialog.close()
 })
 
-newsletterDialog.querySelectorAll<HTMLImageElement>('.newsletter-dialog-pages img').forEach((img) => {
-  const button = document.createElement('button')
-  button.type = 'button'
-  button.className = 'newsletter-image-zoom'
-  button.setAttribute('aria-label', `${img.alt} 확대`)
-  button.setAttribute('aria-pressed', 'false')
-  img.before(button)
-  button.append(img)
-  button.addEventListener('click', () => {
-    const expanded = button.classList.toggle('is-expanded')
-    button.setAttribute('aria-pressed', String(expanded))
-    button.setAttribute('aria-label', `${img.alt} ${expanded ? '원본 크기로 보기' : '확대'}`)
-  })
-})
-
 const thirdNewsletter = newsletterDialog.querySelectorAll('figure')[2]
 if (thirdNewsletter) {
   thirdNewsletter.innerHTML = `<figcaption>03 · D-44</figcaption>
@@ -240,6 +225,69 @@ if (secondNewsletter) {
       <p>감사합니다.</p>
     </article>`
 }
+
+const fourthNewsletter = document.createElement('figure')
+fourthNewsletter.innerHTML = `<figcaption>04 · D-23</figcaption>
+  <article class="newsletter-readable">
+    <header><span>Newsletter</span><h3>빌드업코리아2025 (D-23)<br>부스 신청 접수 마감 임박!</h3></header>
+    <svg class="newsletter-sample-envelope" viewBox="60 85 275 205" role="img" aria-label="파란 봉투 뉴스레터 그래픽"><image href="./projects/newsletter-1.png" width="397" height="689" /></svg>
+    <p><strong>[빌드업코리아 2025] D-23 !!!</strong><br>일시: 09.05-06 (금-토) 9:00-18:00<br>장소: 킨텍스 제2전시장 8홀</p>
+    <p>—<br>안녕하세요, 빌더님😊</p>
+    <p><strong>빌드업코리아 2025와 함께할 부스를 모집합니다! 🚀</strong></p>
+    <p>자유의 가치 아래 모인 수많은 다음 세대에게 여러분의 기업·교회·학교·브랜드의 비전과 가치를 알릴 수 있는 부스 참여를 환영합니다.<br>여러분의 부스가 이 현장의 특별함을 채웁니다.</p>
+    <p>많은 참여 부탁드립니다.</p>
+    <p><strong>💡 부스 안내</strong><br>부스 사이즈별 부스·스폰서 안내: 빌드업코리아 사무국 문의<br>info@buildupkorea.org<br>010-4115-0509</p>
+    <p><strong>📌부스 신청 안내</strong><br>신청 마감: 8월 14일(목) 자정<br>행사 일정: 9월 5일(금) ~ 9월 6일(토)<br>장소: 킨텍스 제2전시장 8홀<br>신청 방법: 공식 홈페이지</p>
+    <p>부스 신청 바로가기: https://www.buildupkorea.org/main.asp</p>
+    <p><strong>빌드업코리아 2025 ✨<br>Build the Future, Born to LEAD!</strong></p>
+    <p>함께 만들어 갈 무대에 여러분을 초대합니다.<br>감사합니다.</p>
+  </article>`
+newsletterDialog.querySelector('.newsletter-dialog-pages')?.append(fourthNewsletter)
+
+const newsletterSamples = Array.from(newsletterDialog.querySelectorAll<HTMLElement>('.newsletter-dialog-pages > figure'))
+const newsletterViewer = document.createElement('dialog')
+newsletterViewer.className = 'personal-project-dialog newsletter-sample-viewer'
+newsletterViewer.setAttribute('aria-label', '뉴스레터 샘플 확대 보기')
+newsletterViewer.innerHTML = `<button class="personal-dialog-close" type="button" aria-label="확대 화면 닫기">×</button><div class="newsletter-viewer-toolbar"><button type="button" data-direction="-1" aria-label="이전 뉴스레터">‹</button><span aria-live="polite"></span><button type="button" data-direction="1" aria-label="다음 뉴스레터">›</button></div><div class="newsletter-viewer-content"></div>`
+document.body.append(newsletterViewer)
+let newsletterSampleIndex = 0
+let newsletterSampleTrigger: HTMLButtonElement | null = null
+const showNewsletterSample = (index: number) => {
+  newsletterSampleIndex = (index + newsletterSamples.length) % newsletterSamples.length
+  const sample = newsletterSamples[newsletterSampleIndex]!
+  const content = sample.querySelector('.newsletter-readable, img')!.cloneNode(true)
+  newsletterViewer.querySelector('.newsletter-viewer-content')!.replaceChildren(content)
+  newsletterViewer.querySelector('.newsletter-viewer-toolbar span')!.textContent = `${sample.querySelector('figcaption')!.textContent} · ${newsletterSampleIndex + 1} / ${newsletterSamples.length}`
+  newsletterViewer.scrollTop = 0
+}
+newsletterSamples.forEach((sample, index) => {
+  const open = document.createElement('button')
+  open.type = 'button'
+  open.className = 'newsletter-sample-open'
+  open.setAttribute('aria-label', `${sample.querySelector('figcaption')!.textContent} 뉴스레터 확대 보기`)
+  sample.append(open)
+  open.addEventListener('click', () => {
+    newsletterSampleTrigger = open
+    showNewsletterSample(index)
+    newsletterViewer.showModal()
+  })
+})
+newsletterViewer.querySelector('.personal-dialog-close')!.addEventListener('click', () => newsletterViewer.close())
+newsletterViewer.querySelectorAll<HTMLButtonElement>('[data-direction]').forEach((button) => {
+  button.addEventListener('click', () => showNewsletterSample(newsletterSampleIndex + Number(button.dataset.direction)))
+})
+newsletterViewer.addEventListener('keydown', (event) => {
+  if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+    event.preventDefault()
+    showNewsletterSample(newsletterSampleIndex + (event.key === 'ArrowLeft' ? -1 : 1))
+  }
+})
+newsletterViewer.addEventListener('close', () => newsletterSampleTrigger?.focus({ preventScroll: true }))
+newsletterViewer.addEventListener('click', (event) => {
+  if (event.target !== newsletterViewer) return
+  const bounds = newsletterViewer.getBoundingClientRect()
+  if (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom) newsletterViewer.close()
+})
 
 newsletterDialog.classList.add('everylife-dialog', 'newsletter-case-dialog')
 const newsletterCase = document.createElement('article')
