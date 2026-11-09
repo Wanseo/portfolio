@@ -187,20 +187,7 @@ if (!document.querySelector('#app > .intro')) document.querySelector<HTMLDivElem
         <h2 id="work-buildup" tabindex="-1">Build Up Korea</h2>
       </header>
       <div class="work-project-grid work-project-grid--freelance">
-        <article class="work-project">
-          <h3>사이트 개편</h3>
-          <div class="renewal-preview" role="button" tabindex="0" aria-haspopup="dialog" aria-label="빌드업코리아 사이트 개편 상세 보기">
-            <div class="renewal-preview-browser">
-              <div class="renewal-preview-toolbar" aria-hidden="true"><i></i><i></i><i></i><span>BUILD UP KOREA</span></div>
-              <img class="renewal-preview-main" src="./projects/previews/renewal-main.jpg" alt="메인 페이지 개편 시안" loading="lazy" decoding="async">
-              <div class="renewal-preview-pages">
-                <figure><img src="./projects/previews/renewal-about.jpg" alt="단체 소개와 미션·비전 페이지 시안" loading="lazy" decoding="async"><figcaption>About Us</figcaption></figure>
-                <figure><img src="./projects/previews/renewal-media.jpg" alt="인스타그램·유튜브 콘텐츠를 모은 미디어 페이지 시안" loading="lazy" decoding="async"><figcaption>Media</figcaption></figure>
-              </div>
-            </div>
-            <span class="renewal-preview-caption">메인 · About Us · 미디어 페이지 기획</span><span class="work-card-arrow" aria-hidden="true">↗</span>
-          </div>
-        </article>
+
         <article class="work-project">
           <h3>뉴스레터 기획/제작</h3>
           <button class="newsletter-preview" type="button" aria-label="빌드업코리아 뉴스레터 세 편 상세 보기">
@@ -214,6 +201,20 @@ if (!document.querySelector('#app > .intro')) document.querySelector<HTMLDivElem
             <img class="blog-preview-logo" src="./projects/naver-blog-logo-transparent.png" alt="네이버 블로그" loading="eager" decoding="async">
             <span class="blog-preview-window"><span class="blog-preview-toolbar"><i></i><i></i><i></i><span>blog.naver.com/bukofficial</span></span><svg viewBox="0 29 1040 467" role="img" aria-label="빌드업코리아2025 블로그 메인 배너"><image href="./projects/previews/buildup-blog.jpg" width="1040" height="882" /></svg><span class="blog-preview-window-bottom">BUILD UP KOREA 2025</span></span>
           <span class="work-card-arrow" aria-hidden="true">↗</span></button>
+        </article>
+        <article class="work-project">
+          <h3>사이트 개편</h3>
+          <div class="renewal-preview" role="button" tabindex="0" aria-haspopup="dialog" aria-label="빌드업코리아 사이트 개편 상세 보기">
+            <div class="renewal-preview-browser">
+              <div class="renewal-preview-toolbar" aria-hidden="true"><i></i><i></i><i></i><span>BUILD UP KOREA</span></div>
+              <img class="renewal-preview-main" src="./projects/previews/renewal-main.jpg" alt="메인 페이지 개편 시안" loading="lazy" decoding="async">
+              <div class="renewal-preview-pages">
+                <figure><img src="./projects/previews/renewal-about.jpg" alt="단체 소개와 미션·비전 페이지 시안" loading="lazy" decoding="async"><figcaption>About Us</figcaption></figure>
+                <figure><img src="./projects/previews/renewal-media.jpg" alt="인스타그램·유튜브 콘텐츠를 모은 미디어 페이지 시안" loading="lazy" decoding="async"><figcaption>Media</figcaption></figure>
+              </div>
+            </div>
+            <span class="renewal-preview-caption">메인 · About Us · 미디어 페이지 기획</span><span class="work-card-arrow" aria-hidden="true">↗</span>
+          </div>
         </article>
         <article class="work-project">
           <h3>MMS 카피라이팅</h3>
