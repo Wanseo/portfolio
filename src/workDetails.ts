@@ -131,10 +131,24 @@ logoDialog.innerHTML = `<button class="personal-dialog-close" type="button" aria
       <div class="goods-board-link logo-case-two-colors">
         <img class="goods-board" src="./projects/yeongae-logo-sharp.png" alt="연금개혁청년행동 로고의 검정·초록 색상 버전" loading="lazy">
       </div>
+      <div class="logo-construction">
+        <h3>LOGOTYPE CONSTRUCTION</h3>
+        <p>심볼과 커스텀 한글 레터링의 구성</p>
+        <figure class="logo-construction-grid">
+          <svg viewBox="100 370 1050 190" role="img" aria-label="그리드 가이드 위에 배치한 연금개혁청년행동 심볼과 커스텀 레터링"><image href="./projects/yeongae-logo-sharp.png" width="1254" height="1254" /></svg>
+          <span class="logo-guide logo-guide--top" aria-hidden="true"></span>
+          <span class="logo-guide logo-guide--bottom" aria-hidden="true"></span>
+        </figure>
+        <div class="logo-construction-labels"><span>SYMBOL</span><span>CUSTOM LETTERING</span></div>
+      </div>
     </section>
     <section class="goods-section logo-case-system">
-      <div class="goods-section-heading"><span class="goods-index">LOGO SYSTEM</span></div>
-      <div><h3>심볼과 한글 로고타입</h3><p>기하학적인 심볼과 굵은 한글 레터링을 가로로 배치한 형태입니다. 두 가지 색상 모두 같은 형태와 비율을 유지합니다.</p></div>
+      <div class="goods-section-heading"><span class="goods-index">DESIGN DETAILS</span></div>
+      <div class="logo-detail-list">
+        <div><h3>Color</h3><p>다양한 그린 계열 중 청년 단체의 젊고 역동적인 이미지를 반영하면서, 화폐를 연상시키는 컬러를 선정했습니다. 블랙과 화이트 배경 모두에서 높은 시인성과 대비를 확보할 수 있도록 고려했으며, 그린을 메인 컬러로 적용하고 블랙 버전을 추가해 활용성을 높였습니다.</p></div>
+        <div><h3>Typography</h3><p>‘연’, ‘혁’, ‘년’ 등 획이 많은 한글의 구조적 특성을 고려해 불필요한 획을 최소화하고, 간결하면서도 명확한 형태의 커스텀 레터링을 제작했습니다. 이를 통해 시각적 복잡도를 낮추고 로고의 가독성과 완성도를 높이고자 했습니다.</p></div>
+        <div><h3>Symbol</h3><p>청년 세대와 중장년 세대의 연대와 협력을 상징하는 맞잡은 손의 형태를 심볼에 반영했습니다. 동시에 지폐의 외곽 형태를 모티브로 활용해 연금 개혁이라는 단체의 정체성을 시각적으로 표현했습니다.</p></div>
+      </div>
     </section>
   </article>`
 document.body.append(logoDialog)
@@ -285,7 +299,7 @@ bookletCase.innerHTML = `
   </section>
   <section class="goods-section booklet-case-cover">
     <div class="goods-section-heading"><span class="goods-index">COVER DESIGN</span></div>
-    <img class="goods-board" src="./projects/yeongae-booklet-white.svg" alt="MZ세대가 생각하는 국가 미래를 위한 연금개혁 방향 책자 전체 표지" loading="lazy">
+    <img class="goods-board" src="./projects/yeongae-booklet.png" width="2481" height="3508" alt="MZ세대가 생각하는 국가 미래를 위한 연금개혁 방향 책자 전체 표지" loading="lazy" decoding="async">
   </section>
   <section class="goods-section goods-application">
     <div class="goods-section-heading"><span class="goods-index">APPLICATION</span></div>

@@ -3285,7 +3285,7 @@ h1 {
   left: -12%;
   clip-path: inset(49% 14% 19% 17%);
 }
-.booklet-dialog { background: #ebeeef; }
+.booklet-dialog { background: #fff; }
 .booklet-dialog > img { display: block; width: 100%; height: auto; }
 .booklet-dialog .personal-dialog-close { position: sticky; float: right; margin: 12px 12px -56px 0; top: 12px; }
 
@@ -3473,6 +3473,7 @@ h1 {
 .booklet-case-dialog .booklet-case-hero h2 { margin: 40px 0 24px; font: 700 clamp(44px, 9vw, 80px)/1.1 Arial, sans-serif; letter-spacing: -.05em; }
 .booklet-case-dialog .booklet-case-hero > p { font-size: 16px; letter-spacing: 0; }
 .booklet-case-dialog .booklet-case-cover { background: #fff; }
+.booklet-case-dialog .booklet-case-cover .goods-board { filter: brightness(1.1); }
 .booklet-case-dialog .goods-application-image { margin-top: 0; }
 .booklet-case-dialog .personal-dialog-close { margin-top: 16px; margin-right: 16px; top: 16px; }
 
@@ -3506,7 +3507,7 @@ h1 {
 
 .work-booklet-preview { background: #fff; }
 .work-booklet-preview > img,
-.work-booklet-preview .booklet-preview-badge { filter: brightness(1.045); }
+.work-booklet-preview .booklet-preview-badge { filter: brightness(1.1); }
 
 .blog-preview { display: flex; flex-direction: column; justify-content: center; gap: 7%; width: 100%; aspect-ratio: 1; padding: 8%; border: .5px solid #000; background: #eef2ff; color: #152e72; cursor: pointer; text-align: left; }
 .blog-preview-label { font-size: 10px; letter-spacing: 2px; font-weight: 700; }
@@ -3961,7 +3962,7 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 .work-logo-preview > img { padding-bottom: 0; }
 
 @media (min-width: 761px) {
-  .kakao-case-dialog .sns-project-board, .sns-case-dialog .sns-project-board { margin-left: -24px; grid-template-columns: 1.25fr 1fr; column-gap: 20px; }
+  .kakao-case-dialog .sns-project-board, .sns-case-dialog .sns-project-board { margin-left: -24px; grid-template-columns: 1fr 1.25fr; column-gap: 16px; }
 }
 .sns-case-dialog .sns-board-screens { width: 94%; margin-left: 0; margin-right: auto; }
 @media (max-width: 760px) {
@@ -3973,3 +3974,26 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 
 .renewal-preview { position: relative; }
 .sns-preview { position: relative; }
+
+.logo-dialog .logo-case-two-colors { height: clamp(150px, 25vw, 230px); display: flex; align-items: center; justify-content: center; }
+.logo-dialog .logo-case-two-colors img { width: 76%; flex-shrink: 0; }
+.logo-construction { padding-top: 48px; }
+.logo-construction h3 { margin: 0 0 8px; font: 700 13px/1.5 Arial, sans-serif; letter-spacing: .06em; }
+.logo-construction > p { margin: 0; color: #777; font-size: 12px; }
+.logo-construction-grid { position: relative; margin: 48px auto 12px; padding: 24px 0; width: 88%; background-image: linear-gradient(to right, #00000012 1px, transparent 1px), linear-gradient(to bottom, #00000012 1px, transparent 1px); background-size: 20px 20px; border-inline: 1px dashed #0004; }
+.logo-construction-grid svg { display: block; width: 100%; height: auto; mix-blend-mode: multiply; }
+.logo-guide { position: absolute; left: -12px; right: -12px; border-top: 1px dashed #0005; }
+.logo-guide--top { top: 24px; }
+.logo-guide--bottom { bottom: 24px; }
+.logo-construction-labels { display: grid; grid-template-columns: 13% 1fr; gap: 12px; width: 88%; margin: auto; color: #777; font: 9px/1.5 Arial, sans-serif; letter-spacing: .08em; }
+.logo-construction-labels span:last-child { text-align: center; }
+.logo-detail-list { display: grid; gap: 32px; }
+.logo-detail-list > div { display: grid; grid-template-columns: 120px minmax(0, 1fr); gap: 24px; padding-top: 24px; border-top: 1px solid #ddd; }
+.logo-dialog .logo-detail-list h3 { margin: 0; font: 700 18px/1.6 Arial, sans-serif; }
+.logo-detail-list p { margin: 0; font-size: 13px; line-height: 1.9; word-break: keep-all; color: #444; }
+@media (max-width: 600px) {
+  .logo-detail-list > div { grid-template-columns: 1fr; gap: 12px; }
+  .logo-construction { padding-top: 32px; }
+  .logo-construction-grid, .logo-construction-labels { width: 100%; }
+  .logo-construction-grid { background-size: 12px 12px; }
+}
