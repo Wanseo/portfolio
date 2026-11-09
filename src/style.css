@@ -3704,3 +3704,5 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 .kakao-case-dialog .kakao-source-note { margin-top: 20px; font-size: 10px; color: #777; }
 @media (max-width: 760px) { .kakao-preview { border-width: 1px; } }
 @media (max-width: 480px) { .kakao-comparison { gap: 10px; } .kakao-channel-card { padding: 16px 12px; } .kakao-card-brand { flex-wrap: wrap; } }
+
+.blog-preview { background: #edf9f1; }
