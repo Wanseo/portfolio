@@ -3519,3 +3519,13 @@ h1 {
 .blog-case-dialog .blog-case-screen { background: #eef2ff; }
 .blog-case-link a { display: inline-flex; justify-content: space-between; gap: 48px; padding: 16px 24px; border: 1px solid #171715; color: #171715; text-decoration: none; font-size: 12px; }
 .blog-case-link a:hover { background: #171715; color: #fff; }
+
+.blog-post-controls { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 12px; font-size: 11px; }
+.blog-scroll-toggle { border: 1px solid #153ba1; background: #fff; color: #153ba1; padding: 8px 12px; cursor: pointer; font: inherit; }
+.blog-post-viewport { height: min(65svh, 560px); overflow-y: auto; background: #fff; border: 1px solid #d7deef; overscroll-behavior: contain; scrollbar-gutter: stable; }
+.blog-readable { padding: clamp(20px, 5vw, 40px); color: #171715; }
+.blog-post-category { font-size: 11px; color: #153ba1; }
+.blog-case-dialog .blog-readable h3 { font-size: 23px; line-height: 1.5; margin: 16px 0 32px; font-weight: 700; }
+.blog-case-dialog .blog-readable p { font-size: 15px; line-height: 1.9; margin: 0 0 16px; color: #171715; overflow-wrap: anywhere; white-space: pre-wrap; }
+.blog-readable img { display: block; width: 100%; height: auto; margin: 24px auto; }
+.blog-original-post { display: inline-block; margin-top: 16px; font-size: 12px; color: #153ba1; }

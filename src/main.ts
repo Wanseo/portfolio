@@ -1,3 +1,4 @@
+import blogPostContent from './blogPost.html?raw'
 import everylifeDetail from './everylifeDetail.html?raw'
 import './style.css'
 import { geoDistance, geoOrthographic, geoPath } from 'd3-geo'
@@ -2345,3 +2346,68 @@ blogDialog.addEventListener('click', (event) => {
   if (event.clientX < bounds.left || event.clientX > bounds.right
     || event.clientY < bounds.top || event.clientY > bounds.bottom) blogDialog.close()
 })
+
+const blogScreen = blogDialog.querySelector('.blog-case-screen')
+if (blogScreen) {
+  blogScreen.innerHTML = `<div class="goods-section-heading"><span class="goods-index">FEATURED POST</span></div>
+    <div class="blog-post-controls"><span>대표 글 · 자동 스크롤</span><button type="button" class="blog-scroll-toggle" aria-pressed="true">일시정지</button></div>
+    <div class="blog-post-viewport" tabindex="0" aria-label="대표 블로그 글. 직접 스크롤하거나 자동 스크롤을 일시정지할 수 있습니다.">
+      <article class="blog-readable"><span class="blog-post-category">미국뉴스</span><h3>[미국뉴스] 12.26 오늘 당신이 꼭 알아야 할 소식 Top 3</h3>${blogPostContent}</article>
+    </div>
+    <a class="blog-original-post" href="https://blog.naver.com/bukofficial/224123389917" target="_blank" rel="noopener noreferrer">원문 보기 ↗</a>`
+}
+const blogPostViewport = blogDialog.querySelector<HTMLElement>('.blog-post-viewport')
+const blogScrollToggle = blogDialog.querySelector<HTMLButtonElement>('.blog-scroll-toggle')
+let blogScrollEnabled = !window.matchMedia('(prefers-reduced-motion: reduce)').matches
+let blogScrollHovered = false
+let blogScrollFrame: number | null = null
+let blogScrollLastTime = 0
+let blogScrollPosition = 0
+const updateBlogScrollControl = () => {
+  blogScrollToggle?.setAttribute('aria-pressed', String(blogScrollEnabled))
+  if (blogScrollToggle) blogScrollToggle.textContent = blogScrollEnabled ? '일시정지' : '자동 스크롤'
+}
+const animateBlogPost = (time: number) => {
+  const elapsed = Math.min(time - blogScrollLastTime, 50)
+  blogScrollLastTime = time
+  if (blogPostViewport && blogScrollEnabled && !blogScrollHovered && blogDialog.open) {
+    blogScrollPosition += elapsed * 0.018
+    blogPostViewport.scrollTop = blogScrollPosition
+    if (blogPostViewport.scrollTop >= blogPostViewport.scrollHeight - blogPostViewport.clientHeight - 1) {
+      blogScrollEnabled = false
+      updateBlogScrollControl()
+    }
+  }
+  if (blogDialog.open) blogScrollFrame = requestAnimationFrame(animateBlogPost)
+}
+blogTrigger?.addEventListener('click', () => {
+  if (blogScrollFrame !== null) cancelAnimationFrame(blogScrollFrame)
+  if (blogPostViewport) blogPostViewport.scrollTop = 0
+  blogScrollPosition = 0
+  blogScrollLastTime = performance.now()
+  blogScrollEnabled = !window.matchMedia('(prefers-reduced-motion: reduce)').matches
+  updateBlogScrollControl()
+  blogScrollFrame = requestAnimationFrame(animateBlogPost)
+})
+blogDialog.addEventListener('close', () => {
+  if (blogScrollFrame !== null) cancelAnimationFrame(blogScrollFrame)
+  blogScrollFrame = null
+})
+blogScrollToggle?.addEventListener('click', () => {
+  blogScrollEnabled = !blogScrollEnabled
+  if (blogPostViewport) {
+    if (blogPostViewport.scrollTop >= blogPostViewport.scrollHeight - blogPostViewport.clientHeight - 1) blogPostViewport.scrollTop = 0
+    blogScrollPosition = blogPostViewport.scrollTop
+  }
+  updateBlogScrollControl()
+})
+blogPostViewport?.addEventListener('mouseenter', () => { blogScrollHovered = true })
+blogPostViewport?.addEventListener('mouseleave', () => {
+  blogScrollHovered = false
+  blogScrollPosition = blogPostViewport.scrollTop
+})
+const pauseBlogPost = () => { blogScrollEnabled = false; updateBlogScrollControl() }
+blogPostViewport?.addEventListener('wheel', pauseBlogPost, { passive: true })
+blogPostViewport?.addEventListener('touchstart', pauseBlogPost, { passive: true })
+blogPostViewport?.addEventListener('keydown', pauseBlogPost)
+updateBlogScrollControl()
