@@ -166,7 +166,18 @@ if (!document.querySelector('#app > .intro')) document.querySelector<HTMLDivElem
       <div class="work-project-grid work-project-grid--freelance">
         <article class="work-project">
           <h3>사이트 개편</h3>
-          <div class="work-project__placeholder" role="img" aria-label="사이트 개편 대표 이미지 준비 중"></div>
+          <div class="renewal-preview" aria-label="빌드업코리아 메인, About Us, 미디어 페이지 개편 시안">
+            <span class="renewal-preview-title">Website Renewal</span>
+            <div class="renewal-preview-browser">
+              <div class="renewal-preview-toolbar" aria-hidden="true"><i></i><i></i><i></i><span>BUILD UP KOREA</span></div>
+              <img class="renewal-preview-main" src="./projects/previews/renewal-main.jpg" alt="메인 페이지 개편 시안" loading="lazy" decoding="async">
+              <div class="renewal-preview-pages">
+                <figure><img src="./projects/previews/renewal-about.jpg" alt="단체 소개와 미션·비전 페이지 시안" loading="lazy" decoding="async"><figcaption>About Us</figcaption></figure>
+                <figure><img src="./projects/previews/renewal-media.jpg" alt="인스타그램·유튜브 콘텐츠를 모은 미디어 페이지 시안" loading="lazy" decoding="async"><figcaption>Media</figcaption></figure>
+              </div>
+            </div>
+            <span class="renewal-preview-caption">메인 · About Us · 미디어 페이지 기획</span>
+          </div>
         </article>
         <article class="work-project">
           <h3>뉴스레터 기획/제작</h3>

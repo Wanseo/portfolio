@@ -3821,3 +3821,30 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 .mms-preview-screens { width: 100%; }
 
 .mms-preview-logo { background: #fff; border-radius: 23%; }
+
+.renewal-preview {
+  container-type: inline-size;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5cqw;
+  width: 100%;
+  aspect-ratio: 1;
+  padding: 8%;
+  overflow: hidden;
+  border: var(--work-outline-width, .25px) solid #000;
+  background: #f4f2fa;
+  color: #171322;
+}
+.renewal-preview-title { font: 700 6cqw/1.2 Arial, sans-serif; }
+.renewal-preview-browser { width: 100%; overflow: hidden; border: 1px solid #dedbe8; border-radius: 1.8cqw; background: #fff; box-shadow: 0 2cqw 6cqw #23104b12; }
+.renewal-preview-toolbar { display: flex; align-items: center; gap: 1cqw; height: 6cqw; padding-inline: 2.5cqw; background: #fff; }
+.renewal-preview-toolbar i { width: 1.2cqw; height: 1.2cqw; border-radius: 50%; background: #d4cedf; }
+.renewal-preview-toolbar span { margin-left: auto; color: #80788d; font: 500 2cqw Arial, sans-serif; letter-spacing: .08em; }
+.renewal-preview-main { display: block; width: 100%; aspect-ratio: 1.75; object-fit: cover; object-position: top; }
+.renewal-preview-pages { display: grid; grid-template-columns: 1fr 1fr; gap: 3cqw; padding: 3cqw; }
+.renewal-preview-pages figure { min-width: 0; margin: 0; }
+.renewal-preview-pages img { display: block; width: 100%; aspect-ratio: 1.9; object-fit: cover; object-position: top; border: 1px solid #eeeaf3; }
+.renewal-preview-pages figcaption { margin-top: 1.5cqw; font: 500 2.5cqw Arial, sans-serif; text-align: center; }
+.renewal-preview-caption { font: 400 2.8cqw/1.4 Arial, 'Apple SD Gothic Neo', sans-serif; color: #6d657b; text-align: center; }
