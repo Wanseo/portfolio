@@ -582,6 +582,7 @@ renewalDialog.innerHTML = `<button class="personal-dialog-close" type="button" a
       <figure><figcaption><span>02</span><h3>About Us</h3><p>단체 소개와 미션·비전을 한영 콘텐츠로 정리하고, 지난 행사와 연도별 활동을 구성했습니다.</p></figcaption>${renewalScreens('about', 'About Us', 6)}</figure>
       <figure><figcaption><span>03</span><h3>Media</h3><p>인스타그램·유튜브 콘텐츠를 모아 보여주고, 뉴스레터 구독과 카카오톡 채널로 연결했습니다.</p></figcaption>${renewalScreens('media', 'Media', 3)}</figure>
     </section>
+    <p class="renewal-site-note">*개편 내용을 적용해 웹사이트 개설했습니다. 현재는 사이트를 사용하지 않아 링크 제공이 어렵습니다.</p>
   </article>`
 document.body.append(renewalDialog)
 renewalTrigger?.addEventListener('click', () => {
