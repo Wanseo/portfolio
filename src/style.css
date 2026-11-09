@@ -3779,3 +3779,6 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 .sns-preview-arrow { font-size: 5cqw; }
 
 .kakao-preview-logo { border-radius: 0; }
+
+.newsletter-preview img.newsletter-platform-logo { top: 31%; bottom: auto; }
+.newsletter-preview .newsletter-envelope { transform: translateY(30%); }
