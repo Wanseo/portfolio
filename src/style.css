@@ -3739,3 +3739,16 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 .kakao-case-dialog .kakao-growth { font: 700 clamp(24px, 5vw, 42px)/1.5 Arial, sans-serif; color: #191919; }
 .kakao-growth span { margin-inline: 12px; color: #b5a000; }
 .kakao-case-dialog .sns-approach dt { color: #7a6d00; }
+
+@media (max-width: 760px) {
+  .work-project > :is(.work-project__placeholder, a, button) { position: relative; border: 0; }
+  .work-project > :is(.work-project__placeholder, a, button)::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 10;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    pointer-events: none;
+  }
+}
