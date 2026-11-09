@@ -141,6 +141,11 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       <header class="work-overview-heading">
         <h2>STRADVISION</h2>
       </header>
+      <div class="work-project-grid work-project-grid--freelance">
+        <article class="work-project">
+          <div class="work-project__placeholder" role="img" aria-label="STRADVISION 대표 이미지 준비 중"></div>
+        </article>
+      </div>
       <header class="work-overview-heading">
         <h2>Freelance Design Work</h2>
       </header>
