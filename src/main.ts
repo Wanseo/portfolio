@@ -1,3 +1,4 @@
+import everylifeDetail from './everylifeDetail.html?raw'
 import './style.css'
 import { geoDistance, geoOrthographic, geoPath } from 'd3-geo'
 import { mesh } from 'topojson-client'
@@ -165,7 +166,11 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         </article>
         <article class="work-project">
           <h3>에브리라이프 굿즈작업</h3>
-          <div class="work-project__placeholder" role="img" aria-label="에브리라이프 굿즈작업 대표 이미지 준비 중"></div>
+          <button class="everylife-preview" type="button" aria-label="everylife 굿즈 프로젝트 상세 보기">
+            <img src="./projects/everylife-card.webp" alt="everylife 로고와 기저귀·아기 스티커" loading="lazy">
+            <span class="everylife-card-number">01</span>
+            <span class="everylife-card-caption"><strong>everylife</strong><span>Merch Sticker ↗</span></span>
+          </button>
         </article>
       </div>
       <header class="work-overview-heading">
@@ -2049,4 +2054,27 @@ document.querySelectorAll<HTMLAnchorElement>('[data-personal-project]').forEach(
       personalDialog.querySelector('video')?.play().catch(() => {})
     }
   })
+})
+
+const everylifeDialog = document.createElement('dialog')
+everylifeDialog.className = 'personal-project-dialog everylife-dialog'
+everylifeDialog.setAttribute('aria-labelledby', 'everylife-dialog-title')
+everylifeDialog.innerHTML = '<button class="personal-dialog-close" type="button" aria-label="닫기">×</button>' + everylifeDetail
+document.body.append(everylifeDialog)
+const everylifeTrigger = document.querySelector<HTMLButtonElement>('.everylife-preview')
+everylifeTrigger?.addEventListener('click', () => {
+  everylifeDialog.showModal()
+  everylifeDialog.scrollTop = 0
+  document.body.style.overflow = 'hidden'
+})
+everylifeDialog.querySelector('button')?.addEventListener('click', () => everylifeDialog.close())
+everylifeDialog.addEventListener('close', () => {
+  document.body.style.overflow = ''
+  everylifeTrigger?.focus()
+})
+everylifeDialog.addEventListener('click', (event) => {
+  if (event.target !== everylifeDialog) return
+  const bounds = everylifeDialog.getBoundingClientRect()
+  if (event.clientX < bounds.left || event.clientX > bounds.right
+    || event.clientY < bounds.top || event.clientY > bounds.bottom) everylifeDialog.close()
 })
