@@ -3652,3 +3652,12 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
   line-height: 1;
   cursor: pointer;
 }
+
+@media (max-width: 760px) {
+  .work-project h3 {
+    font-size: clamp(6px, 2.15vw, 12px);
+    white-space: nowrap;
+    letter-spacing: -.04em;
+    margin-bottom: .75rem;
+  }
+}
