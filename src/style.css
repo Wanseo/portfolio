@@ -3272,10 +3272,12 @@ h1 {
 .work-booklet-preview img {
   position: absolute;
   display: block;
-  width: 100%;
+  width: 120%;
+  max-width: none;
   height: auto;
-  top: -35%;
-  left: 0;
+  top: -60%;
+  left: -12%;
+  clip-path: inset(49% 14% 19% 17%);
 }
 .booklet-dialog { background: #ebeeef; }
 .booklet-dialog > img { display: block; width: 100%; height: auto; }
