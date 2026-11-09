@@ -280,7 +280,6 @@ bookletCase.innerHTML = `
       <p>「MZ세대가 생각하는 국가 미래를 위한 연금개혁 방향」 책자의 표지 디자인입니다. 제목과 연금 기금의 변화를 보여주는 그래픽을 중심으로 구성했습니다.</p>
       <dl class="goods-facts">
         <div><dt>Role</dt><dd>책자 표지디자인 · Graphic Design</dd></div><div><dt>Tool</dt><dd>Adobe Illustrator</dd></div>
-        <div><dt>Year</dt><dd>2024</dd></div>
       </dl>
     </div>
   </section>
