@@ -198,8 +198,8 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
           </button>
         </article>
         <article class="work-project">
-          <h3>문자관리</h3>
-          <div class="work-project__placeholder" role="img" aria-label="문자관리 대표 이미지 준비 중"></div>
+          <h3>MMS 카피라이팅</h3>
+          <div class="work-project__placeholder" role="img" aria-label="MMS 카피라이팅 대표 이미지 준비 중"></div>
         </article>
         <article class="work-project">
           <h3>카카오톡 채널관리</h3>
