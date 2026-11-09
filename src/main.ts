@@ -120,7 +120,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
           <li class="resume-job">
             <p class="resume-job__date">2026.05-Now</p>
             <div class="resume-job__body">
-              <p class="resume-job__company">Personal Project <span>개인 프로젝트</span> <a class="resume-work-link" href="#work" data-work-link="work" aria-label="개인 프로젝트 작업 보기"><svg class="resume-work-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M4 8h8M8 4l4 4-4 4" /></svg></a></p>
+              <p class="resume-job__company">Personal Project <span>개인 프로젝트</span> <a class="resume-work-link" href="#work-personal" data-work-link="work-personal" aria-label="개인 프로젝트 작업 보기"><svg class="resume-work-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M4 8h8M8 4l4 4-4 4" /></svg></a></p>
               <ul class="resume-freelance-projects"><li>Interactive 웹 서비스 기획 및 제작</li></ul>
             </div>
           </li>
