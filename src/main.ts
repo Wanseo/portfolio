@@ -181,7 +181,6 @@ if (!document.querySelector('#app > .intro')) document.querySelector<HTMLDivElem
           <h3>에브리라이프 굿즈작업</h3>
           <button class="everylife-preview" type="button" aria-label="everylife 굿즈 프로젝트 상세 보기">
             <img src="./projects/everylife-card.webp" alt="everylife 로고와 기저귀·아기 스티커" loading="eager" decoding="async">
-            <span class="everylife-card-number">01</span>
             <span class="everylife-card-caption"><strong>everylife</strong><span>Merch Sticker</span></span>
           <span class="work-card-arrow" aria-hidden="true">↗</span></button>
         </article>
