@@ -3381,3 +3381,11 @@ h1 {
 .logo-dialog .logo-case-palette { grid-template-columns: repeat(3, minmax(0, 1fr)); max-width: 270px; }
 .logo-dialog .logo-case-board .goods-board-link { padding: 0; background: #fff; }
 .logo-dialog .logo-case-system h3 { font-size: 22px; }
+
+.work-logo-preview img,
+.logo-dialog .logo-case-two-colors img {
+  clip-path: inset(29% 0 43% 0);
+  transform: translateY(7%);
+}
+.logo-dialog .logo-case-two-colors { overflow: hidden; }
+.logo-dialog .logo-case-palette { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 180px; }

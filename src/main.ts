@@ -158,7 +158,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         </article>
         <article class="work-project">
           <h3>연개청 로고제작</h3>
-          <a class="work-logo-preview" href="./projects/yeongae-logo-clean.png" target="_blank" rel="noopener noreferrer" aria-label="연금개혁청년행동 로고 크게 보기"><img src="./projects/yeongae-logo-clean.png" alt="연금개혁청년행동 로고 — 검정, 초록, 청록 세 가지 색상" loading="lazy"></a>
+          <a class="work-logo-preview" href="./projects/yeongae-logo-clean.png" target="_blank" rel="noopener noreferrer" aria-label="연금개혁청년행동 로고 크게 보기"><img src="./projects/yeongae-logo-clean.png" alt="연금개혁청년행동 로고 — 검정, 초록 두 가지 색상" loading="lazy"></a>
         </article>
         <article class="work-project">
           <h3>연개청 책자 표지디자인</h3>
@@ -2120,7 +2120,7 @@ logoDialog.innerHTML = `<button class="personal-dialog-close" type="button" aria
       <span class="eyebrow">Brand Identity · Logo Design</span>
       <h2 id="logo-dialog-title">연금개혁청년행동</h2>
       <div>
-        <p>연금개혁청년행동을 위한 로고 디자인입니다. 심볼과 한글 로고타입을 결합하고, 검정·초록·청록의 세 가지 색상으로 구성했습니다.</p>
+        <p>연금개혁청년행동을 위한 로고 디자인입니다. 심볼과 한글 로고타입을 결합하고, 검정·초록의 두 가지 색상으로 구성했습니다.</p>
         <dl class="goods-facts">
           <div><dt>Role</dt><dd>Logo Design · Graphic Design</dd></div>
           <div><dt>Format</dt><dd>Symbol + Korean Logotype</dd></div>
@@ -2132,18 +2132,17 @@ logoDialog.innerHTML = `<button class="personal-dialog-close" type="button" aria
       <div class="goods-palette logo-case-palette">
         <div><i style="background:#000000"></i><span>Black</span><small>검정</small></div>
         <div><i style="background:#00C853"></i><span>Green</span><small>초록</small></div>
-        <div><i style="background:#008577"></i><span>Teal</span><small>청록</small></div>
       </div>
     </section>
     <section class="goods-section goods-design-board logo-case-board">
       <div class="goods-section-heading"><span class="goods-index">DESIGN BOARD</span></div>
-      <a class="goods-board-link" href="./projects/yeongae-logo-clean.png" target="_blank" rel="noopener noreferrer" aria-label="연금개혁청년행동 로고 크게 보기">
-        <img class="goods-board" src="./projects/yeongae-logo-clean.png" alt="연금개혁청년행동 로고의 검정·초록·청록 색상 버전" loading="lazy">
-      </a>
+      <div class="goods-board-link logo-case-two-colors">
+        <img class="goods-board" src="./projects/yeongae-logo-clean.png" alt="연금개혁청년행동 로고의 검정·초록 색상 버전" loading="lazy">
+      </div>
     </section>
     <section class="goods-section logo-case-system">
       <div class="goods-section-heading"><span class="goods-index">LOGO SYSTEM</span></div>
-      <div><h3>심볼과 한글 로고타입</h3><p>기하학적인 심볼과 굵은 한글 레터링을 가로로 배치한 형태입니다. 세 가지 색상 모두 같은 형태와 비율을 유지합니다.</p></div>
+      <div><h3>심볼과 한글 로고타입</h3><p>기하학적인 심볼과 굵은 한글 레터링을 가로로 배치한 형태입니다. 두 가지 색상 모두 같은 형태와 비율을 유지합니다.</p></div>
     </section>
   </article>`
 document.body.append(logoDialog)
