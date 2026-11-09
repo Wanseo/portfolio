@@ -3953,3 +3953,9 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 .blog-intro-post .blog-post-viewport { overscroll-behavior-y: contain; }
 
 .work-project-grid--personal { margin-bottom: clamp(3rem, 5vw, 5rem); }
+
+.institute-preview.everylife-preview > img { padding: 13% 0; object-position: center; }
+.everylife-preview:not(.institute-preview) { background: #787083; }
+.everylife-preview:not(.institute-preview) > img { object-position: center; transform: translateY(8%); }
+.everylife-preview:not(.institute-preview)::after { display: none; }
+.work-logo-preview > img { padding-bottom: 0; }

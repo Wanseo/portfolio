@@ -166,22 +166,20 @@ if (!document.querySelector('#app > .intro')) document.querySelector<HTMLDivElem
           <h3>1776연구소 굿즈작업</h3>
           <button class="institute-preview everylife-preview" type="button" aria-label="1776연구소 굿즈 프로젝트 상세 보기">
             <img src="./projects/1776/sticker-4-cover-hires.png" alt="1776연구소 북극곰 캐릭터 스티커" loading="eager" decoding="async">
-            <span class="everylife-card-caption"><strong>1776 Institute.</strong><span>Merch Sticker</span></span>
           <span class="work-card-arrow" aria-hidden="true">↗</span></button>
         </article>
         <article class="work-project">
           <h3>연개청 로고제작</h3>
-          <a class="work-logo-preview" href="./projects/yeongae-logo-sharp.png" target="_blank" rel="noopener noreferrer" aria-label="연금개혁청년행동 로고 크게 보기"><img src="./projects/yeongae-logo-green-transparent.png" alt="연금개혁청년행동 초록색 로고" loading="eager" decoding="async"><span class="work-preview-caption">fairpensionforall</span><span class="work-card-arrow" aria-hidden="true">↗</span></a>
+          <a class="work-logo-preview" href="./projects/yeongae-logo-sharp.png" target="_blank" rel="noopener noreferrer" aria-label="연금개혁청년행동 로고 크게 보기"><img src="./projects/yeongae-logo-green-transparent.png" alt="연금개혁청년행동 초록색 로고" loading="eager" decoding="async"><span class="work-card-arrow" aria-hidden="true">↗</span></a>
         </article>
         <article class="work-project">
           <h3>연개청 책자 표지디자인</h3>
-          <a class="work-booklet-preview" href="./projects/yeongae-booklet-white.svg" target="_blank" rel="noopener noreferrer" aria-label="연개청 책자 표지 크게 보기"><svg class="booklet-preview-badge" viewBox="875 390 700 140" role="img" aria-label="2024년 연금개혁"><image href="./projects/yeongae-booklet-white.svg" width="2481" height="3508" /></svg><img src="./projects/yeongae-booklet-white.svg" alt="2024년 연금개혁 — MZ세대가 생각하는 국가 미래를 위한 연금개혁 방향 책자 표지" loading="eager" decoding="async"><span class="work-preview-caption">airpensionforall Book Cover</span><span class="work-card-arrow" aria-hidden="true">↗</span></a>
+          <a class="work-booklet-preview" href="./projects/yeongae-booklet-white.svg" target="_blank" rel="noopener noreferrer" aria-label="연개청 책자 표지 크게 보기"><svg class="booklet-preview-badge" viewBox="875 390 700 140" role="img" aria-label="2024년 연금개혁"><image href="./projects/yeongae-booklet-white.svg" width="2481" height="3508" /></svg><img src="./projects/yeongae-booklet-white.svg" alt="2024년 연금개혁 — MZ세대가 생각하는 국가 미래를 위한 연금개혁 방향 책자 표지" loading="eager" decoding="async"><span class="work-card-arrow" aria-hidden="true">↗</span></a>
         </article>
         <article class="work-project">
           <h3>에브리라이프 굿즈작업</h3>
           <button class="everylife-preview" type="button" aria-label="everylife 굿즈 프로젝트 상세 보기">
             <img src="./projects/everylife-card.webp" alt="everylife 로고와 기저귀·아기 스티커" loading="eager" decoding="async">
-            <span class="everylife-card-caption"><strong>everylife</strong><span>Merch Sticker</span></span>
           <span class="work-card-arrow" aria-hidden="true">↗</span></button>
         </article>
       </div>
