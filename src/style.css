@@ -3529,3 +3529,8 @@ h1 {
 .blog-case-dialog .blog-readable p { font-size: 15px; line-height: 1.9; margin: 0 0 16px; color: #171715; overflow-wrap: anywhere; white-space: pre-wrap; }
 .blog-readable img { display: block; width: 100%; height: auto; margin: 24px auto; }
 .blog-original-post { display: inline-block; margin-top: 16px; font-size: 12px; color: #153ba1; }
+
+.work-logo-preview img {
+  clip-path: inset(44% 0 43% 0);
+  transform: translateY(-.5%);
+}

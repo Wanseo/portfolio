@@ -159,7 +159,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         </article>
         <article class="work-project">
           <h3>연개청 로고제작</h3>
-          <a class="work-logo-preview" href="./projects/yeongae-logo-clean.png" target="_blank" rel="noopener noreferrer" aria-label="연금개혁청년행동 로고 크게 보기"><img src="./projects/yeongae-logo-clean.png" alt="연금개혁청년행동 로고 — 검정, 초록 두 가지 색상" loading="lazy"></a>
+          <a class="work-logo-preview" href="./projects/yeongae-logo-clean.png" target="_blank" rel="noopener noreferrer" aria-label="연금개혁청년행동 로고 크게 보기"><img src="./projects/yeongae-logo-clean.png" alt="연금개혁청년행동 초록색 로고" loading="lazy"></a>
         </article>
         <article class="work-project">
           <h3>연개청 책자 표지디자인</h3>
