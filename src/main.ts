@@ -189,7 +189,10 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         </article>
         <article class="work-project">
           <h3>MMS 카피라이팅</h3>
-          <div class="work-project__placeholder" role="img" aria-label="MMS 카피라이팅 대표 이미지 준비 중"></div>
+          <button class="mms-preview" type="button" aria-label="MMS 카피라이팅 작업 10개 상세 보기">
+            <span class="mms-preview-title">MMS Copywriting</span>
+            <span class="mms-preview-screens"><img src="./projects/mms-2.png" alt="문자 카피라이팅 작업 예시" loading="lazy"><img src="./projects/mms-1.png" alt="빌드업코리아 문자 메시지" loading="lazy"><img src="./projects/mms-3.png" alt="문자 카피라이팅 작업 예시" loading="lazy"></span>
+          </button>
         </article>
         <article class="work-project">
           <h3>카카오톡 채널관리</h3>
@@ -2402,3 +2405,42 @@ blogPostViewport?.addEventListener('wheel', pauseBlogPost, { passive: true })
 blogPostViewport?.addEventListener('touchstart', pauseBlogPost, { passive: true })
 blogPostViewport?.addEventListener('keydown', pauseBlogPost)
 updateBlogScrollControl()
+
+const mmsTrigger = document.querySelector<HTMLButtonElement>('.mms-preview')
+const mmsDialog = document.createElement('dialog')
+mmsDialog.className = 'personal-project-dialog everylife-dialog mms-case-dialog'
+mmsDialog.setAttribute('aria-labelledby', 'mms-case-title')
+mmsDialog.innerHTML = `<button class="personal-dialog-close" type="button" aria-label="닫기">×</button>
+  <article class="goods-case">
+    <header class="goods-hero mms-case-hero"><span>BUILD UP KOREA</span><h2>MMS<br>Copywriting</h2><p>문자 메시지 카피라이팅</p></header>
+    <section class="goods-section goods-overview dialog-copy">
+      <span class="eyebrow">Copywriting · Mobile Message</span><h2 id="mms-case-title">MMS 카피라이팅</h2>
+      <div><p>빌드업코리아 행사 소식과 참여 안내를 전달하는 문자 메시지 카피라이팅 작업입니다.</p><dl class="goods-facts"><div><dt>Role</dt><dd>문자 카피라이팅</dd></div><div><dt>Channel</dt><dd>MMS</dd></div></dl></div>
+    </section>
+    <section class="goods-section mms-case-gallery"><div class="goods-section-heading"><span class="goods-index">MESSAGE ARCHIVE</span></div>
+      <div class="mms-gallery">${Array.from({ length: 10 }, (_, index) => `<figure><figcaption>${String(index + 1).padStart(2, '0')}</figcaption><button class="mms-image-toggle" type="button" aria-label="문자 작업 ${index + 1} 확대" aria-pressed="false"><img src="./projects/mms-${index + 1}.png" alt="MMS 카피라이팅 작업 ${index + 1}" loading="lazy"></button></figure>`).join('')}</div>
+    </section>
+  </article>`
+document.body.append(mmsDialog)
+mmsTrigger?.addEventListener('click', () => {
+  mmsDialog.showModal()
+  mmsDialog.scrollTop = 0
+  document.body.style.overflow = 'hidden'
+})
+mmsDialog.querySelector('.personal-dialog-close')?.addEventListener('click', () => mmsDialog.close())
+mmsDialog.addEventListener('close', () => {
+  document.body.style.overflow = ''
+  mmsTrigger?.focus()
+})
+mmsDialog.addEventListener('click', (event) => {
+  if (event.target !== mmsDialog) return
+  const bounds = mmsDialog.getBoundingClientRect()
+  if (event.clientX < bounds.left || event.clientX > bounds.right
+    || event.clientY < bounds.top || event.clientY > bounds.bottom) mmsDialog.close()
+})
+mmsDialog.querySelectorAll<HTMLButtonElement>('.mms-image-toggle').forEach((button) => {
+  button.addEventListener('click', () => {
+    const expanded = button.closest('figure')?.classList.toggle('is-expanded') ?? false
+    button.setAttribute('aria-pressed', String(expanded))
+  })
+})
