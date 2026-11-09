@@ -2211,3 +2211,21 @@ newsletterDialog.querySelectorAll<HTMLImageElement>('.newsletter-dialog-pages im
     button.setAttribute('aria-label', `${img.alt} ${expanded ? '원본 크기로 보기' : '확대'}`)
   })
 })
+
+const thirdNewsletter = newsletterDialog.querySelectorAll('figure')[2]
+if (thirdNewsletter) {
+  thirdNewsletter.innerHTML = `<figcaption>03 · D-44</figcaption>
+    <article class="newsletter-readable">
+      <header><span>Newsletter</span><h3>빌드업코리아2025 (D-44)<br>[1차] 연사 라인업 안내</h3></header>
+      <p><strong>빌드업코리아2025 (D-44)<br>[1차] 연사 라인업 안내</strong><br>일시: 09.05-06 (금-토) 9:00-18:00, 장소: 킨텍스 제2전시장 8홀</p>
+      <p>-<br>안녕하세요, 빌더님😊<br>빌드업코리아2025 소식 전달드립니다.</p>
+      <p>🎉<strong>빌드업코리아2025 공식 슬로건이 공개되었습니다!</strong><br><strong class="newsletter-slogan">Build the Future, Born to LEAD</strong><br>미래를 기다리지 않고, 직접 만들어가는 우리.<br>리더의 이름으로 행동하고, 변화의 중심에 서는 여러분을 위한 슬로건입니다.<br>세상을 바꿀 세대가 모이는 <strong>Build Up Korea 2025</strong> —이제, 여러분의 차례입니다.</p>
+      <p>🔥미국 정치판을 뒤흔든 리더들이 한국에 온다!<br>미국 대학가에 정치 토론 열풍을 일으킨 <strong>터닝포인트USA 창립자 찰리 커크</strong>, 트럼프의 핵심 참모 <strong>알렉스 브루세위츠</strong>, 전 해군 정보장교이자 날카로운 정치논객 <strong>잭 포소비엑</strong>까지—지금 이 미국을 움직이는 정치인, 기업인, 언론인, 인플루언서들이 <strong>Build Up Korea 2025</strong> 무대에 총출동합니다!</p>
+      <p>🚨통찰력 있는 비전, 현실을 꿰뚫는 메시지, 미래를 준비할 리더들을 위한 생생한 인사이트!<br>이 이야기를 들을 수 있는 단 하나의 무대, <strong>Build Up Korea 2025!</strong><br>미국을 움직이는 리더들의 인사이트, <strong>한국에서는 오직 이곳에서만</strong> 만날 수 있습니다.<br>특별한 이 기회를 놓치지 마세요!</p>
+      <p>아래 링크된 사이트를 방문해 빌드업코리아2025의 더 많은 정보를 확인하세요!<br>빌드업코리아2025 사이트 방문 &gt;&gt; <a href="https://www.buildupkorea.org/" target="_blank" rel="noopener noreferrer">https://www.buildupkorea.org/</a></p>
+      <p>🎁뉴스레터 구독자에게 <strong>빌드업코리아2025 10% 추가할인 티켓 링크</strong>를 보내드립니다.</p>
+      <p>BUK2025 티켓 10% 추가할인 링크<br>&gt;&gt; <a href="https://booking.naver.com/booking/5/bizes/1102750/items/6875487?preview=1" target="_blank" rel="noopener noreferrer">https://booking.naver.com/booking/5/bizes/1102750/items/6875487?preview=1</a></p>
+      <p>감사합니다.</p>
+      <svg class="newsletter-speakers" viewBox="0 460 244 164" role="img" aria-label="빌드업코리아2025 연사 안내 포스터"><image href="./projects/newsletter-3.png" width="244" height="624" /></svg>
+    </article>`
+}
