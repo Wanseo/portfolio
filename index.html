@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      // Keep the desktop composition on phones; the browser fits it to the screen.
+      if (matchMedia('(pointer: coarse)').matches && Math.min(screen.width, screen.height) <= 760) {
+        document.querySelector('meta[name="viewport"]').content = 'width=1200'
+      }
+    </script>
     <meta name="description" content="Wanseo's portfolio" />
     <link rel="icon" type="image/svg+xml" href="%BASE_URL%favicon.svg" />
     <title>Wanseo's portfolio</title>

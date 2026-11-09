@@ -3595,3 +3595,5 @@ h1 {
 .mms-image-toggle { overflow: hidden; }
 .mms-image-toggle img { margin-top: -12%; }
 .mms-preview-screens img { clip-path: inset(5.5% 0 0); }
+
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
