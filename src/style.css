@@ -3893,3 +3893,6 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 .kakao-preview-logo, .sns-preview-instagram { position: absolute; top: 15.1%; left: 50%; width: 12.8cqw; height: 12.8cqw; object-fit: contain; transform: translateX(-50%); }
 .kakao-preview .channel-preview-art, .sns-preview .channel-preview-art { position: absolute; top: 35%; left: 50%; transform: translateX(-50%); }
 .kakao-preview-count, .sns-preview-result { position: absolute; bottom: 9%; left: 50%; transform: translateX(-50%); white-space: nowrap; }
+
+.kakao-preview-logo { width: 17cqw; height: 17cqw; top: 13%; }
+.sns-preview-instagram { width: 23cqw; height: 23cqw; top: 10%; }
