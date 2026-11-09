@@ -138,16 +138,30 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         <h2>Build Up Korea</h2>
       </header>
       <div class="work-project-grid">
-      <article class="work-project">
-        <h3>사이트 개편</h3>
-        <div class="work-project__placeholder" role="img" aria-label="사이트 개편 대표 이미지 준비 중"></div>
-      </article>
-      <article class="work-project work-project--placeholder" aria-label="작업 이미지 준비 중">
-        <div class="work-project__placeholder" aria-hidden="true"></div>
-      </article>
-      <article class="work-project work-project--placeholder" aria-label="작업 이미지 준비 중">
-        <div class="work-project__placeholder" aria-hidden="true"></div>
-      </article>
+        <article class="work-project">
+          <h3>사이트 개편</h3>
+          <div class="work-project__placeholder" role="img" aria-label="사이트 개편 대표 이미지 준비 중"></div>
+        </article>
+        <article class="work-project">
+          <h3>뉴스레터 기획/제작</h3>
+          <div class="work-project__placeholder" role="img" aria-label="뉴스레터 기획/제작 대표 이미지 준비 중"></div>
+        </article>
+        <article class="work-project">
+          <h3>블로그 관리</h3>
+          <div class="work-project__placeholder" role="img" aria-label="블로그 관리 대표 이미지 준비 중"></div>
+        </article>
+        <article class="work-project">
+          <h3>문자관리</h3>
+          <div class="work-project__placeholder" role="img" aria-label="문자관리 대표 이미지 준비 중"></div>
+        </article>
+        <article class="work-project">
+          <h3>카카오톡 채널관리</h3>
+          <div class="work-project__placeholder" role="img" aria-label="카카오톡 채널관리 대표 이미지 준비 중"></div>
+        </article>
+        <article class="work-project">
+          <h3>SNS관리</h3>
+          <div class="work-project__placeholder" role="img" aria-label="SNS관리 대표 이미지 준비 중"></div>
+        </article>
       </div>
     </section>
     <section class="portfolio-panel bookshelf-panel" id="bookshelf" role="tabpanel" aria-labelledby="tab-bookshelf" hidden>
