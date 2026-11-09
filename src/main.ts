@@ -107,7 +107,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
             <p class="resume-job__date">2024.06 — 2024.12</p>
             <div class="resume-job__body">
               <p class="resume-job__company">Freelance Design Work <span>디자인 외주</span> <a class="resume-work-link" href="#work-freelance" data-work-link="work-freelance" aria-label="Freelance Design Work 작업 보기"><svg class="resume-work-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M4 8h8M8 4l4 4-4 4" /></svg></a></p>
-              <ul class="resume-freelance-projects"><li>1776연구소 굿즈작업</li><li>연개청 로고제작</li><li>연개청 책자제작</li><li>에브리라이프 굿즈작업</li></ul>
+              <ul class="resume-freelance-projects"><li>1776연구소 굿즈작업</li><li>연개청 로고제작</li><li>연개청 책자 표지디자인</li><li>에브리라이프 굿즈작업</li></ul>
             </div>
           </li>
           <li class="resume-job">
@@ -161,7 +161,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
           <a class="work-logo-preview" href="./projects/yeongae-logo-clean.png" target="_blank" rel="noopener noreferrer" aria-label="연금개혁청년행동 로고 크게 보기"><img src="./projects/yeongae-logo-clean.png" alt="연금개혁청년행동 로고 — 검정, 초록, 청록 세 가지 색상" loading="lazy"></a>
         </article>
         <article class="work-project">
-          <h3>연개청 책자제작</h3>
+          <h3>연개청 책자 표지디자인</h3>
           <a class="work-booklet-preview" href="./projects/yeongae-booklet.png" target="_blank" rel="noopener noreferrer" aria-label="연개청 책자 표지 크게 보기"><img src="./projects/yeongae-booklet.png" alt="2024년 연금개혁 — MZ세대가 생각하는 국가 미래를 위한 연금개혁 방향 책자 표지" loading="lazy"></a>
         </article>
         <article class="work-project">
@@ -2082,7 +2082,7 @@ everylifeDialog.addEventListener('click', (event) => {
 const bookletTrigger = document.querySelector<HTMLAnchorElement>('.work-booklet-preview')
 const bookletDialog = document.createElement('dialog')
 bookletDialog.className = 'personal-project-dialog booklet-dialog'
-bookletDialog.setAttribute('aria-label', '연개청 책자제작 상세 화면')
+bookletDialog.setAttribute('aria-label', '연개청 책자 표지디자인 상세 화면')
 bookletDialog.innerHTML = `<button class="personal-dialog-close" type="button" aria-label="닫기">×</button>
   <img src="./projects/yeongae-booklet.png" alt="2024년 연금개혁 책자 전체 표지">
   <img src="./projects/yeongae-booklet-photo.jpg" alt="연금개혁 행사 현장에서 촬영한 연개청 책자 실물" loading="lazy">`
