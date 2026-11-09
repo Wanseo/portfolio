@@ -475,6 +475,7 @@ kakaoDialog.innerHTML = `<button class="personal-dialog-close" type="button" ari
         <section class="kakao-channel-card kakao-channel-card--current"><span class="kakao-period">2026</span><div class="kakao-card-brand"><span class="kakao-brand-icon">BUK</span><strong>빌드업코리아 <span class="kakao-verified" aria-label="인증 채널">✓</span></strong></div><span class="kakao-count-label">채널 친구 수</span><p class="kakao-count">1,089<span>명</span></p></section>
       </div>
       <p class="kakao-source-note">제공된 채널 화면 기준 · 가독성을 위해 텍스트와 수치로 재구성</p>
+      <img class="kakao-source-image" src="./projects/kakao-channel.png" alt="2025년 개설 초기와 2026년 빌드업코리아 카카오톡 채널 실제 화면" loading="lazy">
     </section>
   </article>`
 document.body.append(kakaoDialog)

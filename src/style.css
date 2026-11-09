@@ -3709,3 +3709,5 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 
 .newsletter-preview-title { font-size: 6.4cqw; top: 18%; }
 .newsletter-preview .newsletter-envelope { width: 80%; justify-self: center; transform: translateY(12%); }
+
+.kakao-source-image { display: block; width: 100%; max-width: 452px; height: auto; margin: 24px auto 0; }
