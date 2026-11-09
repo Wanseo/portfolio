@@ -3560,3 +3560,11 @@ h1 {
   left: 26%;
   width: 48%;
 }
+
+.blog-case-dialog .blog-readable { text-align: center; }
+.blog-case-dialog .blog-readable h3 { text-align: center; }
+.blog-case-dialog .blog-readable p { text-align: center; white-space: normal; min-height: .8em; }
+.blog-readable b, .blog-readable strong { font-weight: 700; }
+.blog-readable u { text-decoration: underline; text-underline-offset: 3px; }
+.blog-readable a { color: #153ba1; text-decoration: underline; }
+.blog-readable span { overflow-wrap: anywhere; }
