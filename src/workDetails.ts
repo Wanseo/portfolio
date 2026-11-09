@@ -539,18 +539,13 @@ const renewalScreens = (name: string, title: string, count: number) => `
 const renewalTrigger = document.querySelector<HTMLElement>('.renewal-preview')
 const renewalDialog = document.createElement('dialog')
 renewalDialog.className = 'personal-project-dialog everylife-dialog renewal-case-dialog'
-renewalDialog.setAttribute('aria-labelledby', 'renewal-case-title')
+renewalDialog.setAttribute('aria-label', '사이트 개편')
 renewalDialog.innerHTML = `<button class="personal-dialog-close" type="button" aria-label="닫기">×</button>
   <article class="goods-case">
-    <header class="goods-hero renewal-case-hero"><span>BUILD UP KOREA</span><h2>Website<br>Renewal</h2><p>사이트 개편 기획</p></header>
-    <section class="goods-section goods-overview dialog-copy">
-      <span class="eyebrow">Website Planning</span><h2 id="renewal-case-title">사이트 개편</h2>
-      <div><p>메인 · About Us · 미디어 페이지의 콘텐츠 구성과 이동 흐름을 정리한 웹사이트 개편 시안입니다.</p><dl class="goods-facts"><div><dt>Role</dt><dd>페이지 구성 · 콘텐츠 기획</dd></div><div><dt>Scope</dt><dd>Main · About Us · Media</dd></div></dl></div>
-    </section>
     <section class="goods-section renewal-case-pages">
-      <figure><figcaption><span>01</span><h3>Main</h3><p>행사 영상과 뉴스레터 구독을 첫 화면에 배치하고, 단체 소개·행사·콘텐츠·샵으로 연결했습니다.</p></figcaption>${renewalScreens('main', 'Main', 8)}</figure>
-      <figure><figcaption><span>02</span><h3>About Us</h3><p>단체 소개와 미션·비전을 한영 콘텐츠로 정리하고, 지난 행사와 연도별 활동을 구성했습니다.</p></figcaption>${renewalScreens('about', 'About Us', 6)}</figure>
-      <figure><figcaption><span>03</span><h3>Media</h3><p>인스타그램·유튜브 콘텐츠를 모아 보여주고, 뉴스레터 구독과 카카오톡 채널로 연결했습니다.</p></figcaption>${renewalScreens('media', 'Media', 3)}</figure>
+      <figure>${renewalScreens('main', 'Main', 8)}</figure>
+      <figure>${renewalScreens('about', 'About Us', 6)}</figure>
+      <figure>${renewalScreens('media', 'Media', 3)}</figure>
     </section>
   </article>`
 document.body.append(renewalDialog)
