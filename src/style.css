@@ -3469,3 +3469,6 @@ h1 {
 .booklet-case-dialog .booklet-case-cover { background: #ebeeef; }
 .booklet-case-dialog .goods-application-image { margin-top: 0; }
 .booklet-case-dialog .personal-dialog-close { margin-top: 16px; margin-right: 16px; top: 16px; }
+
+.newsletter-preview { display: grid; place-items: center; padding: 12%; }
+.newsletter-preview .newsletter-envelope { display: block; width: 100%; height: auto; }
