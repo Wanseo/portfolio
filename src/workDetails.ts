@@ -547,16 +547,15 @@ snsDialog.innerHTML = `<button class="personal-dialog-close" type="button" aria-
     <section class="goods-section goods-overview dialog-copy"><span class="eyebrow">Social Media · Content Planning</span><h2 id="sns-case-title">SNS 콘텐츠 기획 및 제작</h2>
       <div><p>행사 홍보와 팔로워 확보를 목표로 인스타그램 콘텐츠를 기획하고 제작했습니다. 연사 스피치, 행사 홍보 배너와 포스터를 활용해 다양한 홍보 콘텐츠를 제작·업로드했습니다.</p><dl class="goods-facts"><div><dt>Role</dt><dd>콘텐츠 기획 · 제작 · 업로드</dd></div><div><dt>Channel</dt><dd>Instagram</dd></div><div><dt>Period</dt><dd>2025.02 – 2026.01 · 12개월</dd></div></dl></div>
     </section>
-    <section class="goods-section sns-case-result"><div class="goods-section-heading"><span class="goods-index">RESULT</span></div><p class="sns-growth">1,415명 <span>→</span> 1.2만 명</p><p>팔로워 수 변화</p></section>
-    <section class="goods-section"><div class="goods-section-heading"><span class="goods-index">APPROACH</span></div>
-      <dl class="sns-approach"><div><dt>WHY</dt><dd>SNS 초기 운영 당시 팔로워 확보를 위해 다양한 콘텐츠 중심의 홍보 기획 및 제작이 필요했습니다.</dd></div><div><dt>HOW</dt><dd>이전 행사 연사 스피치와 새로운 행사 홍보 배너·포스터를 바탕으로 트렌드에 맞는 콘텐츠를 기획·제작하고 업로드했습니다.</dd></div></dl>
-    </section>
+
+
     <section class="goods-section"><div class="goods-section-heading"><span class="goods-index">PROJECT BOARD</span></div><div class="sns-project-board">
       <svg class="sns-board-screens" viewBox="26 330 563 582" role="img" aria-label="2024년과 2025년 인스타그램 프로필 및 콘텐츠 편집 화면"><image href="./projects/sns-management-black.svg" width="1724" height="912" /></svg>
       <div class="sns-board-copy"><h3>SNS 콘텐츠 기획 및 제작</h3><p class="sns-board-growth">1,415명 → 1.2만 명</p>
         <dl><div><dt>주요목표</dt><dd>행사 홍보 및 팔로워 확보</dd></div><div><dt>기간</dt><dd>12개월 (2025.02 – 2026.01)</dd></div><div><dt>WHY</dt><dd>SNS 초기 운영 당시 팔로워 수가 적어 팔로워 확보를 위해 다양한<br>콘텐츠 중심의 홍보 기획 및 제작 필요</dd></div><div><dt>HOW</dt><dd>이전 행사 연사 스피치, 새로운 행사 홍보 배너, 행사 포스터 및 연사<br>스피치 내용을 중심으로 트렌디한 콘텐츠 기획 및 제작, 업로드</dd></div><div><dt>WHAT</dt><dd>팔로워 수 기준 1,415명 → 1.2만 증가</dd></div></dl>
       </div>
     </div></section>
+    <section class="goods-section sns-case-result"><div class="goods-section-heading"><span class="goods-index">RESULT</span></div><p class="sns-growth">1,415명 <span>→</span> 1.2만 명</p><p>팔로워 수 변화</p></section>
   </article>`
 document.body.append(snsDialog)
 snsTrigger?.addEventListener('click', () => {
