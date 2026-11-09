@@ -445,6 +445,15 @@ mmsDialog.querySelectorAll<HTMLButtonElement>('.mms-image-toggle').forEach((butt
   }
   button.addEventListener('click', () => {
     const expanded = !figure.classList.contains('is-expanded')
+    if (expanded) {
+      mmsDialog.querySelectorAll<HTMLElement>('.mms-gallery figure.is-expanded').forEach((previous) => {
+        if (previous === figure) return
+        previous.classList.remove('is-expanded')
+        previous.querySelector('.mms-image-toggle')?.setAttribute('aria-pressed', 'false')
+        const previousClose = previous.querySelector<HTMLButtonElement>('.mms-zoom-close')
+        if (previousClose) previousClose.hidden = true
+      })
+    }
     setExpanded(expanded)
     if (expanded) {
       figure.scrollIntoView({ block: 'start', behavior: 'instant' })
