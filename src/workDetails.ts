@@ -570,7 +570,7 @@ renewalDialog.className = 'personal-project-dialog everylife-dialog renewal-case
 renewalDialog.setAttribute('aria-labelledby', 'renewal-case-title')
 renewalDialog.innerHTML = `<button class="personal-dialog-close" type="button" aria-label="닫기">×</button>
   <article class="goods-case">
-    <header class="goods-hero renewal-case-hero"><span>BUILD UP KOREA</span><h2>Website<br>Renewal</h2><p>사이트 개편 기획</p></header>
+    <header class="goods-hero renewal-case-hero"><span>BUILD UP KOREA</span><h2>Website<br>Renewal</h2></header>
     <section class="goods-section goods-overview dialog-copy">
       <span class="eyebrow">Website Planning</span><h2 id="renewal-case-title">사이트 개편</h2>
       <div><p>메인 · About Us · 미디어 페이지의 콘텐츠 구성과 이동 흐름을 정리한 웹사이트 개편 시안입니다.</p><dl class="goods-facts"><div><dt>Role</dt><dd>페이지 구성 · 콘텐츠 기획</dd></div><div><dt>Tool</dt><dd>Canva, Adobe Illustrator</dd></div></dl></div>
