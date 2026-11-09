@@ -3252,7 +3252,7 @@ h1 {
 .personal-dialog-eyebrow { font-size: 10px; letter-spacing: 1.3px; }
 .personal-dialog-copy h2 { margin: 15px 0; font-size: 34px; letter-spacing: -1px; }
 .personal-dialog-copy p { max-width: 560px; font-size: 14px; line-height: 1.8; word-break: keep-all; }
-.personal-dialog-copy dl { display: flex; align-items: baseline; gap: 10px; margin: 20px 0 24px; }
+.personal-dialog-copy dl { display: grid; grid-template-columns: 34px minmax(0, 1fr); align-items: baseline; gap: 10px; margin: 20px 0 24px; }
 .personal-dialog-copy dt { min-width: 34px; font-size: 9px; letter-spacing: 1.3px; color: #77776f; }
 .personal-dialog-copy dd { margin: 0; font-size: 12px; line-height: 1.6; }
 .personal-dialog-copy > a {
