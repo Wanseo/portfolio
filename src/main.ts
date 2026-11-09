@@ -97,7 +97,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
           <li class="resume-job">
             <p class="resume-job__date">2021.09 — 2024.06</p>
             <div class="resume-job__body">
-              <p class="resume-job__company">STRADVISION <span>스트라드비젼</span> <a class="resume-work-link" href="#work" data-work-link aria-label="STRADVISION 작업 보기"><svg class="resume-work-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M4 8h8M8 4l4 4-4 4" /></svg></a></p>
+              <p class="resume-job__company">STRADVISION <span>스트라드비젼</span> <a class="resume-work-link" href="#work-stradvision" data-work-link="work-stradvision" aria-label="STRADVISION 작업 보기"><svg class="resume-work-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M4 8h8M8 4l4 4-4 4" /></svg></a></p>
               <h3>Lane Detection Algorithm Engineer</h3>
               <ul><li>LD Algorithm 개선</li><li>최적 모델 학습</li><li>데이터베이스 구축 및 관리</li></ul>
             </div>
@@ -105,14 +105,14 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
           <li class="resume-job">
             <p class="resume-job__date">2024.06 — 2024.12</p>
             <div class="resume-job__body">
-              <p class="resume-job__company">Freelance Design Work <span>디자인 외주</span> <a class="resume-work-link" href="#work" data-work-link aria-label="Freelance Design Work 작업 보기"><svg class="resume-work-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M4 8h8M8 4l4 4-4 4" /></svg></a></p>
+              <p class="resume-job__company">Freelance Design Work <span>디자인 외주</span> <a class="resume-work-link" href="#work-freelance" data-work-link="work-freelance" aria-label="Freelance Design Work 작업 보기"><svg class="resume-work-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M4 8h8M8 4l4 4-4 4" /></svg></a></p>
               <ul class="resume-freelance-projects"><li>1776연구소 굿즈작업</li><li>연개청 로고제작</li><li>연개청 책자제작</li><li>에브리라이프 굿즈작업</li></ul>
             </div>
           </li>
           <li class="resume-job">
             <p class="resume-job__date">2025.02 - 2026.02</p>
             <div class="resume-job__body">
-              <p class="resume-job__company">Build Up Korea <span>빌드업코리아</span> <a class="resume-work-link" href="#work" data-work-link aria-label="빌드업코리아 작업 보기"><svg class="resume-work-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M4 8h8M8 4l4 4-4 4" /></svg></a></p>
+              <p class="resume-job__company">Build Up Korea <span>빌드업코리아</span> <a class="resume-work-link" href="#work-buildup" data-work-link="work-buildup" aria-label="빌드업코리아 작업 보기"><svg class="resume-work-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M4 8h8M8 4l4 4-4 4" /></svg></a></p>
               <h3>사원</h3>
               <ul><li>마케팅 기획</li><li>SNS 홍보 배너 및 온·오프라인 게시물 디자인</li></ul>
             </div>
@@ -139,7 +139,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     </section>
     <section class="portfolio-panel work-panel" id="work" role="tabpanel" aria-labelledby="tab-work" hidden>
       <header class="work-overview-heading">
-        <h2>STRADVISION</h2>
+        <h2 id="work-stradvision" tabindex="-1">STRADVISION</h2>
       </header>
       <div class="work-project-grid work-project-grid--freelance">
         <article class="work-project">
@@ -147,7 +147,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         </article>
       </div>
       <header class="work-overview-heading">
-        <h2>Freelance Design Work</h2>
+        <h2 id="work-freelance" tabindex="-1">Freelance Design Work</h2>
       </header>
       <div class="work-project-grid work-project-grid--freelance">
         <article class="work-project">
@@ -168,7 +168,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         </article>
       </div>
       <header class="work-overview-heading">
-        <h2>Build Up Korea</h2>
+        <h2 id="work-buildup" tabindex="-1">Build Up Korea</h2>
       </header>
       <div class="work-project-grid">
         <article class="work-project">
@@ -663,8 +663,9 @@ document.querySelectorAll<HTMLAnchorElement>('[data-work-link]').forEach((link) 
   link.addEventListener('click', (event) => {
     event.preventDefault()
     document.querySelector<HTMLAnchorElement>('#tab-work')?.click()
-    document.querySelector<HTMLAnchorElement>('#tab-work')?.focus({ preventScroll: true })
-    window.scrollTo({ top: 0, behavior: 'instant' })
+    const target = document.getElementById(link.dataset.workLink ?? '')
+    target?.focus({ preventScroll: true })
+    target?.scrollIntoView({ block: 'start', behavior: 'instant' })
   })
 })
 
