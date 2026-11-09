@@ -2244,3 +2244,33 @@ if (secondNewsletter) {
       <p>감사합니다.</p>
     </article>`
 }
+
+newsletterDialog.classList.add('everylife-dialog', 'newsletter-case-dialog')
+const newsletterCase = document.createElement('article')
+newsletterCase.className = 'goods-case'
+newsletterCase.innerHTML = `
+  <header class="goods-hero newsletter-case-hero">
+    <span>BUILD UP KOREA 2025</span>
+    <h2>Newsletter</h2>
+    <p>뉴스레터 기획/제작</p>
+  </header>
+  <section class="goods-section goods-overview dialog-copy">
+    <span class="eyebrow">Content Planning · Newsletter</span>
+    <h2>빌드업코리아 뉴스레터</h2>
+    <div>
+      <p>빌드업코리아2025 행사 소식을 전하는 뉴스레터입니다. 행사 등록과 할인 혜택, 연사 라인업, 공식 슬로건을 회차별로 소개했습니다.</p>
+      <dl class="goods-facts">
+        <div><dt>Role</dt><dd>뉴스레터 기획 · 콘텐츠 제작</dd></div>
+        <div><dt>Contents</dt><dd>D-90 · D-49 · D-44</dd></div>
+      </dl>
+    </div>
+  </section>
+  <section class="goods-section newsletter-case-work">
+    <div class="goods-section-heading"><span class="goods-index">NEWSLETTER ARCHIVE</span></div>
+  </section>`
+const newsletterPages = newsletterDialog.querySelector('.newsletter-dialog-pages')
+if (newsletterPages) newsletterCase.querySelector('.newsletter-case-work')?.append(newsletterPages)
+newsletterDialog.querySelector('.newsletter-dialog-header')?.remove()
+newsletterDialog.append(newsletterCase)
+newsletterDialog.setAttribute('aria-label', '빌드업코리아 뉴스레터 기획 및 제작')
+newsletterDialog.removeAttribute('aria-labelledby')

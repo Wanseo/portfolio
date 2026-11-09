@@ -3448,3 +3448,15 @@ h1 {
   border: 1px solid #000;
   box-sizing: border-box;
 }
+
+.newsletter-case-dialog .goods-case { --everylife-purple: #4265ff; --everylife-on-purple: #fff; }
+.newsletter-case-dialog .newsletter-case-hero { padding: 48px 7%; }
+.newsletter-case-dialog .newsletter-case-hero > span { font-size: 10px; letter-spacing: 1.5px; }
+.newsletter-case-dialog .newsletter-case-hero h2 { margin: 40px 0 24px; font: 700 clamp(38px, 8vw, 72px)/1.1 Arial, sans-serif; letter-spacing: -.05em; }
+.newsletter-case-dialog .newsletter-case-hero > p { font-size: 15px; letter-spacing: 0; }
+.newsletter-case-dialog .newsletter-dialog-pages { padding: 0; }
+.newsletter-case-dialog .newsletter-dialog-pages > figure:first-child { border-top: 0; padding-top: 0; }
+.newsletter-case-dialog .newsletter-dialog-pages > figure:last-child { padding-bottom: 0; }
+.newsletter-case-dialog .newsletter-readable p { font-size: 14px; line-height: 1.9; margin: 0 0 32px; color: #111; }
+.newsletter-case-dialog .newsletter-readable h3 { font-size: 20px; font-weight: 700; line-height: 1.7; text-align: center; margin: 20px 0 0; }
+.newsletter-case-dialog .personal-dialog-close { margin-top: 16px; margin-right: 16px; top: 16px; }
