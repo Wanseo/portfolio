@@ -4033,3 +4033,5 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
   .kakao-preview,
   .sns-preview { background: #fff; }
 }
+
+.logo-grid-symbol-label { position: absolute; top: 8px; left: 2.85%; width: 8.8%; text-align: center; color: #777; font: 9px/1.5 Arial, sans-serif; letter-spacing: .08em; white-space: nowrap; }
