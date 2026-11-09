@@ -120,7 +120,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
             </div>
           </li>
           <li class="resume-job">
-            <div class="resume-job__date"></div>
+            <p class="resume-job__date">2026.05-Now</p>
             <div class="resume-job__body">
               <p class="resume-job__company">Personal Project <span>개인 프로젝트</span></p>
             </div>
