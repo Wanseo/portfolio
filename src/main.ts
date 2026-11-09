@@ -74,7 +74,6 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         <h3 class="about-story__heading">기술의 가치를 시장에 전달하는 커뮤니케이션 전문가로 성장하겠습니다.</h3>
         <p>개발 현장에서 쌓은 기술적 이해, 디자인을 통한 시각적 표현 역량, 다양한 채널에서 축적한 마케팅 경험은 저만의 차별화된 강점입니다.</p>
         <p>이를 바탕으로 복잡한 기술과 제품의 핵심 가치를 명확한 메시지로 풀어내고, 다양한 콘텐츠와 커뮤니케이션 활동을 통해 기업의 기술 경쟁력과 브랜드 가치를 효과적으로 전달하는 Marketing Communications 전문가로 성장하고자 합니다.</p>
-        <p class="about-note">※ 해당 경력은 단체의 정치적 성향에 대한 개인적 지지와 무관하며, <span class="about-note__highlight">수행한 업무와 성과를 중심으로 검토</span>해 주시기 바랍니다.</p>
       </div>
     </section>
     <section class="portfolio-panel resume-panel" id="cv" role="tabpanel" aria-labelledby="tab-cv" hidden>
