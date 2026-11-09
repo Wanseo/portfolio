@@ -4013,3 +4013,5 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 .renewal-scroll-track { position: absolute; inset: 0 0 0 auto; width: 14px; background: #eeecf1; touch-action: none; cursor: pointer; }
 .renewal-scroll-thumb { position: absolute; top: 0; left: 3px; right: 3px; min-height: 28px; background: #8b8495; border-radius: 6px; cursor: grab; }
 .renewal-scroll-thumb:active { cursor: grabbing; background: #655d70; }
+
+.kakao-case-dialog .sns-board-copy dl { width: fit-content; max-width: 100%; }
