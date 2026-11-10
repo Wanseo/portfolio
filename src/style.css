@@ -4064,3 +4064,6 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
   .newsletter-case-dialog .newsletter-dialog-pages { gap: 16px; }
   .newsletter-sample-viewer { padding-inline: 16px; }
 }
+
+.newsletter-sample-footer { margin-top: 32px; padding: 20px; background: #3c394c; color: #ccc; text-align: center; font: 11px/1.9 Arial, sans-serif; }
+.newsletter-case-dialog .newsletter-sample-footer { margin-top: 12px; padding: 10px; font-size: 6px; }
