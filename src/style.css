@@ -4149,3 +4149,8 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 .sns-sample-gallery img:nth-child(n+5) { grid-column: 1 / -1; }
 .sns-sample-gallery img:last-child { max-width: 380px; margin-inline: auto; }
 @media (max-width: 480px) { .sns-sample-gallery { gap: 12px; } }
+
+.kakao-case-dialog .sns-project-board .sns-board-copy { margin-top: 0; }
+@media (min-width: 761px) {
+  .kakao-case-dialog .sns-project-board > .sns-board-screens { align-self: center; margin-top: 24px; }
+}
