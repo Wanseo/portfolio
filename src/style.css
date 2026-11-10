@@ -4188,3 +4188,6 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 @media (min-width: 601px) {
   .sns-reel-embed { align-self: center; }
 }
+
+.mms-board-shot { overflow: hidden; }
+.mms-board-shot img { margin-top: -12%; }
