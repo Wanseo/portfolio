@@ -518,7 +518,7 @@ mmsDialog.innerHTML = `<button class="personal-dialog-close" type="button" aria-
     <section class="goods-section"><div class="goods-section-heading"><span class="goods-index">PROJECT BOARD</span></div>
       <div class="sns-project-board editorial-project-board">
         <div class="project-board-message-pair"><img src="./projects/mms-10.png" alt="빌드업코리아 행사 안내 문자 예시" loading="lazy"><img src="./projects/mms-9.png" alt="빌드업코리아 참가 안내 문자 예시" loading="lazy"></div>
-        <div class="sns-board-copy"><h3>MMS 카피라이팅</h3><dl><div><dt>주요목표</dt><dd>행사 정보 전달 및 참가 신청 유도</dd></div><div><dt>Channel</dt><dd>MMS</dd></div><div><dt>WHY</dt><dd>행사 소식과 참여 안내를 문자 메시지로 명확하게 전달</dd></div><div><dt>HOW</dt><dd>행사 소식과 참여 안내를 중심으로 문자 메시지 카피를 작성하고, 주요 정보와 신청 안내를 구성</dd></div><div><dt>RESULT</dt><dd>행사 홍보 및 참가 안내를 위한 문자 메시지 카피 제작</dd></div></dl></div>
+        <div class="sns-board-copy"><h3>MMS 카피라이팅</h3><dl><div><dt>주요목표</dt><dd>행사 정보 전달 및 참가 신청 유도</dd></div><div><dt>WHY</dt><dd>행사 소식과 참여 안내를 문자 메시지로 명확하게 전달</dd></div><div><dt>HOW</dt><dd>행사 소식과 참여 안내를 중심으로 문자 메시지 카피를 작성하고, 주요 정보와 신청 안내를 구성</dd></div><div><dt>RESULT</dt><dd>행사 홍보 및 참가 안내를 위한 문자 메시지 카피 제작</dd></div></dl></div>
       </div>
     </section>
     <section class="goods-section mms-case-gallery"><div class="goods-section-heading"><span class="goods-index">MESSAGE SAMPLES</span></div>
