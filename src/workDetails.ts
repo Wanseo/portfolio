@@ -651,7 +651,7 @@ snsDialog.innerHTML = `<button class="personal-dialog-close" type="button" aria-
     <section class="goods-section goods-overview dialog-copy"><span class="eyebrow">Social Media · Content Planning</span><h2 id="sns-case-title">SNS 콘텐츠 기획 및 제작</h2>
       <div><p>빌드업코리아의 <strong>행사 홍보와 인스타그램 팔로워 확보</strong>를 목표로, 2025년 2월부터 2026년 1월까지 12개월간 SNS 콘텐츠를 기획·제작하고 운영했습니다.</p>
       <p>초기 운영 당시 팔로워 수가 적었던 상황에서 신규 팔로워의 관심을 끌기 위해 <strong>이전 행사 연사들의 스피치, 행사 홍보 배너와 포스터를 활용한 콘텐츠</strong>를 기획했습니다. 연사들의 메시지와 행사 정보를 트렌드에 맞는 형식으로 제작·업로드하며 채널의 콘텐츠를 확장했습니다.</p>
-      <p>운영 기간 동안 <strong>인스타그램 팔로워는 1,415명에서 1.2만 명으로 증가</strong>했습니다.</p><dl class="goods-facts"><div><dt>Role</dt><dd>콘텐츠 기획 · 제작 · 업로드</dd></div><div><dt>Channel</dt><dd>Instagram</dd></div></dl></div>
+      <p>운영 기간 동안 <strong>인스타그램 팔로워는 1,415명에서 1.2만 명으로 증가</strong>했습니다.</p><dl class="goods-facts"><div><dt>Role</dt><dd>콘텐츠 기획 · 제작 · 업로드</dd></div><div><dt>Channel</dt><dd>Instagram</dd></div><div><dt>Tool</dt><dd>CapCut, VLLO, Adobe Illustrator</dd></div></dl></div>
     </section>
 
 
