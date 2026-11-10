@@ -4161,3 +4161,5 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 .sns-case-dialog .sns-project-board .sns-board-copy { margin-top: 0; align-self: start; }
 
 .kakao-result-shot--full img { margin-top: 0; }
+
+.institute-preview.everylife-preview > img { transform: translateY(4%); }
