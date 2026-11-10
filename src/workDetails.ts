@@ -512,7 +512,8 @@ mmsDialog.innerHTML = `<button class="personal-dialog-close" type="button" aria-
     <header class="goods-hero mms-case-hero"><h2>MMS<br>Copywriting</h2></header>
     <section class="goods-section goods-overview dialog-copy">
       <span class="eyebrow">Copywriting · Mobile Message</span><h2 id="mms-case-title">MMS 카피라이팅</h2>
-      <div><p>빌드업코리아 행사 소식과 참여 안내를 전달하는 문자 메시지 카피라이팅 작업입니다.</p><dl class="goods-facts"><div><dt>Role</dt><dd>문자 카피라이팅</dd></div><div><dt>Channel</dt><dd>MMS</dd></div></dl></div>
+      <div><p>이메일 뉴스레터만으로는 정보 전달과 사용자 접근성에 한계가 있다는 점을 파악하고, MMS와 카카오톡 채널을 추가로 활용하는 멀티채널 커뮤니케이션 전략으로 확대했습니다.</p>
+      <p><strong>빌드업코리아의 행사 소식과 참여 안내를 효과적으로 전달하기 위해 핵심 정보를 중심으로 메시지를 구성했으며, 수신자가 내용을 쉽고 빠르게 이해할 수 있도록 직관적이고 친근한 톤앤매너의 카피라이팅을 진행했습니다.</strong></p><dl class="goods-facts"><div><dt>Role</dt><dd>문자 카피라이팅</dd></div><div><dt>Channel</dt><dd>MMS</dd></div></dl></div>
     </section>
     <section class="goods-section"><div class="goods-section-heading"><span class="goods-index">PROJECT BOARD</span></div>
       <div class="sns-project-board editorial-project-board">
