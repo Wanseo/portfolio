@@ -1,3 +1,4 @@
+import blogUsNewsPostContent from './blogUsNewsPost.html?raw'
 import blogPostContent from './blogPost.html?raw'
 import blogIntroPostContent from './blogIntroPost.html?raw'
 import everylifeDetail from './everylifeDetail.html?raw'
@@ -388,7 +389,7 @@ blogDialog.innerHTML = `<button class="personal-dialog-close" type="button" aria
       <span class="eyebrow">Content Planning · Blog</span><h2 id="blog-case-title">빌드업코리아 공식 블로그</h2>
       <div><p>빌드업코리아의 행사 소식과 주요 콘텐츠를 전달하기 위해 개설한 네이버 블로그입니다.</p>
         <p>브랜드 아이덴티티를 반영한 메인 화면을 디자인하고, ABOUT, EVENTS, NEWSLETTER, NOTICE, CONTENTS로 메뉴를 구성해 정보 접근성을 높였습니다.</p>
-        <p>네이버 검색 트렌드와 주요 키워드를 활용한 국제 뉴스 연재를 통해 자연 검색을 통한 신규 방문자 유입을 유도하고, 공식 웹사이트에서 다루기 어려운 연사들의 강연 내용을 체계적으로 기록·보관하는 콘텐츠 아카이브로 활용하고자 했습니다.</p>
+        <p>네이버 검색 트렌드와 주요 키워드를 활용한 미국 뉴스 연재를 통해 자연 검색을 통한 신규 방문자 유입을 유도하고, 공식 웹사이트에서 다루기 어려운 연사들의 강연 내용을 체계적으로 기록·보관하는 콘텐츠 아카이브로 활용하고자 했습니다.</p>
         <dl class="goods-facts"><div><dt>Role</dt><dd>블로그 기획 · 콘텐츠 제작 · 운영</dd></div><div><dt>Tool</dt><dd>Canva</dd></div></dl>
       </div>
     </section>
@@ -396,7 +397,7 @@ blogDialog.innerHTML = `<button class="personal-dialog-close" type="button" aria
       <div class="sns-project-board editorial-project-board">
         <img class="sns-board-screens" src="./projects/buildup-blog.png" alt="빌드업코리아 네이버 블로그 메인 화면과 콘텐츠 구성" loading="lazy">
         <div class="sns-board-copy"><h3>네이버 블로그 기획 및 운영</h3>
-          <dl><div><dt>주요목표</dt><dd>행사 정보 전달 및 단체·브랜드 소개</dd></div><div><dt>Tool</dt><dd>Canva</dd></div><div><dt>WHY</dt><dd>네이버 검색 트렌드와 주요 키워드를 활용한 신규 방문자 유입<br>및 연사 강연 콘텐츠의 체계적인 기록·보관</dd></div><div><dt>HOW</dt><dd>행사 브랜드를 반영한 메인 화면 및 썸네일 화면 기획.<br>메뉴 구성 및 단체 소개·행사 관련 게시글 제작.<br>국제 뉴스 연재.</dd></div><div><dt>RESULT</dt><dd>브랜드 아이덴티티를 반영한 공식 블로그 구성<br>및 콘텐츠 기획·제작·운영</dd></div></dl>
+          <dl><div><dt>주요목표</dt><dd>행사 정보 전달 및 단체·브랜드 소개</dd></div><div><dt>Tool</dt><dd>Canva</dd></div><div><dt>WHY</dt><dd>네이버 검색 트렌드와 주요 키워드를 활용한 신규 방문자 유입<br>및 연사 강연 콘텐츠의 체계적인 기록·보관</dd></div><div><dt>HOW</dt><dd>행사 브랜드를 반영한 메인 화면 및 썸네일 화면 기획.<br>메뉴 구성 및 단체 소개·행사 관련 게시글 제작.<br>미국 뉴스 연재.</dd></div><div><dt>RESULT</dt><dd>브랜드 아이덴티티를 반영한 공식 블로그 구성<br>및 콘텐츠 기획·제작·운영</dd></div></dl>
         </div>
       </div>
     </section>
@@ -407,6 +408,14 @@ blogDialog.innerHTML = `<button class="personal-dialog-close" type="button" aria
         <article class="blog-readable"><h3>빌드업코리아 소개 주요연혁 비전 미션 주요활동</h3>${blogIntroPostContent}</article>
       </div>
       <a class="blog-original-post" href="https://blog.naver.com/PostView.naver?blogId=bukofficial&amp;logNo=224073747834" target="_blank" rel="noopener noreferrer">원문 보기 ↗</a>
+    </section>
+    <section class="goods-section blog-us-news-post">
+      <div class="goods-section-heading"><span class="goods-index">US NEWS</span></div>
+      <div class="blog-post-controls"><span>미국 뉴스 · 12.05 오늘 당신이 꼭 알아야 할 소식 Top 3</span></div>
+      <div class="blog-post-viewport" tabindex="0" role="region" aria-label="미국 뉴스 게시글. 스크롤하여 전체 내용을 볼 수 있습니다.">
+        <article class="blog-readable"><h3>[미국뉴스] 12.05 오늘 당신이 꼭 알아야 할 소식 Top 3</h3>${blogUsNewsPostContent}</article>
+      </div>
+      <a class="blog-original-post" href="https://blog.naver.com/PostView.naver?blogId=bukofficial&amp;logNo=224099549384&amp;categoryNo=7&amp;parentCategoryNo=7&amp;from=thumbnailList" target="_blank" rel="noopener noreferrer">원문 보기 ↗</a>
     </section>
     <section class="goods-section blog-case-link"><a href="https://blog.naver.com/bukofficial" target="_blank" rel="noopener noreferrer">VISIT BLOG <span aria-hidden="true">↗</span></a></section>
   </article>`
