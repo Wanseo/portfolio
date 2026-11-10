@@ -611,7 +611,7 @@ kakaoDialog.innerHTML = `<button class="personal-dialog-close" type="button" ari
       <div><p>빌드업코리아의 행사 정보를 효과적으로 전달하기 위해 카카오톡 채널을 운영했습니다. 초기에는 뉴스레터 중심으로 정보를 전달했지만, 실제 운영 과정에서 도달률과 사용자 반응이 기대보다 낮다는 점을 확인했습니다.</p>
         <p>이에 <strong>사용자 접근성이 높은 카카오톡 비즈니스 채널을 중심으로 정보 전달 전략을 전환</strong>했습니다. 채널에 맞는 콘텐츠를 기획·제작하고 SNS 홍보를 병행해, 행사 소식과 참여 안내를 보다 쉽게 받아볼 수 있도록 구성했습니다.</p>
         <p>그 결과 <strong>개설 당시 0명이었던 채널 친구 수가 1,000명 이상으로 증가</strong>했습니다. 같은 기간 뉴스레터 구독자가 0명에서 100명으로 증가한 것과 비교해, <strong>카카오톡 채널을 활용한 정보 전달과 구독자 확보의 효과</strong>를 확인했습니다.</p>
-        <dl class="goods-facts"><div><dt>Role</dt><dd>카카오톡 채널 운영</dd></div><div><dt>Channel</dt><dd>KakaoTalk Channel</dd></div><div><dt>Period</dt><dd>2025.02 – 2026.01</dd></div></dl>
+        <dl class="goods-facts"><div><dt>Role</dt><dd>카카오톡 채널 운영</dd></div><div><dt>Channel</dt><dd>KakaoTalk Channel</dd></div><div><dt>Period</dt><dd>9개월 (2025.05 – 2026.01)</dd></div></dl>
       </div>
     </section>
 
@@ -619,7 +619,7 @@ kakaoDialog.innerHTML = `<button class="personal-dialog-close" type="button" ari
     <section class="goods-section"><div class="goods-section-heading"><span class="goods-index">PROJECT BOARD</span></div><div class="sns-project-board kakao-project-board">
       <img class="sns-board-screens" src="./projects/kakao-channel-board.svg" alt="2025년 개설 초기와 2026년 카카오톡 채널 비교 화면" loading="lazy">
       <div class="sns-board-copy"><h3>카카오톡 채널 운영</h3>
-        <dl><div><dt>주요목표</dt><dd>효과적인 행사 정보 전달</dd></div><div><dt>기간</dt><dd>5개월 (2025.02 – 2026.01)</dd></div><div><dt>WHY</dt><dd>초기, 뉴스레터 중심의 정보전달을 진행했지만 실제 운영 과정에서 도달률과<br>사용자 반응이 기대보다 낮음을 확인</dd></div><div><dt>HOW</dt><dd>사용자 접근성이 높은 카카오 비즈니스 채널 중심으로 정보 전달 전략을 수정,<br>비즈니스 채널용 콘텐츠 기획 및 제작, SNS홍보</dd></div><div><dt>RESULT</dt><dd>친구 추가 수 0명 (개설 당시) → 1,000명 증가<br>(뉴스레터 구독자 0명 → 100명 대비 효과적인 결과)</dd></div></dl>
+        <dl><div><dt>주요목표</dt><dd>효과적인 행사 정보 전달</dd></div><div><dt>기간</dt><dd>9개월 (2025.05 – 2026.01)</dd></div><div><dt>WHY</dt><dd>초기, 뉴스레터 중심의 정보전달을 진행했지만 실제 운영 과정에서 도달률과<br>사용자 반응이 기대보다 낮음을 확인</dd></div><div><dt>HOW</dt><dd>사용자 접근성이 높은 카카오 비즈니스 채널 중심으로 정보 전달 전략을 수정,<br>비즈니스 채널용 콘텐츠 기획 및 제작, SNS홍보</dd></div><div><dt>RESULT</dt><dd>친구 추가 수 0명 (개설 당시) → 1,000명 증가<br>(뉴스레터 구독자 0명 → 100명 대비 효과적인 결과)</dd></div></dl>
       </div></div></section>
     <section class="goods-section kakao-results"><div class="kakao-result-images"><div class="kakao-result-shot"><img src="./projects/kakao-result-1.png" alt="빌드업코리아 카카오톡 채널 프로필과 행사 소식 화면" loading="lazy" decoding="async"></div><div class="kakao-result-shot"><img src="./projects/kakao-result-2.png" alt="빌드업코리아 카카오톡 채널 소식과 영상·문의 안내 화면" loading="lazy" decoding="async"></div><div class="kakao-result-shot kakao-result-shot--full"><img src="./projects/kakao-result-3.jpg" alt="빌드업코리아 카카오톡 채널 채팅과 주요 채널 바로가기 메뉴" loading="lazy" decoding="async"></div></div></section>
   </article>`
