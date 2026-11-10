@@ -386,7 +386,9 @@ blogDialog.innerHTML = `<button class="personal-dialog-close" type="button" aria
     <header class="goods-hero blog-case-hero"><h2>Naver Blog</h2></header>
     <section class="goods-section goods-overview dialog-copy">
       <span class="eyebrow">Content Planning · Blog</span><h2 id="blog-case-title">빌드업코리아 공식 블로그</h2>
-      <div><p>빌드업코리아의 행사 소식과 콘텐츠를 전하는 네이버 블로그입니다. 행사 브랜드를 담은 메인 화면과 ABOUT, EVENTS, NEWSLETTER, NOTICE, CONTENTS 메뉴로 구성되어 있습니다.</p>
+      <div><p>빌드업코리아의 행사 소식과 주요 콘텐츠를 전달하기 위해 개설한 네이버 블로그입니다.</p>
+        <p>브랜드 아이덴티티를 반영한 메인 화면을 디자인하고, ABOUT, EVENTS, NEWSLETTER, NOTICE, CONTENTS로 메뉴를 구성해 정보 접근성을 높였습니다.</p>
+        <p>네이버 검색 트렌드와 주요 키워드를 활용해 자연 검색을 통한 신규 방문자 유입을 유도하고, 공식 웹사이트에서 다루기 어려운 연사들의 강연 내용을 체계적으로 기록·보관하는 콘텐츠 아카이브로 활용하고자 했습니다.</p>
         <dl class="goods-facts"><div><dt>Role</dt><dd>블로그 기획 · 콘텐츠 제작 · 운영</dd></div><div><dt>Tool</dt><dd>Canva</dd></div></dl>
       </div>
     </section>
