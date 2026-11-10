@@ -4140,3 +4140,6 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 .kakao-result-images { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; max-width: 580px; margin-inline: auto; align-items: start; }
 .kakao-result-images img { display: block; width: 100%; height: auto; }
 @media (max-width: 480px) { .kakao-result-images { gap: 12px; } }
+
+.kakao-result-shot { overflow: hidden; }
+.kakao-result-shot img { margin-top: -12%; }
