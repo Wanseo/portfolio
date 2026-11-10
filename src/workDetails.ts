@@ -611,7 +611,7 @@ kakaoDialog.innerHTML = `<button class="personal-dialog-close" type="button" ari
       <div><p>빌드업코리아의 행사 정보를 효과적으로 전달하기 위해 카카오톡 채널을 운영했습니다. 초기에는 뉴스레터 중심으로 정보를 전달했지만, 실제 운영 과정에서 도달률과 사용자 반응이 기대보다 낮다는 점을 확인했습니다.</p>
         <p>이에 <strong>사용자 접근성이 높은 카카오톡 비즈니스 채널을 중심으로 정보 전달 전략을 전환</strong>했습니다. 채널에 맞는 콘텐츠를 기획·제작하고 SNS 홍보를 병행해, 행사 소식과 참여 안내를 보다 쉽게 받아볼 수 있도록 구성했습니다.</p>
         <p>그 결과 <strong>개설 당시 0명이었던 채널 친구 수가 1,000명 이상으로 증가</strong>했습니다. 같은 기간 뉴스레터 구독자가 0명에서 100명으로 증가한 것과 비교해, <strong>카카오톡 채널을 활용한 정보 전달과 구독자 확보의 효과</strong>를 확인했습니다.</p>
-        <dl class="goods-facts"><div><dt>Role</dt><dd>카카오톡 채널 운영</dd></div><div><dt>Channel</dt><dd>KakaoTalk Channel</dd></div><div><dt>Period</dt><dd>9개월 (2025.05 – 2026.01)</dd></div></dl>
+        <dl class="goods-facts"><div><dt>Role</dt><dd>카카오톡 채널 운영</dd></div><div><dt>Channel</dt><dd>KakaoTalk Channel</dd></div></dl>
       </div>
     </section>
 
