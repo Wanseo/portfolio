@@ -4050,7 +4050,7 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 
 .work-project[hidden] { display: none; }
 
-.newsletter-case-dialog .newsletter-dialog-pages { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.newsletter-case-dialog .newsletter-dialog-pages { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
 .newsletter-dialog-pages > figure { position: relative; }
 .newsletter-sample-open { position: absolute; inset: 0; width: 100%; border: 0; padding: 0; background: transparent; cursor: zoom-in; }
 .newsletter-sample-open:focus-visible { outline: 2px solid #fc4446; outline-offset: 4px; }
