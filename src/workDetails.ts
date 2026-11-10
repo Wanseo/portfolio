@@ -663,7 +663,7 @@ snsDialog.innerHTML = `<button class="personal-dialog-close" type="button" aria-
     </div></section>
 
     <section class="goods-section sns-sample-section"><div class="sns-sample-gallery">
-      ${Array.from({ length: 6 }, (_, index) => `${index === 5 ? '<div class="sns-status-crop">' : ''}<img src="./projects/sns-sample-${index + 1}.jpg" alt="빌드업코리아 SNS 콘텐츠 제작 예시 ${index + 1}" loading="lazy" decoding="async">${index === 5 ? '</div>' : ''}`).join('')}
+      ${[5, 1, 2, 3, 4, 6].map((number) => `${number === 6 ? '<div class="sns-status-crop">' : ''}<img class="${number === 5 ? 'sns-sample-wide' : ''}" src="./projects/sns-sample-${number}.jpg" alt="빌드업코리아 SNS 콘텐츠 제작 예시 ${number}" loading="lazy" decoding="async">${number === 6 ? '</div>' : ''}`).join('')}
     </div></section>
   </article>`
 document.body.append(snsDialog)

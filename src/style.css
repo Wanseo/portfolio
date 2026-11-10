@@ -4146,7 +4146,7 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 
 .sns-sample-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; align-items: start; }
 .sns-sample-gallery img { display: block; width: 100%; height: auto; }
-.sns-sample-gallery img:nth-child(n+5) { grid-column: 1 / -1; }
+.sns-sample-gallery > .sns-sample-wide { grid-column: 1 / -1; }
 .sns-sample-gallery img:last-child { max-width: 380px; margin-inline: auto; }
 @media (max-width: 480px) { .sns-sample-gallery { gap: 12px; } }
 
