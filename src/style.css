@@ -4117,5 +4117,6 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 @media (max-width: 760px) { .newsletter-board-sample { width: 100%; } }
 
 @media (min-width: 761px) {
-  .blog-case-dialog .editorial-project-board > .sns-board-screens { align-self: center; margin-top: 100px; }
+  .blog-case-dialog .editorial-project-board > .sns-board-screens { align-self: center; margin-top: 0; }
+  .blog-case-dialog .editorial-project-board .sns-board-copy { margin-top: 0; }
 }
