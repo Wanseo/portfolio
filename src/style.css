@@ -4137,7 +4137,7 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
   .mms-case-dialog .editorial-project-board > .project-board-message-pair { align-self: center; }
 }
 
-.kakao-result-images { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; max-width: 580px; margin-inline: auto; align-items: start; }
+.kakao-result-images { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; max-width: 860px; margin-inline: auto; align-items: start; }
 .kakao-result-images img { display: block; width: 100%; height: auto; }
 @media (max-width: 480px) { .kakao-result-images { gap: 12px; } }
 
@@ -4159,3 +4159,5 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 .sns-status-crop img { margin-top: -12%; }
 
 .sns-case-dialog .sns-project-board .sns-board-copy { margin-top: 0; align-self: start; }
+
+.kakao-result-shot--full img { margin-top: 0; }
