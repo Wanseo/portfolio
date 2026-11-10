@@ -4163,3 +4163,12 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 .kakao-result-shot--full img { margin-top: 0; }
 
 .institute-preview.everylife-preview > img { transform: translateY(4%); }
+
+/* Preserve scrolling and viewport bounds in mobile in-app browsers. */
+.personal-project-dialog,
+.institute-sticker-zoom { max-height: 90vh; max-height: 90svh; -webkit-overflow-scrolling: touch; }
+@media (max-width: 760px) {
+  .sns-board-copy dd,
+  .personal-dialog-copy dd,
+  .goods-facts dd { overflow-wrap: anywhere; }
+}
