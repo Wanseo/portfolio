@@ -224,7 +224,7 @@ if (thirdNewsletter) {
       <p>🎁뉴스레터 구독자에게 <strong>빌드업코리아2025 10% 추가할인 티켓 링크</strong>를 보내드립니다.</p>
       <p>BUK2025 티켓 10% 추가할인 링크<br>&gt;&gt; <a href="https://booking.naver.com/booking/5/bizes/1102750/items/6875487?preview=1" target="_blank" rel="noopener noreferrer">https://booking.naver.com/booking/5/bizes/1102750/items/6875487?preview=1</a></p>
       <p>감사합니다.</p>
-      <svg class="newsletter-speakers" viewBox="0 460 244 164" role="img" aria-label="빌드업코리아2025 연사 안내 포스터"><image href="./projects/newsletter-3.png" width="244" height="624" /></svg>
+
     </article>`
 }
 
