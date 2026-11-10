@@ -656,7 +656,7 @@ snsDialog.innerHTML = `<button class="personal-dialog-close" type="button" aria-
 
 
     <section class="goods-section"><div class="goods-section-heading"><span class="goods-index">PROJECT BOARD</span></div><div class="sns-project-board">
-      <svg class="sns-board-screens" viewBox="26 330 563 582" role="img" aria-label="2024년과 2025년 인스타그램 프로필 및 콘텐츠 편집 화면"><image href="./projects/sns-management-black.svg" width="1724" height="912" /></svg>
+      <svg class="sns-board-screens" viewBox="26 330 563 582" role="img" aria-label="2024년과 2025년 인스타그램 프로필 및 콘텐츠 편집 화면"><image href="./projects/sns-management-board.svg" width="1724" height="912" /></svg>
       <div class="sns-board-copy"><h3>SNS 콘텐츠 기획 및 제작</h3><p class="sns-board-growth">1,415명 → 1.2만 명</p>
         <dl><div><dt>주요목표</dt><dd>행사 홍보 및 팔로워 확보</dd></div><div><dt>기간</dt><dd>12개월 (2025.02 – 2026.01)</dd></div><div><dt>WHY</dt><dd>SNS 초기 운영 당시 팔로워 수가 적어 팔로워 확보를 위해 다양한<br>콘텐츠 중심의 홍보 기획 및 제작 필요</dd></div><div><dt>HOW</dt><dd>이전 행사 연사 스피치, 새로운 행사 홍보 배너, 행사 포스터 및 연사<br>스피치 내용을 중심으로 트렌디한 콘텐츠 기획 및 제작, 업로드</dd></div><div><dt>RESULT</dt><dd>팔로워 수 기준 1,415명 → 1.2만 증가</dd></div></dl>
       </div>
