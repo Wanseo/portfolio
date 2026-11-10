@@ -4067,3 +4067,18 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 
 .newsletter-sample-footer { margin-top: 32px; padding: 20px; background: #3c394c; color: #ccc; text-align: center; font: 11px/1.9 Arial, sans-serif; }
 .newsletter-case-dialog .newsletter-sample-footer { margin-top: 12px; padding: 10px; font-size: 6px; }
+
+.newsletter-case-dialog .editorial-project-board,
+.blog-case-dialog .editorial-project-board { grid-template-columns: 1fr 1.25fr; gap: 16px; align-items: start; padding-inline: 0; }
+.editorial-project-board .sns-board-screens { width: 94%; margin-right: auto; }
+.editorial-project-board .sns-board-copy { align-self: start; min-width: 0; margin-top: 100px; padding: 0; }
+.everylife-dialog .editorial-project-board .sns-board-copy h3 { margin: 0 0 20px; font-size: 18px; font-weight: 700; line-height: 1.4; letter-spacing: -.04em; }
+.editorial-project-board .sns-board-copy dl { width: fit-content; max-width: 100%; }
+.editorial-project-board .sns-board-copy dt { font-size: 10px; }
+.editorial-project-board .sns-board-copy dd { font-size: 12px; line-height: 1.8; }
+@media (max-width: 760px) {
+  .newsletter-case-dialog .editorial-project-board,
+  .blog-case-dialog .editorial-project-board { grid-template-columns: 1fr; gap: 28px; }
+  .editorial-project-board .sns-board-copy { margin-top: 0; }
+  .editorial-project-board .sns-board-screens { width: 100%; max-width: none; }
+}
