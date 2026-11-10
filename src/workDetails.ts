@@ -198,7 +198,7 @@ if (firstNewsletter) {
   firstNewsletter.innerHTML = `<figcaption>01 · D-90</figcaption>
     <article class="newsletter-readable">
       <header><span>Newsletter</span><h3>빌드업코리아2025 (D-90)</h3></header>
-      <svg class="newsletter-sample-envelope" viewBox="60 85 275 205" role="img" aria-label="파란 봉투 뉴스레터 그래픽"><image href="./projects/newsletter-1.png" width="397" height="689" /></svg>
+      <img class="newsletter-sample-envelope" src="./projects/newsletter-envelope.svg" alt="파란 봉투 뉴스레터 그래픽">
       <p><strong>빌드업코리아2025 (D-90)</strong><br>일시: 09.05-06, 장소: 킨텍스</p>
       <p>—<br>안녕하세요, 빌더님 😊<br>빌드업코리아의 여러 가지 소식 전달드립니다.</p>
       <p>🎉<strong>오늘(6.7) 15:00, BUK공식사이트에서 빌드업코리아2025 등록이 오픈되었습니다!</strong><br>6월 말까지 등록 시, BUK2025 참가 티켓에 대한 <strong>슈퍼얼리버드 50% 할인 혜택</strong>을 받아보실 수 있습니다.</p>
@@ -246,7 +246,7 @@ const fourthNewsletter = document.createElement('figure')
 fourthNewsletter.innerHTML = `<figcaption>04 · D-23</figcaption>
   <article class="newsletter-readable">
     <header><span>Newsletter</span><h3>빌드업코리아2025 (D-23)<br>부스 신청 접수 마감 임박!</h3></header>
-    <svg class="newsletter-sample-envelope" viewBox="60 85 275 205" role="img" aria-label="파란 봉투 뉴스레터 그래픽"><image href="./projects/newsletter-1.png" width="397" height="689" /></svg>
+    <img class="newsletter-sample-envelope" src="./projects/newsletter-envelope.svg" alt="파란 봉투 뉴스레터 그래픽">
     <p><strong>[빌드업코리아 2025] D-23 !!!</strong><br>일시: 09.05-06 (금-토) 9:00-18:00<br>장소: 킨텍스 제2전시장 8홀</p>
     <p>—<br>안녕하세요, 빌더님😊</p>
     <p><strong>빌드업코리아 2025와 함께할 부스를 모집합니다! 🚀</strong></p>
@@ -330,7 +330,7 @@ newsletterCase.innerHTML = `
   <section class="goods-section">
     <div class="goods-section-heading"><span class="goods-index">PROJECT BOARD</span></div>
     <div class="sns-project-board editorial-project-board">
-      <img class="sns-board-screens" src="./projects/newsletter-1.png" alt="빌드업코리아2025 뉴스레터 기획 및 제작 샘플" loading="lazy">
+      <div class="newsletter-board-sample">${firstNewsletter?.querySelector('.newsletter-readable')?.outerHTML ?? ''}</div>
       <div class="sns-board-copy"><h3>뉴스레터 기획 및 제작</h3>
         <dl><div><dt>주요목표</dt><dd>잠재 참가자 확보 및 행사 등록 유도</dd></div><div><dt>Tool</dt><dd>Stibee</dd></div><div><dt>WHY</dt><dd>컨퍼런스 주요 정보를 전달하고, 잠재 참가자와 지속적으로 소통할 접점 마련</dd></div><div><dt>HOW</dt><dd>웹사이트 메인 페이지에 뉴스레터 구독 섹션 신설. 얼리버드 혜택·행사 소식·글로벌 연사 라인업을 중심으로 콘텐츠 구성. 구독자 애칭 ‘빌더(Builder)’를 활용한 일관된 커뮤니케이션 톤 구축</dd></div><div><dt>RESULT</dt><dd>행사 정보와 브랜드 메시지를 담은 뉴스레터 시리즈 기획·제작 및 구독 채널 운영</dd></div></dl>
       </div>

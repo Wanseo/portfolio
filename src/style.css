@@ -4108,3 +4108,10 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 .work-project > :is(.work-project__placeholder, a, button),
 .work-project > :is(.work-project__placeholder, a, button)::before,
 .work-project > .renewal-preview { border-color: #ccc; }
+
+.newsletter-board-sample { width: 94%; max-height: 500px; overflow: hidden; padding: 16px; border: 1px solid #eee; background: #fff; box-sizing: border-box; }
+.newsletter-case-dialog .newsletter-board-sample .newsletter-readable { padding: 0; }
+.newsletter-case-dialog .newsletter-board-sample h3 { font-size: 13px; line-height: 1.6; }
+.newsletter-case-dialog .newsletter-board-sample p { font-size: 9px; line-height: 1.8; margin-bottom: 18px; }
+.newsletter-case-dialog .newsletter-board-sample header > span { font-size: 8px; }
+@media (max-width: 760px) { .newsletter-board-sample { width: 100%; } }
