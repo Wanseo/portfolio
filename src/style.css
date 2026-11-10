@@ -4104,3 +4104,7 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
   .renewal-case-dialog .editorial-project-board { grid-template-columns: 1fr; gap: 28px; }
   .project-board-message-pair { width: 100%; }
 }
+
+.work-project > :is(.work-project__placeholder, a, button),
+.work-project > :is(.work-project__placeholder, a, button)::before,
+.work-project > .renewal-preview { border-color: #ccc; }
