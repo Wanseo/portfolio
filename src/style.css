@@ -4084,9 +4084,9 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 }
 
 /* Keep newsletter sample previews uniform; the viewer shows the full content. */
-.newsletter-case-dialog .newsletter-dialog-pages > figure { height: 260px; overflow: hidden; border: 1px solid #e5e5e5; padding: 12px; box-sizing: border-box; background: #fff; }
+.newsletter-case-dialog .newsletter-dialog-pages > figure:nth-child(n) { height: 260px; overflow: hidden; border: 1px solid #e5e5e5; padding: 12px; box-sizing: border-box; background: #fff; }
 .newsletter-case-dialog .newsletter-dialog-pages > figure::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 28px; background: linear-gradient(transparent, #fff); pointer-events: none; }
 .newsletter-case-dialog .newsletter-sample-open { z-index: 1; }
 @media (max-width: 480px) {
-  .newsletter-case-dialog .newsletter-dialog-pages > figure { height: 180px; padding: 6px; }
+  .newsletter-case-dialog .newsletter-dialog-pages > figure:nth-child(n) { height: 180px; padding: 6px; }
 }
