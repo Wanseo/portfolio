@@ -4184,3 +4184,7 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 .newsletter-result-note { font-size: 10px; color: #999; font-weight: 400; }
 
 .renewal-result-note { font-size: 10px; color: #999; font-weight: 400; }
+
+@media (min-width: 601px) {
+  .sns-reel-embed { align-self: center; }
+}
