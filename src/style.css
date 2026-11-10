@@ -4115,3 +4115,7 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 .newsletter-case-dialog .newsletter-board-sample p { font-size: 9px; line-height: 1.8; margin-bottom: 18px; }
 .newsletter-case-dialog .newsletter-board-sample header > span { font-size: 8px; }
 @media (max-width: 760px) { .newsletter-board-sample { width: 100%; } }
+
+@media (min-width: 761px) {
+  .blog-case-dialog .editorial-project-board > .sns-board-screens { align-self: center; margin-top: 100px; }
+}
