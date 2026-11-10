@@ -324,7 +324,7 @@ newsletterCase.innerHTML = `
       <dl class="goods-facts">
         <div><dt>Role</dt><dd>뉴스레터 기획 · 콘텐츠 제작</dd></div>
         <div><dt>Tool</dt><dd>Stibee</dd></div>
-        <div><dt>Period</dt><dd>2025.02 – 2025.09 · 7개월</dd></div>
+        <div><dt>Period</dt><dd>7개월 (2025.02 – 2025.09)</dd></div>
       </dl>
     </div>
   </section>
