@@ -694,7 +694,7 @@ renewalDialog.innerHTML = `<button class="personal-dialog-close" type="button" a
     <section class="goods-section"><div class="goods-section-heading"><span class="goods-index">PROJECT BOARD</span></div>
       <div class="sns-project-board editorial-project-board">
         <img class="sns-board-screens" src="./projects/previews/renewal-main.jpg" alt="빌드업코리아 웹사이트 메인 페이지 개편 시안" loading="lazy">
-        <div class="sns-board-copy"><h3>사이트 개편 기획</h3><dl><div><dt>주요목표</dt><dd>행사 정보 접근성 개선 및 구독·등록 동선 구성</dd></div><div><dt>Tool</dt><dd>Canva, Adobe Illustrator</dd></div><div><dt>WHY</dt><dd>단체 소개와 행사·콘텐츠 정보를 정리하고, 방문자가 필요한 정보에 쉽게 접근할 수 있도록 페이지 구성 개선</dd></div><div><dt>HOW</dt><dd>메인·About Us·미디어 페이지의 콘텐츠와 이동 흐름 기획. 행사 영상·뉴스레터 구독·단체 소개·미디어 콘텐츠 배치</dd></div><div><dt>RESULT</dt><dd>개편 시안을 적용한 웹사이트 개설<br>현재는 사용하지 않아 링크 제공이 어렵습니다.</dd></div></dl></div>
+        <div class="sns-board-copy"><h3>사이트 개편 기획</h3><dl><div><dt>주요목표</dt><dd>행사 정보 접근성 개선 및 구독·등록 동선 구성</dd></div><div><dt>Tool</dt><dd>Canva, Adobe Illustrator</dd></div><div><dt>WHY</dt><dd>단체 소개와 행사·콘텐츠 정보를 정리하고, 방문자가 필요한 정보에 쉽게 접근할 수 있도록 페이지 구성 개선</dd></div><div><dt>HOW</dt><dd>메인·About Us·미디어 페이지의 콘텐츠와 이동 흐름 기획. 행사 영상·뉴스레터 구독·단체 소개·미디어 콘텐츠 배치</dd></div><div><dt>RESULT</dt><dd>개편 시안을 적용한 웹사이트 개설<br>*현재는 웹사이트를 사용하지 않아 링크 제공이 어렵습니다.</dd></div></dl></div>
       </div>
     </section>
     <section class="goods-section renewal-case-pages">
