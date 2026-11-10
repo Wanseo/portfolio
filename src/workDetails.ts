@@ -200,7 +200,7 @@ if (firstNewsletter) {
       <header><span>Newsletter</span><h3>빌드업코리아2025 (D-90)</h3></header>
       <svg class="newsletter-sample-envelope" viewBox="60 85 275 205" role="img" aria-label="파란 봉투 뉴스레터 그래픽"><image href="./projects/newsletter-1.png" width="397" height="689" /></svg>
       <p><strong>빌드업코리아2025 (D-90)</strong><br>일시: 09.05-06, 장소: 킨텍스</p>
-      <p>—<br>안녕하세요, 빌더님 😊<br>빌드업코리아의 여러가지 소식 전달드립니다.</p>
+      <p>—<br>안녕하세요, 빌더님 😊<br>빌드업코리아의 여러 가지 소식 전달드립니다.</p>
       <p>🎉<strong>오늘(6.7) 15:00, BUK공식사이트에서 빌드업코리아2025 등록이 오픈되었습니다!</strong><br>6월 말까지 등록 시, BUK2025 참가 티켓에 대한 <strong>슈퍼얼리버드 50% 할인 혜택</strong>을 받아보실 수 있습니다.</p>
       <p>🎉 빌드업코리아 뉴스레터 구독자에게 드리는 <strong>10% 추가할인 혜택</strong>도 챙겨가세요!<br>아래에 10% 추가할인 코드 보내드립니다.<br><strong>추가할인 코드: <span style="color:#1648e8">BUK_2025</span></strong></p>
       <p>빌더님께서 오늘 바로 등록하시면 <strong>슈퍼얼리버드 50% 할인 뿐만 아니라<br>10% 추가할인까지</strong> 받아보실 수 있습니다!</p>
