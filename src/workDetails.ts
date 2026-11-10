@@ -664,7 +664,11 @@ snsDialog.innerHTML = `<button class="personal-dialog-close" type="button" aria-
 
     <section class="goods-section sns-sample-section"><div class="sns-sample-gallery">
       ${[5, 1, 2, 3, 4, 6].map((number) => `${number === 6 ? '<div class="sns-status-crop">' : ''}<img class="${number === 5 ? 'sns-sample-wide' : ''}" src="./projects/sns-sample-${number}.jpg" alt="빌드업코리아 SNS 콘텐츠 제작 예시 ${number}" loading="lazy" decoding="async">${number === 6 ? '</div>' : ''}`).join('')}
-    </div></section>
+          <div class="sns-reel-embed">
+        <iframe src="https://www.instagram.com/reel/DHVtDAwJ6iF/embed/" title="빌드업코리아 인스타그램 릴스" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        <a href="https://www.instagram.com/reel/DHVtDAwJ6iF/" target="_blank" rel="noopener noreferrer">인스타그램에서 릴스 보기 ↗</a>
+      </div>
+</div></section>
   </article>`
 document.body.append(snsDialog)
 snsTrigger?.addEventListener('click', () => {
