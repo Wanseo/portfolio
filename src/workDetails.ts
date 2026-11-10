@@ -617,7 +617,7 @@ kakaoDialog.innerHTML = `<button class="personal-dialog-close" type="button" ari
 
 
     <section class="goods-section"><div class="goods-section-heading"><span class="goods-index">PROJECT BOARD</span></div><div class="sns-project-board kakao-project-board">
-      <img class="sns-board-screens" src="./projects/kakao-channel-black.svg" alt="2025년 개설 초기와 2026년 카카오톡 채널 비교 화면" loading="lazy">
+      <img class="sns-board-screens" src="./projects/kakao-channel-board.svg" alt="2025년 개설 초기와 2026년 카카오톡 채널 비교 화면" loading="lazy">
       <div class="sns-board-copy"><h3>카카오톡 채널 운영</h3>
         <dl><div><dt>주요목표</dt><dd>효과적인 행사 정보 전달</dd></div><div><dt>기간</dt><dd>5개월 (2025.02 – 2026.01)</dd></div><div><dt>WHY</dt><dd>초기, 뉴스레터 중심의 정보전달을 진행했지만 실제 운영 과정에서 도달률과<br>사용자 반응이 기대보다 낮음을 확인</dd></div><div><dt>HOW</dt><dd>사용자 접근성이 높은 카카오 비즈니스 채널 중심으로 정보 전달 전략을 수정,<br>비즈니스 채널용 콘텐츠 기획 및 제작, SNS홍보</dd></div><div><dt>RESULT</dt><dd>친구 추가 수 0명 (개설 당시) → 1,000명 증가<br>(뉴스레터 구독자 0명 → 100명 대비 효과적인 결과)</dd></div></dl>
       </div></div></section>
