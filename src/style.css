@@ -4157,3 +4157,5 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 
 .sns-sample-gallery > .sns-status-crop { grid-column: 1 / -1; width: 100%; max-width: 380px; margin-inline: auto; overflow: hidden; }
 .sns-status-crop img { margin-top: -12%; }
+
+.sns-case-dialog .sns-project-board .sns-board-copy { margin-top: 0; align-self: start; }
