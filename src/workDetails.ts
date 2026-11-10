@@ -658,6 +658,9 @@ snsDialog.innerHTML = `<button class="personal-dialog-close" type="button" aria-
       </div>
     </div></section>
     <section class="goods-section sns-case-result"><div class="goods-section-heading"><span class="goods-index">RESULT</span></div><p class="sns-growth">1,415명 <span>→</span> 1.2만 명</p><p>팔로워 수 변화</p></section>
+    <section class="goods-section sns-sample-section"><div class="sns-sample-gallery">
+      ${Array.from({ length: 6 }, (_, index) => `<img src="./projects/sns-sample-${index + 1}.jpg" alt="빌드업코리아 SNS 콘텐츠 제작 예시 ${index + 1}" loading="lazy" decoding="async">`).join('')}
+    </div></section>
   </article>`
 document.body.append(snsDialog)
 snsTrigger?.addEventListener('click', () => {
