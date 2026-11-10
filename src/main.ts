@@ -218,7 +218,7 @@ if (!document.querySelector('#app > .intro')) document.querySelector<HTMLDivElem
         </article>
         <article class="work-project">
           <h3>MMS 카피라이팅</h3>
-          <button class="mms-preview" type="button" aria-label="MMS 카피라이팅 작업 10개 상세 보기">
+          <button class="mms-preview" type="button" aria-label="MMS 카피라이팅 작업 9개 상세 보기">
             <img class="mms-preview-logo" src="./projects/messages-logo.svg" alt="메시지" loading="eager" decoding="async">
             <span class="mms-preview-screens"><img src="./projects/previews/mms-2.jpg" alt="문자 카피라이팅 작업 예시" loading="eager" decoding="async"><img src="./projects/previews/mms-1.jpg" alt="빌드업코리아 문자 메시지" loading="eager" decoding="async"><img src="./projects/previews/mms-3.jpg" alt="문자 카피라이팅 작업 예시" loading="eager" decoding="async"></span>
           <span class="work-card-arrow" aria-hidden="true">↗</span></button>
