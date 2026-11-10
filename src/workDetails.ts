@@ -686,7 +686,9 @@ renewalDialog.innerHTML = `<button class="personal-dialog-close" type="button" a
     <header class="goods-hero renewal-case-hero"><h2>Website<br>Renewal</h2></header>
     <section class="goods-section goods-overview dialog-copy">
       <span class="eyebrow">Website Planning</span><h2 id="renewal-case-title">사이트 개편</h2>
-      <div><p>메인 · About Us · 미디어 페이지의 콘텐츠 구성과 이동 흐름을 정리한 웹사이트 개편 시안입니다.</p><dl class="goods-facts"><div><dt>Role</dt><dd>페이지 구성 · 콘텐츠 기획</dd></div><div><dt>Tool</dt><dd>Canva, Adobe Illustrator</dd></div></dl></div>
+      <div><p>빌드업코리아 관련 구글 검색량이 일평균 100건 이상 발생한다는 점에 주목해, 검색을 통해 유입된 방문자에게 단체의 정체성과 주요 활동을 효과적으로 전달하고자 웹사이트 개편을 진행했습니다.</p>
+<p>단체 소개와 미션, 주요 행사 정보를 직관적으로 탐색할 수 있도록 콘텐츠 구조를 재정비하고, 메인 페이지에 뉴스레터 구독 섹션을 배치해 지속적인 소통과 구독 전환을 유도했습니다.</p>
+<p>또한 실제 행사 현장을 담은 영상을 직접 제작해 메인 화면에 적용함으로써, 방문자가 단체의 활동과 행사 분위기를 시각적으로 경험할 수 있도록 구성했습니다.</p><dl class="goods-facts"><div><dt>Role</dt><dd>페이지 구성 · 콘텐츠 기획</dd></div><div><dt>Tool</dt><dd>Canva, Adobe Illustrator</dd></div></dl></div>
     </section>
     <section class="goods-section"><div class="goods-section-heading"><span class="goods-index">PROJECT BOARD</span></div>
       <div class="sns-project-board editorial-project-board">
