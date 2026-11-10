@@ -4126,3 +4126,8 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 .newsletter-case-dialog .editorial-project-board .sns-board-copy { margin-top: 0; }
 
 .blog-case-dialog .editorial-project-board > .sns-board-screens { position: relative; left: 0; }
+
+.renewal-case-dialog .editorial-project-board .sns-board-copy { margin-top: 0; }
+@media (min-width: 761px) {
+  .renewal-case-dialog .editorial-project-board > .sns-board-screens { align-self: center; }
+}
