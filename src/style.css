@@ -4191,3 +4191,7 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 
 .mms-board-shot { overflow: hidden; }
 .mms-board-shot img { margin-top: -12%; }
+
+.blog-intro-post .blog-readable p { margin-bottom: 0; }
+.blog-intro-post .blog-readable .blog-original-spacer { height: 1.9em; min-height: 1.9em; margin: 0; }
+.blog-intro-post .blog-readable .blog-original-subheading { font-weight: 700; }
