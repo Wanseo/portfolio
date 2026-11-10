@@ -4180,3 +4180,5 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 @media (max-width: 600px) {
   .sns-sample-gallery > .sns-status-crop, .sns-reel-embed { grid-column: 1 / -1; max-width: 380px; width: 100%; margin-inline: auto; }
 }
+
+.newsletter-result-note { font-size: 10px; color: #999; font-weight: 400; }
