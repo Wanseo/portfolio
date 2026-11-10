@@ -4154,3 +4154,6 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 @media (min-width: 761px) {
   .kakao-case-dialog .sns-project-board > .sns-board-screens { align-self: center; margin-top: 24px; }
 }
+
+.sns-sample-gallery > .sns-status-crop { grid-column: 1 / -1; width: 100%; max-width: 380px; margin-inline: auto; overflow: hidden; }
+.sns-status-crop img { margin-top: -12%; }
