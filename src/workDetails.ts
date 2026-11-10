@@ -502,6 +502,12 @@ mmsDialog.innerHTML = `<button class="personal-dialog-close" type="button" aria-
       <span class="eyebrow">Copywriting · Mobile Message</span><h2 id="mms-case-title">MMS 카피라이팅</h2>
       <div><p>빌드업코리아 행사 소식과 참여 안내를 전달하는 문자 메시지 카피라이팅 작업입니다.</p><dl class="goods-facts"><div><dt>Role</dt><dd>문자 카피라이팅</dd></div><div><dt>Channel</dt><dd>MMS</dd></div></dl></div>
     </section>
+    <section class="goods-section"><div class="goods-section-heading"><span class="goods-index">PROJECT BOARD</span></div>
+      <div class="sns-project-board editorial-project-board">
+        <div class="project-board-message-pair"><img src="./projects/mms-10.png" alt="빌드업코리아 행사 안내 문자 예시" loading="lazy"><img src="./projects/mms-9.png" alt="빌드업코리아 참가 안내 문자 예시" loading="lazy"></div>
+        <div class="sns-board-copy"><h3>MMS 카피라이팅</h3><dl><div><dt>주요목표</dt><dd>행사 정보 전달 및 참가 신청 유도</dd></div><div><dt>Channel</dt><dd>MMS</dd></div><div><dt>WHY</dt><dd>행사 소식과 참여 안내를 문자 메시지로 명확하게 전달</dd></div><div><dt>HOW</dt><dd>행사 소식과 참여 안내를 중심으로 문자 메시지 카피를 작성하고, 주요 정보와 신청 안내를 구성</dd></div><div><dt>RESULT</dt><dd>행사 홍보 및 참가 안내를 위한 문자 메시지 카피 제작</dd></div></dl></div>
+      </div>
+    </section>
     <section class="goods-section mms-case-gallery"><div class="goods-section-heading"><span class="goods-index">MESSAGE ARCHIVE</span></div>
       <div class="mms-gallery">${Array.from({ length: 10 }, (_, index) => 10 - index).map((number, index) => `<figure><figcaption>${String(index + 1).padStart(2, '0')}</figcaption><button class="mms-image-toggle" type="button" aria-label="문자 작업 ${index + 1} 확대" aria-pressed="false"><img src="./projects/mms-${number}.png" alt="MMS 카피라이팅 작업 ${index + 1}" loading="lazy"></button></figure>`).join('')}</div>
     </section>
@@ -670,6 +676,12 @@ renewalDialog.innerHTML = `<button class="personal-dialog-close" type="button" a
     <section class="goods-section goods-overview dialog-copy">
       <span class="eyebrow">Website Planning</span><h2 id="renewal-case-title">사이트 개편</h2>
       <div><p>메인 · About Us · 미디어 페이지의 콘텐츠 구성과 이동 흐름을 정리한 웹사이트 개편 시안입니다.</p><dl class="goods-facts"><div><dt>Role</dt><dd>페이지 구성 · 콘텐츠 기획</dd></div><div><dt>Tool</dt><dd>Canva, Adobe Illustrator</dd></div></dl></div>
+    </section>
+    <section class="goods-section"><div class="goods-section-heading"><span class="goods-index">PROJECT BOARD</span></div>
+      <div class="sns-project-board editorial-project-board">
+        <img class="sns-board-screens" src="./projects/previews/renewal-main.jpg" alt="빌드업코리아 웹사이트 메인 페이지 개편 시안" loading="lazy">
+        <div class="sns-board-copy"><h3>사이트 개편 기획</h3><dl><div><dt>주요목표</dt><dd>행사 정보 접근성 개선 및 구독·등록 동선 구성</dd></div><div><dt>Tool</dt><dd>Canva, Adobe Illustrator</dd></div><div><dt>WHY</dt><dd>단체 소개와 행사·콘텐츠 정보를 정리하고, 방문자가 필요한 정보에 쉽게 접근할 수 있도록 페이지 구성 개선</dd></div><div><dt>HOW</dt><dd>메인·About Us·미디어 페이지의 콘텐츠와 이동 흐름 기획. 행사 영상·뉴스레터 구독·단체 소개·미디어 콘텐츠 배치</dd></div><div><dt>RESULT</dt><dd>개편 시안을 적용한 웹사이트 개설<br>현재는 사용하지 않아 링크 제공이 어렵습니다.</dd></div></dl></div>
+      </div>
     </section>
     <section class="goods-section renewal-case-pages">
       <figure><figcaption><span>01</span><h3>Main</h3><p>행사 영상과 뉴스레터 구독을 첫 화면에 배치하고, 단체 소개·행사·콘텐츠·샵으로 연결했습니다.</p></figcaption>${renewalScreens('main', 'Main', 8)}</figure>

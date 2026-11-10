@@ -4094,3 +4094,13 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 @media (min-width: 761px) {
   .blog-case-dialog .editorial-project-board { grid-template-columns: .8fr 1.45fr; }
 }
+
+.mms-case-dialog .editorial-project-board,
+.renewal-case-dialog .editorial-project-board { grid-template-columns: 1fr 1.25fr; gap: 16px; align-items: start; padding-inline: 0; }
+.project-board-message-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; width: 94%; align-items: start; }
+.project-board-message-pair img { display: block; width: 100%; height: auto; }
+@media (max-width: 760px) {
+  .mms-case-dialog .editorial-project-board,
+  .renewal-case-dialog .editorial-project-board { grid-template-columns: 1fr; gap: 28px; }
+  .project-board-message-pair { width: 100%; }
+}
