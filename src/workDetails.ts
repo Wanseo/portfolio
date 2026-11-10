@@ -394,7 +394,7 @@ blogDialog.innerHTML = `<button class="personal-dialog-close" type="button" aria
       <div class="sns-project-board editorial-project-board">
         <img class="sns-board-screens" src="./projects/buildup-blog.png" alt="빌드업코리아 네이버 블로그 메인 화면과 콘텐츠 구성" loading="lazy">
         <div class="sns-board-copy"><h3>네이버 블로그 기획 및 운영</h3>
-          <dl><div><dt>주요목표</dt><dd>행사 정보 전달 및 단체·브랜드 소개</dd></div><div><dt>Tool</dt><dd>Canva</dd></div><div><dt>WHY</dt><dd>단체 소개와 행사 소식을 한곳에서 확인할 수 있는 콘텐츠 채널 구성</dd></div><div><dt>HOW</dt><dd>행사 브랜드를 반영한 메인 화면 기획. ABOUT·EVENTS·NEWSLETTER·NOTICE·CONTENTS 메뉴 구성 및 단체 소개·행사 관련 게시글 제작</dd></div><div><dt>RESULT</dt><dd>브랜드 아이덴티티를 반영한 공식 블로그 구성 및 콘텐츠 기획·제작·운영</dd></div></dl>
+          <dl><div><dt>주요목표</dt><dd>행사 정보 전달 및 단체·브랜드 소개</dd></div><div><dt>Tool</dt><dd>Canva</dd></div><div><dt>WHY</dt><dd>단체 소개와 행사 소식을 한곳에서 확인할 수 있는<br>콘텐츠 채널 구성</dd></div><div><dt>HOW</dt><dd>행사 브랜드를 반영한 메인 화면 기획.<br>메뉴 구성 및 단체 소개·행사 관련 게시글 제작</dd></div><div><dt>RESULT</dt><dd>브랜드 아이덴티티를 반영한 공식 블로그 구성<br>및 콘텐츠 기획·제작·운영</dd></div></dl>
         </div>
       </div>
     </section>

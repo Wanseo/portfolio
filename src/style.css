@@ -4090,3 +4090,7 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 @media (max-width: 480px) {
   .newsletter-case-dialog .newsletter-dialog-pages > figure:nth-child(n) { height: 180px; padding: 6px; }
 }
+
+@media (min-width: 761px) {
+  .blog-case-dialog .editorial-project-board { grid-template-columns: .8fr 1.45fr; }
+}
