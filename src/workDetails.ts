@@ -390,7 +390,7 @@ blogDialog.innerHTML = `<button class="personal-dialog-close" type="button" aria
       <div><p>빌드업코리아의 행사 소식과 주요 콘텐츠를 전달하기 위해 개설한 네이버 블로그입니다.</p>
         <p>브랜드 아이덴티티를 반영한 메인 화면을 디자인하고, ABOUT, EVENTS, NEWSLETTER, NOTICE, CONTENTS로 메뉴를 구성해 정보 접근성을 높였습니다.</p>
         <p><strong>네이버 검색 트렌드와 주요 키워드를 활용한 미국 뉴스 연재를 통해 자연 검색을 통한 신규 방문자 유입을 유도하고, 공식 웹사이트에서 다루기 어려운 연사들의 강연 내용을 체계적으로 기록·보관하는 콘텐츠 아카이브로 활용</strong>하고자 했습니다.</p>
-        <p>블로그 유입 시 웹 검색량은 20%, 모바일 검색량이 80%를 차지하는 것으로 확인되어, 세로형으로 글을 작성하여 가독성을 높였습니다.</p>
+        <p>블로그 검색 유입의 80%가 모바일에서 발생한다는 점을 고려해, 세로형으로 글을 구성하여 가독성을 높였습니다.</p>
         <dl class="goods-facts"><div><dt>Role</dt><dd>블로그 기획 · 콘텐츠 제작 · 운영</dd></div><div><dt>Tool</dt><dd>Canva</dd></div></dl>
       </div>
     </section>
